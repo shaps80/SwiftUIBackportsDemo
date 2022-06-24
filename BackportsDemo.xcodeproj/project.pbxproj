@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		545530A928660AFD00BA482D /* SwiftUIBackportsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* SwiftUIBackportsDemoApp.swift */; };
-		545530AA28660AFD00BA482D /* SwiftUIBackportsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* SwiftUIBackportsDemoApp.swift */; };
+		5428D13B28661F71009AFCD2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */; };
+		5428D13C28661F71009AFCD2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */; };
+		5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
+		5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
+		5428D1442866504D009AFCD2 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D1432866504D009AFCD2 /* Chevron.swift */; };
+		5428D1452866504D009AFCD2 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D1432866504D009AFCD2 /* Chevron.swift */; };
+		5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
+		5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
+		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
+		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AB28660AFD00BA482D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309A28660AFC00BA482D /* ContentView.swift */; };
 		545530AC28660AFD00BA482D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309A28660AFC00BA482D /* ContentView.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		545530BA28660B2100BA482D /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 545530B928660B2100BA482D /* SwiftUIBackports */; };
+		545530BC28660B2400BA482D /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 545530BB28660B2400BA482D /* SwiftUIBackports */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5455309928660AFC00BA482D /* SwiftUIBackportsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBackportsDemoApp.swift; sourceTree = "<group>"; };
+		5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDemo.swift; sourceTree = "<group>"; };
+		5428D1432866504D009AFCD2 /* Chevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chevron.swift; sourceTree = "<group>"; };
+		5428D149286654A6009AFCD2 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--iOS--Info.plist"; sourceTree = "<group>"; };
+		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309A28660AFC00BA482D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		545530A028660AFD00BA482D /* SwiftUIBackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		545530A628660AFD00BA482D /* SwiftUIBackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		545530B728660B1500BA482D /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545530BA28660B2100BA482D /* SwiftUIBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,27 +53,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545530BC28660B2400BA482D /* SwiftUIBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5428D146286650BA009AFCD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5428D1432866504D009AFCD2 /* Chevron.swift */,
+				5428D149286654A6009AFCD2 /* Checkmark.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5428D147286650C0009AFCD2 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		5428D14828665102009AFCD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5455309B28660AFD00BA482D /* Assets.xcassets */,
+				5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5428D14D28666D5B009AFCD2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				545530B728660B1500BA482D /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
+				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
 				545530A128660AFD00BA482D /* Products */,
+				545530B828660B2100BA482D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5455309828660AFC00BA482D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5455309928660AFC00BA482D /* SwiftUIBackportsDemoApp.swift */,
+				5428D14828665102009AFCD2 /* Resources */,
+				5428D146286650BA009AFCD2 /* Views */,
+				5428D147286650C0009AFCD2 /* Demos */,
+				5455309928660AFC00BA482D /* DemoApp.swift */,
 				5455309A28660AFC00BA482D /* ContentView.swift */,
-				5455309B28660AFD00BA482D /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +121,8 @@
 		545530A128660AFD00BA482D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				545530A028660AFD00BA482D /* SwiftUIBackportsDemo.app */,
-				545530A628660AFD00BA482D /* SwiftUIBackportsDemo.app */,
+				545530A028660AFD00BA482D /* BackportsDemo.app */,
+				545530A628660AFD00BA482D /* BackportsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +135,19 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		545530B828660B2100BA482D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5455309F28660AFD00BA482D /* SwiftUIBackportsDemo (iOS) */ = {
+		5455309F28660AFD00BA482D /* Demo (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 545530B128660AFD00BA482D /* Build configuration list for PBXNativeTarget "SwiftUIBackportsDemo (iOS)" */;
+			buildConfigurationList = 545530B128660AFD00BA482D /* Build configuration list for PBXNativeTarget "Demo (iOS)" */;
 			buildPhases = (
 				5455309C28660AFD00BA482D /* Sources */,
 				5455309D28660AFD00BA482D /* Frameworks */,
@@ -93,14 +157,17 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftUIBackportsDemo (iOS)";
+			name = "Demo (iOS)";
+			packageProductDependencies = (
+				545530B928660B2100BA482D /* SwiftUIBackports */,
+			);
 			productName = "SwiftUIBackportsDemo (iOS)";
-			productReference = 545530A028660AFD00BA482D /* SwiftUIBackportsDemo.app */;
+			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		545530A528660AFD00BA482D /* SwiftUIBackportsDemo (macOS) */ = {
+		545530A528660AFD00BA482D /* Demo (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 545530B428660AFD00BA482D /* Build configuration list for PBXNativeTarget "SwiftUIBackportsDemo (macOS)" */;
+			buildConfigurationList = 545530B428660AFD00BA482D /* Build configuration list for PBXNativeTarget "Demo (macOS)" */;
 			buildPhases = (
 				545530A228660AFD00BA482D /* Sources */,
 				545530A328660AFD00BA482D /* Frameworks */,
@@ -110,9 +177,12 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftUIBackportsDemo (macOS)";
+			name = "Demo (macOS)";
+			packageProductDependencies = (
+				545530BB28660B2400BA482D /* SwiftUIBackports */,
+			);
 			productName = "SwiftUIBackportsDemo (macOS)";
-			productReference = 545530A628660AFD00BA482D /* SwiftUIBackportsDemo.app */;
+			productReference = 545530A628660AFD00BA482D /* BackportsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +193,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					5455309F28660AFD00BA482D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -133,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5455309728660AFC00BA482D /* Build configuration list for PBXProject "SwiftUIBackportsDemo" */;
+			buildConfigurationList = 5455309728660AFC00BA482D /* Build configuration list for PBXProject "BackportsDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5455309F28660AFD00BA482D /* SwiftUIBackportsDemo (iOS) */,
-				545530A528660AFD00BA482D /* SwiftUIBackportsDemo (macOS) */,
+				5455309F28660AFD00BA482D /* Demo (iOS) */,
+				545530A528660AFD00BA482D /* Demo (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428D13B28661F71009AFCD2 /* Launch Screen.storyboard in Resources */,
 				545530AD28660AFD00BA482D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428D13C28661F71009AFCD2 /* Launch Screen.storyboard in Resources */,
 				545530AE28660AFD00BA482D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */,
 				545530AB28660AFD00BA482D /* ContentView.swift in Sources */,
-				545530A928660AFD00BA482D /* SwiftUIBackportsDemoApp.swift in Sources */,
+				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
+				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
+				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
 				545530AC28660AFD00BA482D /* ContentView.swift in Sources */,
-				545530AA28660AFD00BA482D /* SwiftUIBackportsDemoApp.swift in Sources */,
+				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
+				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
+				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +304,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -284,6 +363,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,19 +392,20 @@
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
-				PRODUCT_NAME = SwiftUIBackportsDemo;
+				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -342,19 +423,20 @@
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
-				PRODUCT_NAME = SwiftUIBackportsDemo;
+				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,9 +451,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -384,7 +468,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
-				PRODUCT_NAME = SwiftUIBackportsDemo;
+				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -397,9 +481,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -412,7 +498,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
-				PRODUCT_NAME = SwiftUIBackportsDemo;
+				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5455309728660AFC00BA482D /* Build configuration list for PBXProject "SwiftUIBackportsDemo" */ = {
+		5455309728660AFC00BA482D /* Build configuration list for PBXProject "BackportsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				545530AF28660AFD00BA482D /* Debug */,
@@ -431,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		545530B128660AFD00BA482D /* Build configuration list for PBXNativeTarget "SwiftUIBackportsDemo (iOS)" */ = {
+		545530B128660AFD00BA482D /* Build configuration list for PBXNativeTarget "Demo (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				545530B228660AFD00BA482D /* Debug */,
@@ -440,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		545530B428660AFD00BA482D /* Build configuration list for PBXNativeTarget "SwiftUIBackportsDemo (macOS)" */ = {
+		545530B428660AFD00BA482D /* Build configuration list for PBXNativeTarget "Demo (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				545530B528660AFD00BA482D /* Debug */,
@@ -450,6 +536,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		545530B928660B2100BA482D /* SwiftUIBackports */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIBackports;
+		};
+		545530BB28660B2400BA482D /* SwiftUIBackports */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIBackports;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5455309428660AFC00BA482D /* Project object */;
 }

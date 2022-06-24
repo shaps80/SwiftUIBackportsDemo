@@ -4,15 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftUIBackportsDemo (iOS).xcscheme_^#shared#^_</key>
+		<key>Demo (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>SwiftUIBackportsDemo (macOS).xcscheme_^#shared#^_</key>
+		<key>Demo (macOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5455309F28660AFD00BA482D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>545530A528660AFD00BA482D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

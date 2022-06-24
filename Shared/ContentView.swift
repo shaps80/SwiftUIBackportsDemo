@@ -1,16 +1,13 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Shaps Benkau on 24/06/2022.
-//
-
-import SwiftUI
+import SwiftUIBackports
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                PresentationDemo()
+            }
+            .navigationBarTitle("Demos")
+        }
     }
 }
 
