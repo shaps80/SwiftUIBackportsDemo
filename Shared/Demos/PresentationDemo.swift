@@ -11,13 +11,13 @@ struct PresentationDemo: View {
             Text("Presentation")
         }
         .sheet(isPresented: $showSheet) {
-            PresentedView()
+            DemoView()
         }
     }
 
 }
 
-private struct PresentedView: View {
+private struct DemoView: View {
     @Environment(\.presentationMode) private var presentation
 
     @State private var selection: Backport.PresentationDetent = .medium

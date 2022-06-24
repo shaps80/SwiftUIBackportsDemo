@@ -15,10 +15,11 @@
 		5428D1452866504D009AFCD2 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D1432866504D009AFCD2 /* Chevron.swift */; };
 		5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
+		5428D15028667330009AFCD2 /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 5428D14F28667330009AFCD2 /* SwiftUIBackports */; };
+		5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D152286678B7009AFCD2 /* AppStorageDemo.swift */; };
+		5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D152286678B7009AFCD2 /* AppStorageDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
-		545530AB28660AFD00BA482D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309A28660AFC00BA482D /* ContentView.swift */; };
-		545530AC28660AFD00BA482D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309A28660AFC00BA482D /* ContentView.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530BA28660B2100BA482D /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 545530B928660B2100BA482D /* SwiftUIBackports */; };
@@ -31,8 +32,8 @@
 		5428D1432866504D009AFCD2 /* Chevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chevron.swift; sourceTree = "<group>"; };
 		5428D149286654A6009AFCD2 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
 		5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--iOS--Info.plist"; sourceTree = "<group>"; };
+		5428D152286678B7009AFCD2 /* AppStorageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
-		5455309A28660AFC00BA482D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5428D15028667330009AFCD2 /* SwiftUIBackports in Frameworks */,
 				545530BA28660B2100BA482D /* SwiftUIBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
+				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -113,7 +116,6 @@
 				5428D146286650BA009AFCD2 /* Views */,
 				5428D147286650C0009AFCD2 /* Demos */,
 				5455309928660AFC00BA482D /* DemoApp.swift */,
-				5455309A28660AFC00BA482D /* ContentView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 			name = "Demo (iOS)";
 			packageProductDependencies = (
 				545530B928660B2100BA482D /* SwiftUIBackports */,
+				5428D14F28667330009AFCD2 /* SwiftUIBackports */,
 			);
 			productName = "SwiftUIBackportsDemo (iOS)";
 			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
@@ -212,6 +215,9 @@
 				Base,
 			);
 			mainGroup = 5455309328660AFC00BA482D;
+			packageReferences = (
+				5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */,
+			);
 			productRefGroup = 545530A128660AFD00BA482D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,9 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */,
-				545530AB28660AFD00BA482D /* ContentView.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
+				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
-				545530AC28660AFD00BA482D /* ContentView.swift in Sources */,
 				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
+				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +543,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shaps80/swiftuibackports";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		5428D14F28667330009AFCD2 /* SwiftUIBackports */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */;
+			productName = SwiftUIBackports;
+		};
 		545530B928660B2100BA482D /* SwiftUIBackports */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIBackports;
