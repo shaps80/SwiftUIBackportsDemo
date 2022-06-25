@@ -1,3 +1,4 @@
+import SwiftUI
 import SwiftUIBackports
 
 @available(iOS 14, macOS 10.15, *)
@@ -6,8 +7,9 @@ import SwiftUIBackports
         WindowGroup {
             NavigationView {
                 List {
-                    PresentationDemo()
                     AppStorageDemo()
+                    PresentationDemo()
+                    RefreshableDemo()
                 }
                 .navigationBarTitle("Demos")
             }

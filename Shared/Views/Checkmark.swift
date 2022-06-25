@@ -1,3 +1,4 @@
+import SwiftUI
 import SwiftUIBackports
 
 struct Checkmark: ViewModifier {
@@ -21,11 +22,5 @@ struct Checkmark: ViewModifier {
 extension View {
     func checkmark(_ visibility: Backport<Any>.Visibility) -> some View {
         modifier(Checkmark(visibility: visibility))
-    }
-}
-
-struct Chevron_Previews: PreviewProvider {
-    static var previews: some View {
-        Chevron()
     }
 }
