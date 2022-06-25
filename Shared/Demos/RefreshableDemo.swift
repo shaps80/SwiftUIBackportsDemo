@@ -37,13 +37,14 @@ private struct DemoView: View {
         List {
             RefreshableView()
                 .backport.refreshable {
-                    isRefreshing = true
+                    withAnimation { isRefreshing = true }
                     sleep(1)
-                    isRefreshing = false
+                    withAnimation { isRefreshing = false }
                 }
         }
         .navigationBarTitle("Refreshable")
         .navigationBarItems(trailing: Progress(visibility: isRefreshing ? .visible : .hidden))
+        .navigationBarBackButtonHidden(isRefreshing)
     }
 }
 

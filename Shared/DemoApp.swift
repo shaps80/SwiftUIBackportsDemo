@@ -10,6 +10,7 @@ import SwiftUIBackports
                     AppStorageDemo()
                     PresentationDemo()
                     RefreshableDemo()
+                    ScaledMetricDemo()
                 }
                 .navigationBarTitle("Demos")
             }
