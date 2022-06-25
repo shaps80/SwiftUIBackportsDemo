@@ -24,6 +24,10 @@
 		5428D15A286685E9009AFCD2 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D158286685E9009AFCD2 /* Progress.swift */; };
 		5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */; };
 		5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */; };
+		5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
+		5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
+		5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
+		5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
@@ -42,6 +46,8 @@
 		5428D15528668485009AFCD2 /* RefreshableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableDemo.swift; sourceTree = "<group>"; };
 		5428D158286685E9009AFCD2 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricDemo.swift; sourceTree = "<group>"; };
+		5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingGeometryReaderDemo.swift; sourceTree = "<group>"; };
+		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +87,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5428D147286650C0009AFCD2 /* Demos */ = {
+		5428D147286650C0009AFCD2 /* Backport Demos */ = {
 			isa = PBXGroup;
 			children = (
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
@@ -89,7 +95,7 @@
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 			);
-			path = Demos;
+			path = "Backport Demos";
 			sourceTree = "<group>";
 		};
 		5428D14828665102009AFCD2 /* Resources */ = {
@@ -109,6 +115,15 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		5428D15F2866958D009AFCD2 /* Extras Demos */ = {
+			isa = PBXGroup;
+			children = (
+				5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */,
+				5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */,
+			);
+			path = "Extras Demos";
+			sourceTree = "<group>";
+		};
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +141,8 @@
 			children = (
 				5428D14828665102009AFCD2 /* Resources */,
 				5428D146286650BA009AFCD2 /* Views */,
-				5428D147286650C0009AFCD2 /* Demos */,
+				5428D147286650C0009AFCD2 /* Backport Demos */,
+				5428D15F2866958D009AFCD2 /* Extras Demos */,
 				5455309928660AFC00BA482D /* DemoApp.swift */,
 			);
 			path = Shared;
@@ -267,12 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */,
+				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D159286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
+				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
+				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D15A286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5428D15728668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
+				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

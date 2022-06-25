@@ -7,12 +7,20 @@ import SwiftUIBackports
         WindowGroup {
             NavigationView {
                 List {
-                    AppStorageDemo()
-                    PresentationDemo()
-                    RefreshableDemo()
-                    ScaledMetricDemo()
+                    Backport.Section("Backports") {
+                        AppStorageDemo()
+                        PresentationDemo()
+                        RefreshableDemo()
+                        ScaledMetricDemo()
+                    }
+
+                    Backport.Section("Extras") {
+                        FittingGeometryReaderDemo()
+                        FittingScrollViewDemo()
+                    }
                 }
                 .navigationBarTitle("Demos")
+                .listStyle(.sidebar)
             }
         }
     }
