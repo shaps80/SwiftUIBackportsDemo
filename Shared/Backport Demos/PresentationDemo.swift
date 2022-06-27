@@ -29,6 +29,7 @@ private struct DemoView: View {
     @State private var isModal: Bool = false
     @State private var enablePrompt: Bool = true
     @State private var showPrompt: Bool = false
+    @State private var undimmedDetent: Backport<Any>.PresentationDetent.Identifier?
 
     var body: some View {
         NavigationView {
@@ -44,6 +45,13 @@ private struct DemoView: View {
                         selection = selection == .medium ? .large : .medium
                     } label: {
                         Text(selection == .medium ? "Expand" : "Collapse")
+                    }
+
+                    Button {
+                        undimmedDetent = undimmedDetent == .medium ? nil : .medium
+                    } label: {
+                        Text("Passthrough")
+                            .checkmark(undimmedDetent != nil ? .visible : .hidden)
                     }
                 }
 
@@ -99,6 +107,7 @@ private struct DemoView: View {
         }
         .backport.presentationDragIndicator(visible)
         .backport.presentationDetents(detents, selection: $selection)
+        .backport.presentationUndimmed(from: undimmedDetent)
         .presentation(isModal: isModal) {
             if enablePrompt { showPrompt = true }
         }
