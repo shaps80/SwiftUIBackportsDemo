@@ -47,6 +47,7 @@ private struct DemoView: View {
                     } label: {
                         Text(selection == .medium ? "Expand" : "Collapse")
                     }
+                    .disabled(detents.count == 1)
 
                     Button {
                         undimmedDetent = undimmedDetent == .medium ? nil : .medium
@@ -59,6 +60,7 @@ private struct DemoView: View {
                 Section {
                     Button {
                         detents = [.large]
+                        selection = .large
                     } label: {
                         Text("Expanded Only")
                             .checkmark(detents == [.large] ? .visible : .hidden)
@@ -66,6 +68,7 @@ private struct DemoView: View {
 
                     Button {
                         detents = [.medium]
+                        selection = .medium
                     } label: {
                         Text("Collapsed Only")
                             .checkmark(detents == [.medium] ? .visible : .hidden)
