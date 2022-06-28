@@ -19,6 +19,7 @@ import SwiftUIBackports
                         #if os(iOS)
                         ScaledMetricDemo()
                         #endif
+                        ShareLinkDemo()
                     }
 
                     Backport.Section("Extras") {
