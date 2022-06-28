@@ -34,7 +34,7 @@ private struct DemoView: View {
                     .environment(\.sizeCategory, category)
             }
         }
-        .navigationBarTitle("ScaledMetric")
+        .backport.navigationTitle("ScaledMetric")
     }
 
 }

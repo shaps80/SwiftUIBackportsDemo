@@ -42,7 +42,7 @@ private struct DemoView: View {
                     withAnimation { isRefreshing = false }
                 }
         }
-        .navigationBarTitle("Refreshable")
+        .backport.navigationTitle("Refreshable")
         .navigationBarItems(trailing: Progress(visibility: isRefreshing ? .visible : .hidden))
         .navigationBarBackButtonHidden(isRefreshing)
     }

@@ -97,7 +97,7 @@ private struct DemoView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationBarTitle("Sheet")
+            .backport.navigationTitle("Sheet")
             .navigationBarItems(trailing: Button {
                 presentation.wrappedValue.dismiss()
             } label: {

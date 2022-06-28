@@ -28,7 +28,7 @@ private struct DemoView: View {
                 }
             }
         }
-        .navigationBarTitle("AppStorage")
+        .backport.navigationTitle("AppStorage")
     }
 }
 

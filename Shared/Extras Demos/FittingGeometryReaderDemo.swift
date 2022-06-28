@@ -43,7 +43,7 @@ private struct DemoView: View {
             }
         }
         .padding()
-        .navigationBarTitle("FittingGeometryReader")
+        .backport.navigationTitle("FittingGeometryReader")
     }
 
     var content: some View {

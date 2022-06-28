@@ -25,7 +25,7 @@ private struct DemoView: View {
                     .padding(.horizontal, 20)
             }
         }
-        .navigationBarTitle("FittingScrollView")
+        .backport.navigationTitle("FittingScrollView")
         .multilineTextAlignment(.center)
     }
 }

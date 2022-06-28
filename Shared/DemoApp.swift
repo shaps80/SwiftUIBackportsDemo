@@ -9,6 +9,7 @@ import SwiftUIBackports
                 List {
                     Backport.Section("Backports") {
                         AppStorageDemo()
+                        NavigationDemo()
                         PresentationDemo()
                         RefreshableDemo()
                         ScaledMetricDemo()
@@ -19,7 +20,7 @@ import SwiftUIBackports
                         FittingScrollViewDemo()
                     }
                 }
-                .navigationBarTitle("Demos")
+                .backport.navigationTitle("Demos")
                 .listStyle(.sidebar)
             }
         }

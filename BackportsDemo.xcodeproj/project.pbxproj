@@ -32,6 +32,8 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
+		54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		54AB053D2869DBCF00C9FB4A /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
+		54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
+				54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				54AB053D2869DBCF00C9FB4A /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -280,6 +286,7 @@
 				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D159286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
+				54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
@@ -297,6 +304,7 @@
 				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D15A286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
+				54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */,
 				5428D15728668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
