@@ -11,6 +11,7 @@ import SwiftUIBackports
                         AsyncImageDemo()
                         AppStorageDemo()
                         NavigationDemo()
+                        ProgressDemo()
                         #if os(iOS)
                         PresentationDemo()
                         #endif
@@ -29,7 +30,7 @@ import SwiftUIBackports
                 .listStyle(.sidebar)
             }
             #if os(macOS)
-            .frame(maxWidth: 800, maxHeight: 600)
+            .frame(maxWidth: 800, maxHeight: 800)
             #endif
         }
     }

@@ -36,6 +36,10 @@
 		54AB0546286AF20300C9FB4A /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AB0545286AF20300C9FB4A /* SwiftUIBackports */; };
 		54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */; };
 		54AB054A286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */; };
+		54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
+		54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
+		54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
+		54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,9 @@
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
+		54AB054C286B0C4F00C9FB4A /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
+		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
+		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5428D1432866504D009AFCD2 /* Chevron.swift */,
+				54AB0550286B0D6300C9FB4A /* Titled.swift */,
 				5428D149286654A6009AFCD2 /* Checkmark.swift */,
 				5428D158286685E9009AFCD2 /* Progress.swift */,
 			);
@@ -92,12 +100,13 @@
 		5428D147286650C0009AFCD2 /* Backport Demos */ = {
 			isa = PBXGroup;
 			children = (
+				54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */,
 				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
+				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */,
-				54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -131,6 +140,7 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				54AB054C286B0C4F00C9FB4A /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -295,6 +305,8 @@
 				54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
+				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
+				54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +326,8 @@
 				54AB054A286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
+				54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
+				54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
