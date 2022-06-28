@@ -9,9 +9,15 @@ struct Checkmark: ViewModifier {
             HStack {
                 content
                 Spacer()
+                #if os(iOS)
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
                     .font(.callout.weight(.semibold))
+                #else
+                Text("✓")
+                    .foregroundColor(.accentColor)
+                    .font(.callout.weight(.semibold))
+                #endif
             }
         default:
             content

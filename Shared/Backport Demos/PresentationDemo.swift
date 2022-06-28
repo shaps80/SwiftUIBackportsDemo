@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
+#if os(iOS)
 @available(iOS 14, *)
 struct PresentationDemo: View {
 
@@ -121,3 +122,4 @@ private struct DemoView: View {
         })
     }
 }
+#endif

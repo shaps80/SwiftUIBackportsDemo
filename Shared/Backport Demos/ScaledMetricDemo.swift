@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
+#if !os(macOS)
 struct ScaledMetricDemo: View {
     var body: some View {
         NavigationLink {
@@ -76,3 +77,4 @@ private extension UIContentSizeCategory {
         ]
     }
 }
+#endif

@@ -24,7 +24,11 @@ struct RefreshableView: View {
                 isRefreshing = false
             }
         } label: {
-            Text("Refresh")
+            HStack {
+                Text("Refresh")
+                Spacer()
+                Progress(visibility: isRefreshing ? .visible : .hidden)
+            }
         }
         .disabled(refresh == nil || isRefreshing)
     }
@@ -43,8 +47,9 @@ private struct DemoView: View {
                 }
         }
         .backport.navigationTitle("Refreshable")
-        .navigationBarItems(trailing: Progress(visibility: isRefreshing ? .visible : .hidden))
+        #if !os(macOS)
         .navigationBarBackButtonHidden(isRefreshing)
+        #endif
     }
 }
 

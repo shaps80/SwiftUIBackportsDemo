@@ -27,6 +27,10 @@ private struct Demo: View {
             Backport.NavigationLink(value: Person(name: "Shaps")) {
                 Text("Push a person")
             }
+
+            NavigationLink("Normal Link") {
+                Demo(title: "Normal")
+            }
         }
         .backport.navigationDestination(for: String.self) { value in
             Demo(title: "Number")

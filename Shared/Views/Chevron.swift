@@ -2,9 +2,15 @@ import SwiftUI
 
 struct Chevron: View {
     var body: some View {
-        Image(systemName: "chevron.right")
-            .foregroundColor(.secondary)
-            .font(.callout.weight(.semibold))
+        Group {
+            #if os(iOS)
+            Image(systemName: "chevron.right")
+            #else
+            Text("̕▸")
+            #endif
+        }
+        .foregroundColor(.secondary)
+        .font(.callout.weight(.semibold))
     }
 }
 

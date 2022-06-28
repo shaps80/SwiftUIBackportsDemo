@@ -49,7 +49,11 @@ private struct DemoView: View {
     var content: some View {
         ZStack {
             Rectangle()
+                #if os(macOS)
+                .foregroundColor(Color(.windowBackgroundColor))
+                #else
                 .foregroundColor(Color(.separator))
+                #endif
                 .clipShape(RoundedRectangle(cornerRadius: 13))
 
             Rectangle()
