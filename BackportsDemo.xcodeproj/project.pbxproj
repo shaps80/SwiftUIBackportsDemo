@@ -26,6 +26,8 @@
 		5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
 		5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
 		5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
+		543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
+		543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
@@ -57,6 +59,7 @@
 		5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingGeometryReaderDemo.swift; sourceTree = "<group>"; };
 		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
 		542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--macOS--Info.plist"; sourceTree = "<group>"; };
+		543F19D1286DEED000518DB2 /* StateObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +115,7 @@
 				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
+				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -312,6 +316,7 @@
 				54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
+				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
@@ -334,6 +339,7 @@
 				54AB054A286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
+				543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
