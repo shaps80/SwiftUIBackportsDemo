@@ -56,6 +56,7 @@
 		5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricDemo.swift; sourceTree = "<group>"; };
 		5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingGeometryReaderDemo.swift; sourceTree = "<group>"; };
 		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
+		542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--macOS--Info.plist"; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +178,7 @@
 		545530A728660AFD00BA482D /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */,
 				545530A828660AFD00BA482D /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -462,12 +464,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Backports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,12 +496,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Backports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +533,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS/Demo--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,6 +564,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS/Demo--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

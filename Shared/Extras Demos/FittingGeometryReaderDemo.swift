@@ -1,7 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
 
-@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 struct FittingGeometryReaderDemo: View {
     var body: some View {
         NavigationLink {
@@ -12,10 +11,8 @@ struct FittingGeometryReaderDemo: View {
     }
 }
 
-@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 private struct DemoView: View {
 
-    @Namespace private var namespace
     @State private var showFitting: Bool = false
 
     var body: some View {
@@ -61,7 +58,6 @@ private struct DemoView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 13))
                 .frame(width: 200)
         }
-        .matchedGeometryEffect(id: "content", in: namespace)
     }
 
 }

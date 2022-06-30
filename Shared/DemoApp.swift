@@ -1,38 +1,67 @@
 import SwiftUI
 import SwiftUIBackports
 
-@available(iOS 14, macOS 11, *)
+#if os(iOS)
+@main
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool { true }
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+}
+
+final class SceneDelegate: UIResponder, UISceneDelegate {
+    var window: UIWindow?
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let scene = scene as? UIWindowScene else { return }
+        window = UIWindow(windowScene: scene)
+        window?.rootViewController = UIHostingController(rootView: RootView())
+        window?.makeKeyAndVisible()
+    }
+}
+#else
+@available(macOS 11, *)
 @main struct DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                List {
-                    Backport.Section("Backports") {
-                        AsyncImageDemo()
-                        AppStorageDemo()
-                        LabelDemo()
-                        NavigationDemo()
-                        ProgressDemo()
-                        #if os(iOS)
-                        PresentationDemo()
-                        #endif
-                        RefreshableDemo()
-                        #if os(iOS)
-                        ScaledMetricDemo()
-                        #endif
-                    }
+            RootView()
+        }
+    }
+}
+#endif
 
-                    Backport.Section("Extras") {
-                        FittingGeometryReaderDemo()
-                        FittingScrollViewDemo()
+struct RootView: View {
+    var body: some View {
+        NavigationView {
+            List {
+                Backport.Section("Backports") {
+                    AsyncImageDemo()
+                    AppStorageDemo()
+                    LabelDemo()
+                    NavigationDemo()
+                    ProgressDemo()
+                    RefreshableDemo()
+                }
+
+#if os(iOS)
+                if #available(iOS 14, *) {
+                    Backport.Section("Backports (iOS 14+)") {
+                        PresentationDemo()
+                        ScaledMetricDemo()
                     }
                 }
-                .backport.navigationTitle("Demos")
-                .listStyle(.sidebar)
+#endif
+
+                Backport.Section("Extras") {
+                    FittingGeometryReaderDemo()
+                    FittingScrollViewDemo()
+                }
             }
-            #if os(macOS)
-            .frame(maxWidth: 800, maxHeight: 800)
-            #endif
+            .backport.navigationTitle("Demos")
         }
+        #if os(macOS)
+        .frame(maxWidth: 800, maxHeight: 800)
+        #endif
     }
 }

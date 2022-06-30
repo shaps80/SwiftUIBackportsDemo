@@ -34,5 +34,6 @@ private struct Demo: View {
         .backport.overlay {
             Progress(visibility: isLoading ? .visible : .hidden)
         }
+        .edgesIgnoringSafeArea([.bottom, .horizontal])
     }
 }
