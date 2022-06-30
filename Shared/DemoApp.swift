@@ -10,6 +10,7 @@ import SwiftUIBackports
                     Backport.Section("Backports") {
                         AsyncImageDemo()
                         AppStorageDemo()
+                        LabelDemo()
                         NavigationDemo()
                         ProgressDemo()
                         #if os(iOS)
@@ -19,7 +20,6 @@ import SwiftUIBackports
                         #if os(iOS)
                         ScaledMetricDemo()
                         #endif
-//                        ShareLinkDemo()
                     }
 
                     Backport.Section("Extras") {

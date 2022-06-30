@@ -6,15 +6,7 @@ struct Progress: View {
 
     var body: some View {
         if visibility == .visible {
-            #if os(iOS)
-            if #available(iOS 14, *) {
-                ProgressView()
-            } else {
-                Image(systemName: "circle.dotted")
-            }
-            #else
-            Text("◦")
-            #endif
+            Backport.ProgressView()
         }
     }
 }

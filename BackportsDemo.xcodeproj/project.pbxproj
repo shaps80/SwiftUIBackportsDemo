@@ -26,8 +26,6 @@
 		5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
 		5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
 		5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
-		5429FEB9286BAD6C0063DAC5 /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5429FEB8286BAD6C0063DAC5 /* ShareLinkDemo.swift */; };
-		5429FEBA286BAD6C0063DAC5 /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5429FEB8286BAD6C0063DAC5 /* ShareLinkDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
@@ -42,6 +40,8 @@
 		54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
 		54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
 		54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
+		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
+		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,6 @@
 		5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricDemo.swift; sourceTree = "<group>"; };
 		5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingGeometryReaderDemo.swift; sourceTree = "<group>"; };
 		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
-		5429FEB8286BAD6C0063DAC5 /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,8 @@
 		54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
 		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
+		54FEADAD286CB5E50079AC74 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
+		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +103,14 @@
 		5428D147286650C0009AFCD2 /* Backport Demos */ = {
 			isa = PBXGroup;
 			children = (
-				54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */,
 				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
-				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
-				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
-				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
-				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
+				54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */,
+				54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */,
 				54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */,
-				5429FEB8286BAD6C0063DAC5 /* ShareLinkDemo.swift */,
+				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
+				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
+				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
+				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -143,6 +144,7 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				54FEADAD286CB5E50079AC74 /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -296,13 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */,
+				54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
 				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D159286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */,
-				5429FEB9286BAD6C0063DAC5 /* ShareLinkDemo.swift in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
@@ -318,13 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
+				54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
 				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D15A286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */,
-				5429FEBA286BAD6C0063DAC5 /* ShareLinkDemo.swift in Sources */,
 				5428D15728668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54AB054A286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
