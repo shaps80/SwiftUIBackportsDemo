@@ -61,7 +61,6 @@
 		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
 		542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--macOS--Info.plist"; sourceTree = "<group>"; };
 		543F19D1286DEED000518DB2 /* StateObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectDemo.swift; sourceTree = "<group>"; };
-		543F19D4286DFE2F00518DB2 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		543F19D6286E00EA00518DB2 /* HostingDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
-				543F19D4286DFE2F00518DB2 /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
