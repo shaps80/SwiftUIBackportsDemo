@@ -13,6 +13,7 @@ struct RootView: View {
                     ProgressDemo()
                     RefreshableDemo()
                     StateObjectDemo()
+                    ShareLinkDemo()
                 }
 #if os(iOS)
                 if #available(iOS 14, *) {
