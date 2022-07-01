@@ -52,7 +52,13 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = UIHostingController(rootView: RootView())
+
+#warning("Switch back to RootView")
+        if #available(iOS 14, *) {
+            window?.rootViewController = UIHostingController(rootView: HostingDemo())
+        }
+
+//        window?.rootViewController = UIHostingController(rootView: RootView())
         window?.makeKeyAndVisible()
     }
 }
