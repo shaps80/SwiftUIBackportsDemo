@@ -20,9 +20,9 @@ private struct Demo: View {
         VStack {
             List {
                 Backport.Section("Backport") {
-                    backports
-
                     if #available(iOS 14, macOS 11, *) {
+                        backports
+
                         Menu("Menu") {
                             Button {
 
