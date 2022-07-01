@@ -14,16 +14,15 @@ struct RootView: View {
                     RefreshableDemo()
                     StateObjectDemo()
                 }
-
 #if os(iOS)
                 if #available(iOS 14, *) {
                     Backport.Section("Backports (iOS 14+)") {
                         PresentationDemo()
                         ScaledMetricDemo()
+                        HostingDemo()
                     }
                 }
 #endif
-
                 Backport.Section("Extras") {
                     FittingGeometryReaderDemo()
                     FittingScrollViewDemo()
@@ -52,13 +51,7 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: scene)
-
-#warning("Switch back to RootView")
-        if #available(iOS 14, *) {
-            window?.rootViewController = UIHostingController(rootView: HostingDemo())
-        }
-
-//        window?.rootViewController = UIHostingController(rootView: RootView())
+        window?.rootViewController = UIHostingController(rootView: RootView())
         window?.makeKeyAndVisible()
     }
 }

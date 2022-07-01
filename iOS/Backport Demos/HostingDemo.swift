@@ -6,18 +6,20 @@ import SwiftUIBackports
 @available(iOS 14, *)
 struct HostingDemo: View {
     var body: some View {
-        NavigationView {
-            Representable()
-                .backport.navigationTitle("Host Config")
+        NavigationLink {
+            Demo()
+        } label: {
+            Text("UIKit Hosting")
         }
-        .navigationViewStyle(.stack)
+    }
+}
 
-//        NavigationLink {
-//            Representable()
-//                .backport.navigationTitle("UIHostingConfiguration")
-//        } label: {
-//            Text("UIHostingConfiguration")
-//        }
+@available(iOS 14, *)
+private struct Demo: View {
+    var body: some View {
+        Representable()
+            .edgesIgnoringSafeArea(.all)
+            .backport.navigationTitle("UIKit Hosting")
     }
 }
 
@@ -29,11 +31,13 @@ private struct Representable: UIViewControllerRepresentable {
 
 @available(iOS 14, *)
 private final class Controller: UICollectionViewController {
-    private typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
+    private typealias DataSource = UICollectionViewDiffableDataSource<Int, Int>
     private var dataSource: DataSource?
 
     private static var layout: UICollectionViewCompositionalLayout {
-        .list(using: .init(appearance: .insetGrouped))
+        var config = UICollectionLayoutListConfiguration(appearance: .grouped)
+        config.headerMode = .supplementary
+        return UICollectionViewCompositionalLayout.list(using: config)
     }
 
     init() {
@@ -44,39 +48,95 @@ private final class Controller: UICollectionViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private var content: some View {
+        VStack(spacing: 20) {
+            HStack(spacing: 20) {
+                Image(systemName: "swift")
+                    .font(.title)
+                    .padding(10)
+                    .backport.background {
+                        Circle()
+                            .stroke(lineWidth: 3)
+                    }
+                    .foregroundColor(.accentColor)
+                    .padding(.top, 3)
 
-        let reg = UICollectionView.CellRegistration<UICollectionViewListCell, String> { cell, indexPath, item in
-
-            cell.backport.contentConfiguration = Backport.UIHostingConfiguration {
                 VStack(alignment: .leading) {
-                    Text("Primary")
-                    Text("Secondary")
+                    Text("Swift")
+                        .font(.title3)
+                    Text("Programming Language")
                         .font(.footnote)
                         .foregroundColor(.secondary)
                 }
-                .frame(maxWidth: .infinity)
+
+                Spacer(minLength: 0)
             }
 
+            HStack {
+                Text("Where dream come true.")
+                Spacer(minLength: 0)
+            }
+            .foregroundColor(.secondary)
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let cell = UICollectionView.CellRegistration<UICollectionViewListCell, Int> { cell, indexPath, item in
+            switch indexPath.section {
+            case 0:
+                cell.backport.contentConfiguration = Backport.UIHostingConfiguration { self.content }
+                    .margins(.all, 20)
+            default:
+                if #available(iOS 16, *) {
+                    cell.contentConfiguration = UIHostingConfiguration { self.content }
+                        .margins(.all, 20)
+                }
+            }
+        }
+
+        let header = UICollectionView.SupplementaryRegistration<UICollectionViewListCell>(elementKind: UICollectionView.elementKindSectionHeader) { view, kind, indexPath in
+            var configuration = view.defaultContentConfiguration()
+
+            switch indexPath.section {
+            case 0:
+                configuration.text = "Backport"
+            default:
+                configuration.text = "Native"
+            }
+
+            view.contentConfiguration = configuration
         }
 
         dataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, item in
-            collectionView.dequeueConfiguredReusableCell(using: reg, for: indexPath, item: item)
+            collectionView.dequeueConfiguredReusableCell(using: cell, for: indexPath, item: item)
+        }
+
+        dataSource?.supplementaryViewProvider = { collectionView, kind, indexPath in
+            switch kind {
+            case UICollectionView.elementKindSectionHeader:
+                return collectionView.dequeueConfiguredReusableSupplementary(using: header, for: indexPath)
+            default:
+                fatalError()
+            }
         }
 
         collectionView.dataSource = dataSource
 
-        var snapshot = NSDiffableDataSourceSnapshot<Int, String>()
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
         snapshot.appendSections([0])
-        snapshot.appendItems(["SwiftUI"])
+        snapshot.appendItems([0])
+
+        if #available(iOS 16, *) {
+            snapshot.appendSections([1])
+            snapshot.appendItems([1])
+        }
 
         dataSource?.apply(snapshot)
     }
 
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool { true }
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool { true }
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { }
+    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool { false }
 
 }
 
