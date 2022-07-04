@@ -14,13 +14,10 @@ struct RootView: View {
                         NavigationDemo()
                     }
 
-                    if #available(iOS 14, macOS 11, *) {
-                        QuicklookDemo()
-                    }
-
                     Group {
                         OpenURLDemo()
                         ProgressDemo()
+                        QuicklookDemo()
                         RequestReviewDemo()
                         RefreshableDemo()
                         StateObjectDemo()

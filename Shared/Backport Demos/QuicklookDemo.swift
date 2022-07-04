@@ -1,8 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
-import QuickLook
 
-@available(iOS 14, macOS 11, *)
 struct QuicklookDemo: View {
     var body: some View {
         NavigationLink {
@@ -14,7 +12,6 @@ struct QuicklookDemo: View {
     }
 }
 
-@available(iOS 14, macOS 11, *)
 private struct Demo: View {
     @State private var url: URL?
     @State private var selection: URL?
@@ -27,15 +24,15 @@ private struct Demo: View {
             } label: {
                 Text("Quicklook URL")
             }
-            .quickLookPreview($url)
+            .backport.quickLookPreview($url)
 
             Button {
-                selection = urls.first
+                selection = urls.randomElement()!
             } label: {
                 Text("Quicklook Collection")
             }
         }
-        .quickLookPreview($selection, in: urls)
+        .backport.quickLookPreview($selection, in: urls)
     }
 }
 
