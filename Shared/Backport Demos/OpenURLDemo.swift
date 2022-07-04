@@ -1,7 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
 
-@available(iOS 14, *)
 struct OpenURLDemo: View {
     var body: some View {
         NavigationLink {
@@ -20,7 +19,6 @@ struct OpenURLDemo: View {
     }
 }
 
-@available(iOS 14, *)
 private struct Demo: View {
     @Environment(\.backportOpenURL) private var openURL
     @State private var showDiscarded: Bool = false
