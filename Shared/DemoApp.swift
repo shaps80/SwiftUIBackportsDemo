@@ -6,22 +6,35 @@ struct RootView: View {
         NavigationView {
             List {
                 Backport.Section("Backports") {
-                    AsyncImageDemo()
-                    AppStorageDemo()
-                    LabelDemo()
-                    NavigationDemo()
+                    Group {
+                        AsyncImageDemo()
+                        AppStorageDemo()
+                        DismissDemo()
+                        LabelDemo()
+                        NavigationDemo()
+                    }
+
                     if #available(iOS 14, macOS 11, *) {
                         QuicklookDemo()
                     }
-                    ProgressDemo()
-                    RefreshableDemo()
-                    StateObjectDemo()
+
+                    Group {
+                        OpenURLDemo()
+                        ProgressDemo()
+                        RequestReviewDemo()
+                        RefreshableDemo()
+                        StateObjectDemo()
+                    }
                 }
 #if os(iOS)
+                Backport.Section("Backports (iOS 13+)") {
+                    DynamicTypeDemo()
+                    ScaledMetricDemo()
+                }
+
                 if #available(iOS 14, *) {
                     Backport.Section("Backports (iOS 14+)") {
                         PresentationDemo()
-                        ScaledMetricDemo()
                         HostingDemo()
                     }
                 }
@@ -32,6 +45,9 @@ struct RootView: View {
                 }
             }
             .backport.navigationTitle("Demos")
+
+            Text("Select a Demo")
+                .foregroundColor(.secondary)
         }
         #if os(macOS)
         .frame(maxWidth: 800, maxHeight: 800)

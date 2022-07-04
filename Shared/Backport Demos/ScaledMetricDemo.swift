@@ -13,68 +13,37 @@ struct ScaledMetricDemo: View {
 }
 
 private struct DemoView: View {
-    @State private var category: ContentSizeCategory = .large
-
-    private var filtered: [ContentSizeCategory] {
-        ContentSizeCategory.allCases.filter { !$0.isAccessibilityCategory }
-    }
+    @State private var size: Backport.DynamicTypeSize = .large
 
     var body: some View {
         List {
             Section {
-                ForEach(filtered, id: \.self) { size in
+                ScalableView()
+            }
+
+            Section {
+                ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
                     Button {
-                        category = size
+                        self.size = size
                     } label: {
                         Text("\(String(describing: size))")
-                            .checkmark(category == size ? .visible : .hidden)
+                            .checkmark(self.size == size ? .visible : .hidden)
                     }
                 }
-            } header: {
-                ScalableView()
-                    .environment(\.sizeCategory, category)
             }
         }
+        .backport.dynamicTypeSize(size)
         .backport.navigationTitle("ScaledMetric")
     }
 
 }
 
-struct ScalableView: View {
+private struct ScalableView: View {
     @Backport.ScaledMetric private var size: CGFloat = 17
 
     var body: some View {
-        if #available(iOS 14, *) {
-            text
-                .textCase(.none)
-                .font(.system(size: size))
-        } else {
-            text
-        }
-    }
-
-    private var text: some View {
         Text("You can change your dynamic type size to see this text scale automatically.")
             .multilineTextAlignment(.center)
-    }
-}
-
-private extension UIContentSizeCategory {
-    static var all: [UIContentSizeCategory] {
-        return [
-            .accessibilityExtraExtraExtraLarge,
-            .accessibilityExtraExtraLarge,
-            .accessibilityExtraLarge,
-            .accessibilityLarge,
-            .accessibilityMedium,
-            .extraExtraExtraLarge,
-            .extraExtraLarge,
-            .extraLarge,
-            .large,
-            .medium,
-            .small,
-            .extraSmall
-        ]
     }
 }
 #endif

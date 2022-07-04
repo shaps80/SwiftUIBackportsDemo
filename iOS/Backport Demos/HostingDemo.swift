@@ -84,16 +84,8 @@ private final class Controller: UICollectionViewController {
         super.viewDidLoad()
 
         let cell = UICollectionView.CellRegistration<UICollectionViewListCell, Int> { cell, indexPath, item in
-            switch indexPath.section {
-            case 0:
-                cell.backport.contentConfiguration = Backport.UIHostingConfiguration { self.content }
-                    .margins(.all, 20)
-            default:
-                if #available(iOS 16, *) {
-                    cell.contentConfiguration = UIHostingConfiguration { self.content }
-                        .margins(.all, 20)
-                }
-            }
+            cell.backport.contentConfiguration = Backport.UIHostingConfiguration { self.content }
+                .margins(.all, 20)
         }
 
         let header = UICollectionView.SupplementaryRegistration<UICollectionViewListCell>(elementKind: UICollectionView.elementKindSectionHeader) { view, kind, indexPath in
