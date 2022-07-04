@@ -11,6 +11,7 @@ struct RootView: View {
                     LabelDemo()
                     NavigationDemo()
                     ProgressDemo()
+                    RequestReviewDemo()
                     RefreshableDemo()
                     StateObjectDemo()
                 }

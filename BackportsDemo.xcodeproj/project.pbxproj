@@ -33,6 +33,8 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		5496022F2873267700C96E44 /* RequestReviewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496022E2873267700C96E44 /* RequestReviewDemo.swift */; };
+		549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496022E2873267700C96E44 /* RequestReviewDemo.swift */; };
 		54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 		54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 		54AB0544286AF1E900C9FB4A /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AB0543286AF1E900C9FB4A /* SwiftUIBackports */; };
@@ -67,6 +69,7 @@
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
 		54A7E528286E8BDF00E195AD /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 				54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
 				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
+				5496022E2873267700C96E44 /* RequestReviewDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
@@ -328,6 +332,7 @@
 				54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
+				5496022F2873267700C96E44 /* RequestReviewDemo.swift in Sources */,
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */,
@@ -338,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */,
 				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
 				54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
 				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
