@@ -10,6 +10,7 @@ struct RootView: View {
                     AppStorageDemo()
                     LabelDemo()
                     NavigationDemo()
+                    OpenURLDemo()
                     ProgressDemo()
                     RefreshableDemo()
                     StateObjectDemo()
