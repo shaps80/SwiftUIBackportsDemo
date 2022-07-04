@@ -15,6 +15,10 @@ struct RootView: View {
                     StateObjectDemo()
                 }
 #if os(iOS)
+                Backport.Section("Backports (iOS 13+)") {
+                    DynamicTypeDemo()
+                }
+
                 if #available(iOS 14, *) {
                     Backport.Section("Backports (iOS 14+)") {
                         PresentationDemo()
