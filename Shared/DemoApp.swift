@@ -36,6 +36,9 @@ struct RootView: View {
                 }
             }
             .backport.navigationTitle("Demos")
+
+            Text("Select a Demo")
+                .foregroundColor(.secondary)
         }
         #if os(macOS)
         .frame(maxWidth: 800, maxHeight: 800)

@@ -29,7 +29,6 @@ private struct DemoView: View {
                         Text("\(String(describing: size))")
                             .checkmark(self.size == size ? .visible : .hidden)
                     }
-                    .buttonStyle(.plain)
                 }
             }
         }
