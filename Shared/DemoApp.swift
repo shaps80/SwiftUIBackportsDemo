@@ -8,6 +8,7 @@ struct RootView: View {
                 Backport.Section("Backports") {
                     AsyncImageDemo()
                     AppStorageDemo()
+                    DismissDemo()
                     LabelDemo()
                     NavigationDemo()
                     ProgressDemo()
