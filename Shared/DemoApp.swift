@@ -13,6 +13,7 @@ struct RootView: View {
                     NavigationDemo()
                     OpenURLDemo()
                     ProgressDemo()
+                    RequestReviewDemo()
                     RefreshableDemo()
                     StateObjectDemo()
                 }
