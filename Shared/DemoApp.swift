@@ -17,12 +17,12 @@ struct RootView: View {
 #if os(iOS)
                 Backport.Section("Backports (iOS 13+)") {
                     DynamicTypeDemo()
+                    ScaledMetricDemo()
                 }
 
                 if #available(iOS 14, *) {
                     Backport.Section("Backports (iOS 14+)") {
                         PresentationDemo()
-                        ScaledMetricDemo()
                         HostingDemo()
                     }
                 }
