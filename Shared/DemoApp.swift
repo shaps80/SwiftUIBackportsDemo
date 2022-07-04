@@ -10,6 +10,9 @@ struct RootView: View {
                     AppStorageDemo()
                     LabelDemo()
                     NavigationDemo()
+                    if #available(iOS 14, macOS 11, *) {
+                        QuicklookDemo()
+                    }
                     ProgressDemo()
                     RefreshableDemo()
                     StateObjectDemo()
