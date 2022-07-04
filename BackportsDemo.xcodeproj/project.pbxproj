@@ -33,8 +33,8 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		54A7E5372873176300E195AD /* DismissDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5362873176300E195AD /* DismissDemo.swift */; };
 		54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */; };
-		54A7E5342872F3D600E195AD /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54A7E5352872F3D600E195AD /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 		54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
@@ -73,8 +73,9 @@
 		54A7E528286E8BDF00E195AD /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeDemo.swift; sourceTree = "<group>"; };
 		54A7E5332872F3D600E195AD /* LeadingAligned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAligned.swift; sourceTree = "<group>"; };
-		54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
-		54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
+		54A7E5362873176300E195AD /* DismissDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissDemo.swift; sourceTree = "<group>"; };
+		54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeDemo.swift; sourceTree = "<group>"; };
+		54A7E5332872F3D600E195AD /* LeadingAligned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAligned.swift; sourceTree = "<group>"; };
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
 		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 			children = (
 				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
 				54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */,
+				54A7E5362873176300E195AD /* DismissDemo.swift */,
 				54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */,
 				54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
@@ -334,6 +336,7 @@
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				543F19D7286E00EA00518DB2 /* HostingDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
+				54A7E5372873176300E195AD /* DismissDemo.swift in Sources */,
 				54AB0549286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A7E5382873176300E195AD /* DismissDemo.swift in Sources */,
 				5428D14B286654A6009AFCD2 /* Checkmark.swift in Sources */,
 				54A7E5352872F3D600E195AD /* LeadingAligned.swift in Sources */,
 				54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
