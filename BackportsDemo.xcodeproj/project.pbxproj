@@ -33,8 +33,6 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
-		54A7E52A286E8C5800E195AD /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E529286E8C5800E195AD /* ShareLinkDemo.swift */; };
-		54A7E52B286E8C5800E195AD /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E529286E8C5800E195AD /* ShareLinkDemo.swift */; };
 		54AB053F286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 		54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */; };
 		54AB0544286AF1E900C9FB4A /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AB0543286AF1E900C9FB4A /* SwiftUIBackports */; };
@@ -70,7 +68,6 @@
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		54A7E528286E8BDF00E195AD /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
-		54A7E529286E8C5800E195AD /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		54AB053E286AE5FF00C9FB4A /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		54AB0548286AF7E900C9FB4A /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
@@ -121,7 +118,6 @@
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
-				54A7E529286E8C5800E195AD /* ShareLinkDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -334,7 +330,6 @@
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
-				54A7E52A286E8C5800E195AD /* ShareLinkDemo.swift in Sources */,
 				54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +348,6 @@
 				54AB0540286AE5FF00C9FB4A /* NavigationDemo.swift in Sources */,
 				5428D15728668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
-				54A7E52B286E8C5800E195AD /* ShareLinkDemo.swift in Sources */,
 				54AB054A286AF7E900C9FB4A /* AsyncImageDemo.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
