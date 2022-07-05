@@ -21,14 +21,13 @@ struct RootView: View {
                         RequestReviewDemo()
                         RefreshableDemo()
                         StateObjectDemo()
-                        ScrollViewDemo()
                     }
                 }
 #if os(iOS)
                 Backport.Section("Backports (iOS 13+)") {
                     DynamicTypeDemo()
                     ScaledMetricDemo()
-                    ScrollDismissDemo()
+                    ScrollViewDemo()
                 }
 
                 if #available(iOS 14, *) {
