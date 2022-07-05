@@ -14,7 +14,7 @@ struct RefreshableDemo: View {
 
 struct RefreshableView: View {
     @Environment(\.backportRefresh) private var refresh
-    @State private var isRefreshing: Bool = false
+    @Binding var isRefreshing: Bool
 
     var body: some View {
         Button {
@@ -39,17 +39,14 @@ private struct DemoView: View {
 
     var body: some View {
         List {
-            RefreshableView()
-                .backport.refreshable {
-                    withAnimation { isRefreshing = true }
-                    sleep(1)
-                    withAnimation { isRefreshing = false }
-                }
+            RefreshableView(isRefreshing: $isRefreshing)
+        }
+        .backport.refreshable {
+            isRefreshing = true
+            sleep(2)
+            isRefreshing = false
         }
         .backport.navigationTitle("Refreshable")
-        #if !os(macOS)
-        .navigationBarBackButtonHidden(isRefreshing)
-        #endif
     }
 }
 
