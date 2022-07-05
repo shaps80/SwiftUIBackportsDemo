@@ -32,6 +32,7 @@ private struct Demo: View {
                 }
             }
 
+            #if os(iOS)
             Section {
                 HStack {
                     Text("Dismiss Mode")
@@ -43,9 +44,12 @@ private struct Demo: View {
                         }
                     }
                 }
-                
+
                 TextField("Placeholder", text: .constant(""))
-            } footer: {
+            }
+            #endif
+
+            Section { } footer: {
                 Rectangle()
                     .foregroundColor(.clear)
                     .frame(height: 500)
@@ -61,7 +65,7 @@ private struct Demo: View {
 extension View {
     @ViewBuilder
     func menuPickerStyle() -> some View {
-        if #available(iOS 14, *) {
+        if #available(iOS 14, macOS 11, *) {
             pickerStyle(.menu)
         } else {
             pickerStyle(.automatic)
