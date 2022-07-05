@@ -66,6 +66,7 @@ private struct Demo: View {
             }
             .backport.dynamicTypeSize(.large)
         }
+        .menuPickerStyle()
         .backport.dynamicTypeSize(isOverriden ? size : min(maxSize, max(minSize, size)))
         .backport.dynamicTypeSize(minSize...)
         .backport.dynamicTypeSize(...maxSize)
