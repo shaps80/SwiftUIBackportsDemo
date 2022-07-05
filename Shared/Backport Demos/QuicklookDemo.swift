@@ -37,24 +37,6 @@ private struct Demo: View {
                 }
                 .backport.quickLookPreview($selection, in: urls)
             }
-
-            if #available(iOS 15, macOS 11, *) {
-                Backport.Section("Native") {
-                    Button {
-                        nativeUrl = urls.randomElement()!
-                    } label: {
-                        Text("Quicklook URL")
-                    }
-                }
-                .quickLookPreview($nativeUrl)
-
-                Button {
-                    nativeSelection = urls.randomElement()!
-                } label: {
-                    Text("Quicklook Collection")
-                }
-                .quickLookPreview($nativeSelection, in: urls)
-            }
         }
     }
 }
