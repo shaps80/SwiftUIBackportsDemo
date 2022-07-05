@@ -13,26 +13,49 @@ struct QuicklookDemo: View {
 }
 
 private struct Demo: View {
+    @State private var nativeUrl: URL?
+    @State private var nativeSelection: URL?
+
     @State private var url: URL?
     @State private var selection: URL?
     let urls = Bundle.main.quicklookUrls
 
     var body: some View {
         List {
-            Button {
-                url = urls.randomElement()!
-            } label: {
-                Text("Quicklook URL")
-            }
-            .backport.quickLookPreview($url)
+            Backport.Section("Backport") {
+                Button {
+                    url = urls.randomElement()!
+                } label: {
+                    Text("Quicklook URL")
+                }
+                .backport.quickLookPreview($url)
 
-            Button {
-                selection = urls.randomElement()!
-            } label: {
-                Text("Quicklook Collection")
+                Button {
+                    selection = urls.randomElement()!
+                } label: {
+                    Text("Quicklook Collection")
+                }
+                .backport.quickLookPreview($selection, in: urls)
+            }
+
+            if #available(iOS 15, macOS 11, *) {
+                Backport.Section("Native") {
+                    Button {
+                        nativeUrl = urls.randomElement()!
+                    } label: {
+                        Text("Quicklook URL")
+                    }
+                }
+                .quickLookPreview($nativeUrl)
+
+                Button {
+                    nativeSelection = urls.randomElement()!
+                } label: {
+                    Text("Quicklook Collection")
+                }
+                .quickLookPreview($nativeSelection, in: urls)
             }
         }
-        .backport.quickLookPreview($selection, in: urls)
     }
 }
 
