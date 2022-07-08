@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftUIBackports
 
 struct StateObjectDemo: View {
     var body: some View {
@@ -34,7 +35,7 @@ private final class Counter: ObservableObject {
 }
 
 private struct ChildView: View {
-    @StateObject private var owned = Counter()
+    @Backport.StateObject private var owned = Counter()
     @ObservedObject private var observed = Counter()
 
     var body: some View {
