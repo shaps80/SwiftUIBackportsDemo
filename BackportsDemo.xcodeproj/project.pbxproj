@@ -27,7 +27,7 @@
 		5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
 		543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
-		543F19D7286E00EA00518DB2 /* HostingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D6286E00EA00518DB2 /* HostingDemo.swift */; };
+		543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */; };
 		544A24512874956800CE4B76 /* ScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A24502874956800CE4B76 /* ScrollViewDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
@@ -65,6 +65,7 @@
 		54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
 		54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
 		54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
+		54ADC53B287DEC3A00113EFE /* HostingTableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -83,13 +84,14 @@
 		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
 		542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--macOS--Info.plist"; sourceTree = "<group>"; };
 		543F19D1286DEED000518DB2 /* StateObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectDemo.swift; sourceTree = "<group>"; };
-		543F19D6286E00EA00518DB2 /* HostingDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingDemo.swift; sourceTree = "<group>"; };
+		543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingCollectionDemo.swift; sourceTree = "<group>"; };
 		544A24502874956800CE4B76 /* ScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemo.swift; sourceTree = "<group>"; };
 		5455309928660AFC00BA482D /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		5455309B28660AFD00BA482D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5472BF35287DE9E400518729 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
 		549602312873278A00C96E44 /* OpenURLDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLDemo.swift; sourceTree = "<group>"; };
 		54960234287339DB00C96E44 /* QuicklookDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklookDemo.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
 		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
 		54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledContentDemo.swift; sourceTree = "<group>"; };
+		54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTableDemo.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,7 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
-				543F19D6286E00EA00518DB2 /* HostingDemo.swift */,
+				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
+				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
 				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
 			);
 			path = "Backport Demos";
@@ -201,6 +205,7 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				5472BF35287DE9E400518729 /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -374,6 +379,7 @@
 				54960235287339DB00C96E44 /* QuicklookDemo.swift in Sources */,
 				54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
 				54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */,
+				54ADC53B287DEC3A00113EFE /* HostingTableDemo.swift in Sources */,
 				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
@@ -383,7 +389,7 @@
 				5496024A2873428200C96E44 /* OpenURLDemo.swift in Sources */,
 				54AB053F286AE5FF00C9FB4A /* (null) in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
-				543F19D7286E00EA00518DB2 /* HostingDemo.swift in Sources */,
+				543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */,
 				549602452873424600C96E44 /* NavigationDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54A7E5372873176300E195AD /* DismissDemo.swift in Sources */,

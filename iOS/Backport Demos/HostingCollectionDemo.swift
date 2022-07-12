@@ -4,12 +4,13 @@ import SwiftUIBackports
 #if os(iOS) || os(tvOS)
 
 @available(iOS 14, *)
-struct HostingDemo: View {
+struct HostingCollectionDemo: View {
     var body: some View {
         NavigationLink {
             Demo()
+                .backport.navigationTitle("CollectionView")
         } label: {
-            Text("UIKit Hosting")
+            Text("CollectionView")
         }
     }
 }
@@ -19,7 +20,6 @@ private struct Demo: View {
     var body: some View {
         Representable()
             .edgesIgnoringSafeArea(.all)
-            .backport.navigationTitle("UIKit Hosting")
     }
 }
 
