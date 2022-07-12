@@ -98,7 +98,6 @@
 		5496023A28733E6F00C96E44 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		549602412873423A00C96E44 /* AsyncImageDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		549602442873424600C96E44 /* NavigationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
-		549602482873426500C96E44 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeDemo.swift; sourceTree = "<group>"; };
 		54A7E5332872F3D600E195AD /* LeadingAligned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAligned.swift; sourceTree = "<group>"; };
 		54A7E5362873176300E195AD /* DismissDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissDemo.swift; sourceTree = "<group>"; };
@@ -202,7 +201,6 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
-				549602482873426500C96E44 /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
