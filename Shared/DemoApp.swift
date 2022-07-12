@@ -11,6 +11,7 @@ struct RootView: View {
                         AppStorageDemo()
                         DismissDemo()
                         LabelDemo()
+                        LabeledContentDemo()
                         NavigationDemo()
                     }
 
