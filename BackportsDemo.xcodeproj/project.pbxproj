@@ -63,6 +63,8 @@
 		54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
 		54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
 		54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
+		54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
+		54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +104,7 @@
 		54A7E5362873176300E195AD /* DismissDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissDemo.swift; sourceTree = "<group>"; };
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
 		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
+		54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledContentDemo.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,13 +147,14 @@
 				549602412873423A00C96E44 /* AsyncImageDemo.swift */,
 				54A7E5362873176300E195AD /* DismissDemo.swift */,
 				54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */,
+				54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */,
 				549602442873424600C96E44 /* NavigationDemo.swift */,
 				549602312873278A00C96E44 /* OpenURLDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
 				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
 				54960234287339DB00C96E44 /* QuicklookDemo.swift */,
-				5496022E2873267700C96E44 /* RequestReviewDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
+				5496022E2873267700C96E44 /* RequestReviewDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 			);
@@ -374,6 +378,7 @@
 				54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */,
 				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
+				54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
 				545530A928660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D159286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
@@ -414,6 +419,7 @@
 				549602332873278A00C96E44 /* OpenURLDemo.swift in Sources */,
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54AB054A286AF7E900C9FB4A /* (null) in Sources */,
+				54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 				549602432873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
