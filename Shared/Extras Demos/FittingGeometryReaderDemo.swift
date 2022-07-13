@@ -32,7 +32,7 @@ private struct DemoView: View {
             Spacer(minLength: 0)
 
             Button {
-                withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.9, blendDuration: 0.4)) {
+                withAnimation(.interactive) {
                     showFitting.toggle()
                 }
             } label: {

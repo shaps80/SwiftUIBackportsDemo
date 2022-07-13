@@ -29,9 +29,3 @@ private struct DemoView: View {
         .multilineTextAlignment(.center)
     }
 }
-
-struct FittingScrollViewDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        FittingScrollViewDemo()
-    }
-}

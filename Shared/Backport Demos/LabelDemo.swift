@@ -21,40 +21,34 @@ private struct Demo: View {
             List {
                 Backport.Section("Backport") {
                     if #available(iOS 14, macOS 11, *) {
-                        backports
-
                         Menu("Menu") {
-                            Button {
-
-                            } label: {
+                            Button { } label: {
                                 Backport.Label(title, systemImage: icon)
                             }
                         }
+
+                        Backport.Label(title, systemImage: icon)
+                            .backport.labelStyle(.titleOnly)
+
+                        Backport.Label(title, systemImage: icon)
+                            .backport.labelStyle(.iconOnly)
+
+                        Backport.Label(title, systemImage: icon)
+                            .backport.labelStyle(.titleAndIcon)
+
+                        Backport.Label {
+                            Text("Custom title and icon")
+                                .foregroundColor(.accentColor)
+                        } icon: {
+                            Image(systemName: icon)
+                                .foregroundColor(.secondary)
+                        }
+                    } else {
+                        Text("Not available in this version of your OS")
                     }
                 }
             }
             .toolbar(title: title, systemName: icon)
-        }
-    }
-
-    @available(iOS 13, macOS 11, *)
-    @ViewBuilder
-    private var backports: some View {
-        Backport.Label(title, systemImage: icon)
-            .backport.labelStyle(.titleOnly)
-
-        Backport.Label(title, systemImage: icon)
-            .backport.labelStyle(.iconOnly)
-
-        Backport.Label(title, systemImage: icon)
-            .backport.labelStyle(.titleAndIcon)
-
-        Backport.Label {
-            Text("Custom title and icon")
-                .foregroundColor(.accentColor)
-        } icon: {
-            Image(systemName: icon)
-                .foregroundColor(.secondary)
         }
     }
 }
