@@ -97,7 +97,6 @@
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		5472BF35287DE9E400518729 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
 		549602312873278A00C96E44 /* OpenURLDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLDemo.swift; sourceTree = "<group>"; };
 		54960234287339DB00C96E44 /* QuicklookDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklookDemo.swift; sourceTree = "<group>"; };
@@ -215,7 +214,6 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
-				5472BF35287DE9E400518729 /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
