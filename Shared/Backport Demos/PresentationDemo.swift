@@ -30,7 +30,7 @@ private struct DemoView: View {
     @State private var isModal: Bool = false
     @State private var enablePrompt: Bool = true
     @State private var showPrompt: Bool = false
-    @State private var undimmedDetent: Backport<Any>.PresentationDetent.Identifier?
+    @State private var undimmedDetent: Backport<Any>.PresentationDetent?
 
     var body: some View {
         NavigationView {
@@ -110,9 +110,8 @@ private struct DemoView: View {
             })
         }
         .backport.presentationDragIndicator(visible)
-        .backport.presentationDetents(detents, selection: $selection)
-        .backport.presentationUndimmed(from: undimmedDetent)
-        .presentation(isModal: isModal) {
+        .backport.presentationDetents(detents, selection: $selection, largestUndimmedDetent: undimmedDetent)
+        .backport.interactiveDismissDisabled(isModal) {
             if enablePrompt { showPrompt = true }
         }
         .actionSheet(isPresented: $showPrompt, content: {
