@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
+import Lorem
 
 struct LabeledContentDemo: View {
     var body: some View {
@@ -24,37 +25,56 @@ private struct Demo: View {
         ])
     ]
 
+    @Backport.AppStorage("hide-labels") private var hideLabels: Bool = false
+
     var body: some View {
         Form {
-            Backport.Section("Backport") {
-                ForEach(people) { person in
-                    Backport.LabeledContent("Name", value: person.name)
+            Section {
+                Toggle("Hide Labels", isOn: $hideLabels)
+            }
 
-                    if !person.pets.isEmpty {
+            ForEach(people) { person in
+                if !person.pets.isEmpty {
+                    Section {
                         ForEach(person.pets) { pet in
                             Backport.LabeledContent(pet.species, value: pet.name)
                         }
-                    }
-                }
-            }
-//            .labelsHidden()
-
-            if #available(iOS 16, macOS 13, *) {
-                Section("Native") {
-                    ForEach(people) { person in
-                        LabeledContent("Name", value: person.name)
-
-                        if !person.pets.isEmpty {
-                            ForEach(person.pets) { pet in
-                                LabeledContent(pet.species, value: pet.name)
-                            }
+                    } header: {
+                        HStack {
+                            Text(person.name)
+                            Spacer()
+                            Text("\(person.age) years old")
+                                .font(.footnote)
                         }
                     }
+                    .noTextCasing()
                 }
-//                .labelsHidden()
             }
+            .hideLabels(hideLabels)
         }
         .backport.navigationTitle("People")
+    }
+}
+
+private extension View {
+    @ViewBuilder
+    func noTextCasing() -> some View {
+        if #available(iOS 14, *) {
+            textCase(.none)
+        } else {
+            self
+        }
+    }
+}
+
+private extension View {
+    @ViewBuilder
+    func hideLabels(_ isHidden: Bool) -> some View {
+        if isHidden {
+            labelsHidden()
+        } else {
+            self
+        }
     }
 }
 

@@ -28,6 +28,7 @@
 		543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */; };
+		5442D11B2881702000A5F9E7 /* Lorem in Frameworks */ = {isa = PBXBuildFile; productRef = 5442D11A2881702000A5F9E7 /* Lorem */; };
 		544A24512874956800CE4B76 /* ScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A24502874956800CE4B76 /* ScrollViewDemo.swift */; };
 		545530A928660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
@@ -122,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5442D11B2881702000A5F9E7 /* Lorem in Frameworks */,
 				54AB0546286AF20300C9FB4A /* SwiftUIBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +289,7 @@
 			name = "Demo (iOS)";
 			packageProductDependencies = (
 				54AB0545286AF20300C9FB4A /* SwiftUIBackports */,
+				5442D11A2881702000A5F9E7 /* Lorem */,
 			);
 			productName = "SwiftUIBackportsDemo (iOS)";
 			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
@@ -341,6 +344,7 @@
 			mainGroup = 5455309328660AFC00BA482D;
 			packageReferences = (
 				5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */,
+				5442D1192881702000A5F9E7 /* XCRemoteSwiftPackageReference "Lorem" */,
 			);
 			productRefGroup = 545530A128660AFD00BA482D /* Products */;
 			projectDirPath = "";
@@ -733,9 +737,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5442D1192881702000A5F9E7 /* XCRemoteSwiftPackageReference "Lorem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thirdfort/Lorem";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5442D11A2881702000A5F9E7 /* Lorem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5442D1192881702000A5F9E7 /* XCRemoteSwiftPackageReference "Lorem" */;
+			productName = Lorem;
+		};
 		54AB0543286AF1E900C9FB4A /* SwiftUIBackports */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */;
