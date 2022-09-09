@@ -35,8 +35,8 @@ struct RootView: View {
                     ScrollViewDemo()
                 }
 
-                if #available(iOS 14, *) {
-                    Backport.Section("Backports (iOS 14+)") {
+                if #available(iOS 15, *) {
+                    Backport.Section("Backports (iOS 15+)") {
                         PresentationDemo()
                     }
                 }

@@ -110,7 +110,7 @@ private struct DemoView: View {
             })
         }
         .backport.presentationDragIndicator(visible)
-        .backport.presentationDetents(detents, selection: $selection, largestUndimmedDetent: undimmedDetent)
+        .presentationDetentsIfAvailable(detents, selection: $selection, largestUndimmedDetent: undimmedDetent)
         .backport.interactiveDismissDisabled(isModal) {
             if enablePrompt { showPrompt = true }
         }
@@ -122,6 +122,17 @@ private struct DemoView: View {
                 .cancel()
             ])
         })
+    }
+}
+
+extension View {
+    @ViewBuilder
+    func presentationDetentsIfAvailable(_ detents: Set<Backport<Any>.PresentationDetent>, selection: Binding<Backport<Any>.PresentationDetent>, largestUndimmedDetent: Backport<Any>.PresentationDetent?) -> some View {
+        if #available(iOS 15, *) {
+            backport.presentationDetents(detents, selection: selection, largestUndimmedDetent: largestUndimmedDetent)
+        } else {
+            self
+        }
     }
 }
 #endif
