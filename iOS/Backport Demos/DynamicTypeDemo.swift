@@ -34,7 +34,7 @@ private struct Demo: View {
 
                 Toggle("Override min/max", isOn: $isOverriden)
 
-                HStack {
+                VStack {
                     VStack {
                         Picker(selection: $minSize) {
                             ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
@@ -45,11 +45,7 @@ private struct Demo: View {
                         .labelsHidden()
 
                         Text("Minimum")
-                    }
-
-                    Spacer()
-
-                    VStack {
+                        
                         Picker(selection: $maxSize) {
                             ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
                                 Text(String(describing: size))
@@ -71,6 +67,18 @@ private struct Demo: View {
         .backport.dynamicTypeSize(minSize...)
         .backport.dynamicTypeSize(...maxSize)
         .backport.dynamicTypeSize(size)
+    }
+}
+
+
+private extension View {
+    @ViewBuilder
+    func menuPickerStyle() -> some View {
+        if #available(iOS 14, macOS 11, *) {
+            pickerStyle(.menu)
+        } else {
+            pickerStyle(.segmented)
+        }
     }
 }
 

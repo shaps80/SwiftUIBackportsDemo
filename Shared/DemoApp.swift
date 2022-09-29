@@ -21,6 +21,7 @@ struct RootView: View {
                         QuicklookDemo()
                         RequestReviewDemo()
                         RefreshableDemo()
+                        ShareLinkDemo()
                         StateObjectDemo()
                     }
                 }

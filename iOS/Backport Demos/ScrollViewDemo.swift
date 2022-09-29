@@ -55,21 +55,10 @@ private struct Demo: View {
                     .frame(height: 500)
             }
         }
-        .menuPickerStyle()
+        .pickerStyle(.segmented)
         .backport.scrollDismissesKeyboard(dismissMode)
         .backport.scrollIndicators(indicatorVisibility)
         .backport.scrollDisabled(!scrollEnabled)
-    }
-}
-
-extension View {
-    @ViewBuilder
-    func menuPickerStyle() -> some View {
-        if #available(iOS 14, macOS 11, *) {
-            pickerStyle(.menu)
-        } else {
-            pickerStyle(.automatic)
-        }
     }
 }
 
