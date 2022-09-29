@@ -15,7 +15,7 @@ private struct DemoView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 40) {
-                ShareLink(item: "Can I share this?") {
+                Backport.ShareLink(item: "Can I share this?") {
                     VStack {
                         Image(systemName: "globe")
                             .imageScale(.large)
@@ -25,13 +25,13 @@ private struct DemoView: View {
                 }
                 .buttonStyle(.plain)
 
-                ShareLink(item: "Some text to share")
+                Backport.ShareLink(item: "Some text to share")
 
-                ShareLink("Benkau", item: URL(string: "https://benkau.com")!)
+                Backport.ShareLink("Benkau", item: URL(string: "https://benkau.com")!)
 
-                ShareLink(item: "", preview: SharePreview("Nice one!"))
+                Backport.ShareLink(item: "", preview: SharePreview("Nice one!"))
 
-                ShareLink(
+                Backport.ShareLink(
                     item: Image(systemName: "circle.fill"),
                     preview: SharePreview(
                         "Preview",
@@ -47,7 +47,7 @@ private struct DemoView: View {
         }
         .backport.navigationTitle("Sharing")
         #if os(iOS)
-        .navigationBarItems(trailing: ShareLink(item: URL(string: "https://benkau.com")!))
+        .navigationBarItems(trailing: Backport.ShareLink(item: URL(string: "https://benkau.com")!))
         #endif
     }
 }

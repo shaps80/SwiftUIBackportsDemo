@@ -1,6 +1,5 @@
 import SwiftUI
 import SwiftUIBackports
-import Lorem
 
 struct LabeledContentDemo: View {
     var body: some View {
@@ -59,7 +58,7 @@ private struct Demo: View {
 private extension View {
     @ViewBuilder
     func noTextCasing() -> some View {
-        if #available(iOS 14, *) {
+        if #available(iOS 14, macOS 11, *) {
             textCase(.none)
         } else {
             self
