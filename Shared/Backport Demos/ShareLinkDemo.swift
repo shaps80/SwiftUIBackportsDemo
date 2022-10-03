@@ -26,21 +26,7 @@ private struct DemoView: View {
                 .buttonStyle(.plain)
 
                 Backport.ShareLink(item: "Some text to share")
-
                 Backport.ShareLink("Benkau", item: URL(string: "https://benkau.com")!)
-
-                Backport.ShareLink(item: "", preview: SharePreview("Nice one!"))
-
-                Backport.ShareLink(
-                    item: Image(systemName: "circle.fill"),
-                    preview: SharePreview(
-                        "Preview",
-                        image: Image(systemName: "circle"),
-                        icon: Image(systemName: "square")
-                    )
-                ) {
-                    Backport.Label("Custom label", systemImage: "arrow.up")
-                }
             }
             .frame(maxWidth: .infinity)
             .padding(20)
