@@ -50,6 +50,12 @@ private struct Demo: View {
                 }
             }
             .hideLabels(hideLabels)
+
+            Section {
+                Backport.LabeledContent("Title", value: "Value")
+                    .backport.labeledContentStyle(.vertical)
+            }
+            .hideLabels(hideLabels)
         }
         .backport.navigationTitle("People")
     }
@@ -89,4 +95,18 @@ private struct Person: Identifiable {
         var name: String
         var species: String
     }
+}
+
+private struct VerticalLabeledContentStyle: BackportLabeledContentStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            configuration.label
+                .font(.footnote)
+                .foregroundColor(.secondary)
+            configuration.content
+        }
+    }
+}
+extension BackportLabeledContentStyle where Self == VerticalLabeledContentStyle {
+    static var vertical: Self { .init() }
 }
