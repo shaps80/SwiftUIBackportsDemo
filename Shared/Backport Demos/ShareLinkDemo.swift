@@ -17,9 +17,13 @@ private struct DemoView: View {
             VStack(spacing: 40) {
                 Backport.ShareLink(item: "Can I share this?") {
                     VStack {
-                        Image(systemName: "globe")
-                            .imageScale(.large)
-                            .foregroundColor(.accentColor)
+#if os(macOS)
+                        if #available(macOS 11, *) {
+                            Image(systemName: "globe")
+                                .imageScale(.large)
+                                .foregroundColor(.accentColor)
+                        }
+#endif
                         Text("Hello, world!")
                     }
                 }

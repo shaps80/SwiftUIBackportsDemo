@@ -52,9 +52,6 @@ struct RootView: View {
             Text("Select a Demo")
                 .foregroundColor(.secondary)
         }
-        #if os(macOS)
-        .frame(maxWidth: 800, maxHeight: 800)
-        #endif
     }
 }
 
