@@ -50,8 +50,5 @@ private struct DemoView: View {
     }
 }
 
-struct RefreshableDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        RefreshableDemo()
-    }
-}
+// I think this is a Swift bug, feels like I shouldn't need to do this given Bool is already Sendable.
+extension State: @unchecked Sendable where Value == Bool { }

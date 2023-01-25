@@ -31,9 +31,3 @@ private struct DemoView: View {
         .backport.navigationTitle("AppStorage")
     }
 }
-
-struct AppStorageDemo_Previews: PreviewProvider {
-    static var previews: some View {
-        AppStorageDemo()
-    }
-}
