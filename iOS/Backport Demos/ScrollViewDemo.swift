@@ -49,6 +49,7 @@ private struct Demo: View {
             }
             #endif
 
+
             Section { } footer: {
                 Rectangle()
                     .foregroundColor(.clear)
@@ -56,6 +57,7 @@ private struct Demo: View {
             }
         }
         .pickerStyle(.segmented)
+        .background(Color.accentColor)
         .backport.scrollDismissesKeyboard(dismissMode)
         .backport.scrollIndicators(indicatorVisibility)
         .backport.scrollDisabled(!scrollEnabled)
