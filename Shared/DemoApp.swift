@@ -5,64 +5,67 @@ import PhotosUI
 struct RootView: View {
     var body: some View {
         NavigationView {
-            List {
-                Backport.Section("Backports") {
-                    Group {
-                        AsyncImageDemo()
-                        AppStorageDemo()
-                        DismissDemo()
-                        LabelDemo()
-                        LabeledContentDemo()
-                        NavigationDemo()
-                    }
-
-                    Group {
-                        OpenURLDemo()
-                        ProgressDemo()
-                        QuicklookDemo()
-                        RequestReviewDemo()
-                        RefreshableDemo()
-                        ShareLinkDemo()
-                        StateObjectDemo()
-                    }
-#if os(iOS)
-                    DynamicTypeDemo()
-                    PasteButtonDemo()
-                    ScaledMetricDemo()
-                    ScrollViewDemo()
-#endif
-                }
-
-#if os(iOS)
-                Backport.Section("iOS 14+") {
-                    if #available(iOS 14, *) {
-                        HostingCollectionDemo()
-                        HostingTableDemo()
-                    }
-                }
-
-                if #available(iOS 15, *) {
-                    Backport.Section("iOS 15+") {
-                        PresentationDemo()
-                    }
-                }
-
-                if #available(iOS 16, *) {
-                    Backport.Section("iOS 16+") {
-                        PhotosPickerDemo()
-                    }
-                }
-#endif
-
-                Backport.Section("Extras") {
-                    FittingGeometryReaderDemo()
-                    FittingScrollViewDemo()
-                }
+            if #available(iOS 16, *) {
+                PhotosDemoView()
             }
-            .backport.navigationTitle("Demos")
-
-            Text("Select a Demo")
-                .foregroundColor(.secondary)
+//            List {
+//                Backport.Section("Backports") {
+//                    Group {
+//                        AsyncImageDemo()
+//                        AppStorageDemo()
+//                        DismissDemo()
+//                        LabelDemo()
+//                        LabeledContentDemo()
+//                        NavigationDemo()
+//                    }
+//
+//                    Group {
+//                        OpenURLDemo()
+//                        ProgressDemo()
+//                        QuicklookDemo()
+//                        RequestReviewDemo()
+//                        RefreshableDemo()
+//                        ShareLinkDemo()
+//                        StateObjectDemo()
+//                    }
+//#if os(iOS)
+//                    DynamicTypeDemo()
+//                    PasteButtonDemo()
+//                    ScaledMetricDemo()
+//                    ScrollViewDemo()
+//#endif
+//                }
+//
+//#if os(iOS)
+//                Backport.Section("iOS 14+") {
+//                    if #available(iOS 14, *) {
+//                        HostingCollectionDemo()
+//                        HostingTableDemo()
+//                    }
+//                }
+//
+//                if #available(iOS 15, *) {
+//                    Backport.Section("iOS 15+") {
+//                        PresentationDemo()
+//                    }
+//                }
+//
+//                if #available(iOS 16, *) {
+//                    Backport.Section("iOS 16+") {
+//                        PhotosPickerDemo()
+//                    }
+//                }
+//#endif
+//
+//                Backport.Section("Extras") {
+//                    FittingGeometryReaderDemo()
+//                    FittingScrollViewDemo()
+//                }
+//            }
+//            .backport.navigationTitle("Demos")
+//
+//            Text("Select a Demo")
+//                .foregroundColor(.secondary)
         }
     }
 }

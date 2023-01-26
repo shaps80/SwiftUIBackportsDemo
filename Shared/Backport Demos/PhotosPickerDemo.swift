@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftUIBackports
 import PhotosUI
 
 #if os(iOS)
@@ -6,7 +7,7 @@ import PhotosUI
 struct PhotosPickerDemo: View {
     var body: some View {
         NavigationLink {
-            DemoView()
+            PhotosDemoView()
         } label: {
             Text("PhotosPicker")
         }
@@ -14,13 +15,31 @@ struct PhotosPickerDemo: View {
 }
 
 @available(iOS, introduced: 16)
-private struct DemoView: View {
-    @State private var selection: [PhotosPickerItem] = []
+struct PhotosDemoView: View {
+    @State private var backportSelection: Backport<Any>.PhotosPickerItem? = nil
+    @State private var selection: PhotosPickerItem? = nil
     
     var body: some View {
-        PhotosPicker(selection: $selection, preferredItemEncoding: .current, photoLibrary: PHPhotoLibrary.shared()) {
-            Label("Choose Photos", systemImage: "photo")
+        List {
+            Backport.Section("Backport") {
+                Backport.PhotosPicker(
+                    selection: $backportSelection,
+                    matching: .images
+                ) {
+                    Label("Choose Photos", systemImage: "photo")
+                }
+            }
+            
+            Backport.Section("Native") {
+                PhotosPicker(
+                    selection: $selection,
+                    matching: .images
+                ) {
+                    Label("Choose Photos", systemImage: "photo")
+                }
+            }
         }
+        .backport.navigationTitle("Photos Picker")
     }
 }
 #endif
