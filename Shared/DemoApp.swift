@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
+import PhotosUI
 
 struct RootView: View {
     var body: some View {
@@ -24,24 +25,35 @@ struct RootView: View {
                         ShareLinkDemo()
                         StateObjectDemo()
                     }
-                }
 #if os(iOS)
-                Backport.Section("Backports (iOS 13+)") {
                     DynamicTypeDemo()
+                    PasteButtonDemo()
+                    ScaledMetricDemo()
+                    ScrollViewDemo()
+#endif
+                }
+
+#if os(iOS)
+                Backport.Section("iOS 14+") {
                     if #available(iOS 14, *) {
                         HostingCollectionDemo()
                         HostingTableDemo()
                     }
-                    ScaledMetricDemo()
-                    ScrollViewDemo()
                 }
 
                 if #available(iOS 15, *) {
-                    Backport.Section("Backports (iOS 15+)") {
+                    Backport.Section("iOS 15+") {
                         PresentationDemo()
                     }
                 }
+
+                if #available(iOS 16, *) {
+                    Backport.Section("iOS 16+") {
+                        PhotosPickerDemo()
+                    }
+                }
 #endif
+
                 Backport.Section("Extras") {
                     FittingGeometryReaderDemo()
                     FittingScrollViewDemo()
