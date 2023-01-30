@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		540287A12981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */; };
-		540287A22981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */; };
 		5428D13B28661F71009AFCD2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */; };
 		5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
 		5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
@@ -180,7 +179,6 @@
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 				54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */,
 				5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */,
-				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -216,6 +214,7 @@
 		543F19D5286E00DF00518DB2 /* Backport Demos */ = {
 			isa = PBXGroup;
 			children = (
+				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
 				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
 				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
@@ -456,7 +455,6 @@
 				54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
 				54ADC541287EAC5300113EFE /* MatchedGeometry.swift in Sources */,
 				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
-				540287A22981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */,
 				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 				549602432873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
 				549602462873424600C96E44 /* NavigationDemo.swift in Sources */,

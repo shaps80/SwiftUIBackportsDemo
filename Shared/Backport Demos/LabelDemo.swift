@@ -44,7 +44,9 @@ private struct Demo: View {
                                 .foregroundColor(.secondary)
                         }
                     } else {
-                        Text("Not available in this version of your OS")
+                        #if os(iOS)
+                        Backport.Label(title, systemImage: icon)
+                        #endif
                     }
                 }
             }
