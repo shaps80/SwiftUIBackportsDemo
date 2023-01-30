@@ -15,6 +15,7 @@ struct PhotosPickerDemo: View {
 
 struct PhotosDemoView: View {
     @State private var selection: [Backport<Any>.PhotosPickerItem] = []
+    @State private var text: String = ""
     
     var body: some View {
         List {
@@ -26,6 +27,8 @@ struct PhotosDemoView: View {
                     Backport.Label("Choose Photo", systemImage: "photo")
                 }
             }
+
+            TextField("Enter text", text: $text)
 
             if #available(iOS 16, *) {
                 Backport.Section("iOS 16+") {
