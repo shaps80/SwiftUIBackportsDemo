@@ -170,15 +170,15 @@
 				54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */,
 				549602442873424600C96E44 /* NavigationDemo.swift */,
 				549602312873278A00C96E44 /* OpenURLDemo.swift */,
+				5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
 				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
 				54960234287339DB00C96E44 /* QuicklookDemo.swift */,
 				5428D15528668485009AFCD2 /* RefreshableDemo.swift */,
 				5496022E2873267700C96E44 /* RequestReviewDemo.swift */,
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
-				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 				54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */,
-				5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */,
+				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -214,10 +214,10 @@
 		543F19D5286E00DF00518DB2 /* Backport Demos */ = {
 			isa = PBXGroup;
 			children = (
-				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
 				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
 				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
+				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
 			);
 			path = "Backport Demos";

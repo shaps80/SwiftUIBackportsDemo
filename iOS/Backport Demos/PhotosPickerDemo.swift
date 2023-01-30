@@ -14,38 +14,24 @@ struct PhotosPickerDemo: View {
 }
 
 struct PhotosDemoView: View {
-    @State private var backportSelection: Backport<Any>.PhotosPickerItem? = nil
+    @State private var selection: [Backport<Any>.PhotosPickerItem] = []
     
     var body: some View {
         List {
-            if #available(iOS 14, *) {
-            } else {
-                Backport.Section("iOS 13") {
-                    Backport.PhotosPicker(
-                        selection: $backportSelection,
-                        matching: .images
-                    ) {
-                        Backport.Label("Choose Photo", systemImage: "photo")
-                    }
-                }
-            }
-
-            if #available(iOS 14, *) {
-                Backport.Section("iOS 14+") {
-                    Backport.PhotosPicker(
-                        selection: $backportSelection,
-                        matching: .images
-                    ) {
-                        Label("Choose Photos", systemImage: "photo")
-                    }
+            Backport.Section("iOS 13+") {
+                Backport.PhotosPicker(
+                    selection: $selection,
+                    matching: nil
+                ) {
+                    Backport.Label("Choose Photo", systemImage: "photo")
                 }
             }
 
             if #available(iOS 16, *) {
                 Backport.Section("iOS 16+") {
                     PhotosPicker(
-                        selection: .constant(nil),
-                        matching: .images
+                        selection: .constant([]),
+                        matching: nil
                     ) {
                         Label("Choose Photos", systemImage: "photo")
                     }
