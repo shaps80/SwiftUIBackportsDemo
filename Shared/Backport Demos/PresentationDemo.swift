@@ -4,7 +4,6 @@ import SwiftUIBackports
 #if os(iOS)
 @available(iOS 14, *)
 struct PresentationDemo: View {
-
     @State private var showSheet: Bool = false
 
     var body: some View {
@@ -17,12 +16,11 @@ struct PresentationDemo: View {
             DemoView()
         }
     }
-
 }
 
 @available(iOS 14, *)
 private struct DemoView: View {
-    @Environment(\.presentationMode) private var presentation
+    @Environment(\.backportDismiss) private var dismiss
 
     @State private var selection: Backport.PresentationDetent = .medium
     @State private var visible: Backport.Visibility = .hidden
@@ -102,12 +100,16 @@ private struct DemoView: View {
             }
             .listStyle(.insetGrouped)
             .backport.navigationTitle("Sheet")
-            .navigationBarItems(trailing: Button {
-                presentation.wrappedValue.dismiss()
-            } label: {
-                Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.primary)
-            })
+            .backport.toolbar {
+                Backport.ToolbarItem {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.primary)
+                    }
+                }
+            }
         }
         .backport.presentationDragIndicator(visible)
         .presentationDetentsIfAvailable(detents, selection: $selection, largestUndimmedDetent: undimmedDetent)
@@ -117,7 +119,7 @@ private struct DemoView: View {
         .actionSheet(isPresented: $showPrompt, content: {
             ActionSheet(title: Text("Dismiss"), buttons: [
                 .default(Text("OK")) {
-                    presentation.wrappedValue.dismiss()
+                    dismiss()
                 },
                 .cancel()
             ])

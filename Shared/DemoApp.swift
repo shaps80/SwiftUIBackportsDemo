@@ -24,6 +24,7 @@ struct RootView: View {
                         RefreshableDemo()
                         ShareLinkDemo()
                         StateObjectDemo()
+                        ToolBarBackgroundDemo()
                     }
                 }
 
