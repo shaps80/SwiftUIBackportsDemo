@@ -6,6 +6,7 @@ struct ToolBarBackgroundDemo: View {
     @State private var showNative: Bool = false
 
     var body: some View {
+        #if os(iOS)
         Button {
             showDemo = true
         } label: {
@@ -25,9 +26,11 @@ struct ToolBarBackgroundDemo: View {
                 Native()
             }
         }
+        #endif
     }
 }
 
+#if os(iOS)
 private struct Demo: View {
     @Environment(\.backportDismiss) private var dismiss
 
@@ -144,3 +147,4 @@ private struct Native: View {
         }
     }
 }
+#endif
