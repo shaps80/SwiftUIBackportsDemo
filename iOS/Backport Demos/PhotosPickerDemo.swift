@@ -21,7 +21,7 @@ struct PhotosDemoView: View {
         List {
             Backport.Section("Backport") {
                 if #available(iOS 15, *) {
-                    Backport.PhotosPicker(selection: $selection, maxSelectionCount: 3, selectionBehavior: .ordered, matching: .all(of: [.slomoVideos, .videos])) {
+                    Backport.PhotosPicker(selection: $selection, maxSelectionCount: 3, selectionBehavior: .ordered, matching: .any(of: [.slomoVideos, .timelapseVideos])) {
                         Label("Choose Photos", systemImage: "photo")
                     }
                 } else if #available(iOS 14, *) {
@@ -30,14 +30,14 @@ struct PhotosDemoView: View {
                     } label: {
                         Text("Show iOS 14 Picker")
                     }
-                    .backport.photosPicker(isPresented: $showPicker, selection: $selection, maxSelectionCount: 3, matching: .any(of: [.images, .videos]))
+                    .backport.photosPicker(isPresented: $showPicker, selection: $selection, maxSelectionCount: 3, matching: .any(of: [.videos]))
                 } else {
                     Button {
                         showPicker = true
                     } label: {
                         Text("Show iOS 13 Picker")
                     }
-                    .backport.photosPicker(isPresented: $showPicker, selection: $selection)
+                    .backport.photosPicker(isPresented: $showPicker, selection: $selection, matching: .livePhotos)
                 }
             }
 
