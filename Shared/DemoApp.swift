@@ -25,6 +25,7 @@ struct RootView: View {
                         ShareLinkDemo()
                         StateObjectDemo()
                         ToolBarBackgroundDemo()
+                        UniformTypesDemo()
                     }
                 }
 
