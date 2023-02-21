@@ -38,10 +38,15 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		5468DE3B299AE433000DAE7D /* UTType+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE39299AE433000DAE7D /* UTType+All.swift */; };
+		5468DE3C299AE433000DAE7D /* UTType+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE39299AE433000DAE7D /* UTType+All.swift */; };
+		5468DE3D299AE433000DAE7D /* UTType+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE3A299AE433000DAE7D /* UTType+Image.swift */; };
+		5468DE3E299AE433000DAE7D /* UTType+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE3A299AE433000DAE7D /* UTType+Image.swift */; };
 		54721CA328E5882900D8FF6F /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */; };
 		54721CA428E5882900D8FF6F /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */; };
 		5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */; };
 		5485638129818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */; };
+		548B89C929A50CE400A3D5D5 /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 548B89C829A50CE400A3D5D5 /* SwiftUIPlus */; };
 		549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496022E2873267700C96E44 /* RequestReviewDemo.swift */; };
 		549602332873278A00C96E44 /* OpenURLDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549602312873278A00C96E44 /* OpenURLDemo.swift */; };
 		54960235287339DB00C96E44 /* QuicklookDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54960234287339DB00C96E44 /* QuicklookDemo.swift */; };
@@ -64,8 +69,6 @@
 		54A7E5372873176300E195AD /* DismissDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5362873176300E195AD /* DismissDemo.swift */; };
 		54AB053F286AE5FF00C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		54AB0540286AE5FF00C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
-		54AB0544286AF1E900C9FB4A /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AB0543286AF1E900C9FB4A /* SwiftUIBackports */; };
-		54AB0546286AF20300C9FB4A /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AB0545286AF20300C9FB4A /* SwiftUIBackports */; };
 		54AB0549286AF7E900C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		54AB054A286AF7E900C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
@@ -109,7 +112,8 @@
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		54721CA128E5869B00D8FF6F /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftUIBackports; sourceTree = "<group>"; };
+		5468DE39299AE433000DAE7D /* UTType+All.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+All.swift"; sourceTree = "<group>"; };
+		5468DE3A299AE433000DAE7D /* UTType+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+Image.swift"; sourceTree = "<group>"; };
 		54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonDemo.swift; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
@@ -137,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54AB0546286AF20300C9FB4A /* SwiftUIBackports in Frameworks */,
+				548B89C929A50CE400A3D5D5 /* SwiftUIPlus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54AB0544286AF1E900C9FB4A /* SwiftUIBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +158,8 @@
 		5428D146286650BA009AFCD2 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				5468DE39299AE433000DAE7D /* UTType+All.swift */,
+				5468DE3A299AE433000DAE7D /* UTType+Image.swift */,
 				54ADC53C287EABDD00113EFE /* Animation.swift */,
 				5428D149286654A6009AFCD2 /* Checkmark.swift */,
 				5428D1432866504D009AFCD2 /* Chevron.swift */,
@@ -234,7 +239,6 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
-				54721CA128E5869B00D8FF6F /* SwiftUIBackports */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -307,7 +311,7 @@
 			);
 			name = "Demo (iOS)";
 			packageProductDependencies = (
-				54AB0545286AF20300C9FB4A /* SwiftUIBackports */,
+				548B89C829A50CE400A3D5D5 /* SwiftUIPlus */,
 			);
 			productName = "SwiftUIBackportsDemo (iOS)";
 			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
@@ -327,7 +331,6 @@
 			);
 			name = "Demo (macOS)";
 			packageProductDependencies = (
-				54AB0543286AF1E900C9FB4A /* SwiftUIBackports */,
 			);
 			productName = "SwiftUIBackportsDemo (macOS)";
 			productReference = 545530A628660AFD00BA482D /* BackportsDemo.app */;
@@ -361,7 +364,7 @@
 			);
 			mainGroup = 5455309328660AFC00BA482D;
 			packageReferences = (
-				5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */,
+				548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */,
 			);
 			productRefGroup = 545530A128660AFD00BA482D /* Products */;
 			projectDirPath = "";
@@ -424,12 +427,14 @@
 				54AB053F286AE5FF00C9FB4A /* (null) in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */,
+				5468DE3D299AE433000DAE7D /* UTType+Image.swift in Sources */,
 				549602452873424600C96E44 /* NavigationDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54A7E5372873176300E195AD /* DismissDemo.swift in Sources */,
 				54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */,
 				54AB0549286AF7E900C9FB4A /* (null) in Sources */,
 				544A24512874956800CE4B76 /* ScrollViewDemo.swift in Sources */,
+				5468DE3B299AE433000DAE7D /* UTType+All.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
@@ -452,6 +457,7 @@
 				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				54960236287339DB00C96E44 /* QuicklookDemo.swift in Sources */,
 				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
+				5468DE3E299AE433000DAE7D /* UTType+Image.swift in Sources */,
 				545530AA28660AFD00BA482D /* DemoApp.swift in Sources */,
 				5428D15A286685E9009AFCD2 /* Progress.swift in Sources */,
 				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
@@ -471,6 +477,7 @@
 				549602432873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
 				549602462873424600C96E44 /* NavigationDemo.swift in Sources */,
 				549602472873424E00C96E44 /* DismissDemo.swift in Sources */,
+				5468DE3C299AE433000DAE7D /* UTType+All.swift in Sources */,
 				543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */,
@@ -753,9 +760,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */ = {
+		548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/shaps80/swiftuibackports";
+			repositoryURL = "https://github.com/shaps80/SwiftUIPlus";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -764,15 +771,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		54AB0543286AF1E900C9FB4A /* SwiftUIBackports */ = {
+		548B89C829A50CE400A3D5D5 /* SwiftUIPlus */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */;
-			productName = SwiftUIBackports;
-		};
-		54AB0545286AF20300C9FB4A /* SwiftUIBackports */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5428D14E28667330009AFCD2 /* XCRemoteSwiftPackageReference "swiftuibackports" */;
-			productName = SwiftUIBackports;
+			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
+			productName = SwiftUIPlus;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
