@@ -48,7 +48,7 @@ struct PresentationDemo: View {
                         Text("Show Sheet")
                     }
                 }
-                .popover(isPresented: $showSheet) {
+                .sheet(isPresented: $showSheet) {
                     DemoView(detents: $detents, selection: $selection, customRadius: $customRadius, cornerRadius: $cornerRadius)
                         .presentationDetentsIfAvailable(
                             detents: detents,
