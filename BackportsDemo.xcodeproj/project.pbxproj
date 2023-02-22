@@ -116,6 +116,9 @@
 		5468DE3A299AE433000DAE7D /* UTType+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+Image.swift"; sourceTree = "<group>"; };
 		54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonDemo.swift; sourceTree = "<group>"; };
+		548B89CA29A50F8A00A3D5D5 /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
+		548B89CB29A50F8A00A3D5D5 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
+		548B89CC29A50F8A00A3D5D5 /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
 		549602312873278A00C96E44 /* OpenURLDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLDemo.swift; sourceTree = "<group>"; };
 		54960234287339DB00C96E44 /* QuicklookDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklookDemo.swift; sourceTree = "<group>"; };
@@ -239,6 +242,9 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				548B89CC29A50F8A00A3D5D5 /* SwiftBackports */,
+				548B89CB29A50F8A00A3D5D5 /* SwiftUIBackports */,
+				548B89CA29A50F8A00A3D5D5 /* SwiftUIPlus */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
