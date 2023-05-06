@@ -44,6 +44,7 @@ struct RootView: View {
                     Backport.Section("iOS 14+") {
                         HostingCollectionDemo()
                         HostingTableDemo()
+                        TextEditorDemo()
                     }
                 }
 

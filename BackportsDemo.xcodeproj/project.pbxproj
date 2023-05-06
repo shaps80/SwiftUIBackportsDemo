@@ -85,6 +85,7 @@
 		54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 54AF14A62A06FB5400228D6B /* SwiftUIPlus */; };
+		54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,10 @@
 		54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTableDemo.swift; sourceTree = "<group>"; };
 		54ADC53C287EABDD00113EFE /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometry.swift; sourceTree = "<group>"; };
+		54AF14A82A06FD0900228D6B /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
+		54AF14A92A06FD0900228D6B /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
+		54AF14AA2A06FD0900228D6B /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
+		54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDemo.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
+				54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */,
 				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
 				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
 				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
@@ -241,6 +247,9 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
+				54AF14A92A06FD0900228D6B /* SwiftBackports */,
+				54AF14A82A06FD0900228D6B /* SwiftUIBackports */,
+				54AF14AA2A06FD0900228D6B /* SwiftUIPlus */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -426,6 +435,7 @@
 				5415EDA929954EF000D79822 /* UniformTypesDemo.swift in Sources */,
 				5496024A2873428200C96E44 /* OpenURLDemo.swift in Sources */,
 				54ADC540287EAC5300113EFE /* MatchedGeometry.swift in Sources */,
+				54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */,
 				544151702989288E00842CF4 /* ToolBarBackgroundDemo.swift in Sources */,
 				54AB053F286AE5FF00C9FB4A /* (null) in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
