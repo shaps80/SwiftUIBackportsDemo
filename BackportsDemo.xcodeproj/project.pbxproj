@@ -84,6 +84,7 @@
 		54ADC541287EAC5300113EFE /* MatchedGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */; };
 		54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
+		54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 54AF14A62A06FB5400228D6B /* SwiftUIPlus */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -116,9 +117,6 @@
 		5468DE3A299AE433000DAE7D /* UTType+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+Image.swift"; sourceTree = "<group>"; };
 		54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonDemo.swift; sourceTree = "<group>"; };
-		548B89CA29A50F8A00A3D5D5 /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
-		548B89CB29A50F8A00A3D5D5 /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
-		548B89CC29A50F8A00A3D5D5 /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
 		549602312873278A00C96E44 /* OpenURLDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLDemo.swift; sourceTree = "<group>"; };
 		54960234287339DB00C96E44 /* QuicklookDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklookDemo.swift; sourceTree = "<group>"; };
@@ -152,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,9 +241,6 @@
 		5455309328660AFC00BA482D = {
 			isa = PBXGroup;
 			children = (
-				548B89CC29A50F8A00A3D5D5 /* SwiftBackports */,
-				548B89CB29A50F8A00A3D5D5 /* SwiftUIBackports */,
-				548B89CA29A50F8A00A3D5D5 /* SwiftUIPlus */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -337,6 +333,7 @@
 			);
 			name = "Demo (macOS)";
 			packageProductDependencies = (
+				54AF14A62A06FB5400228D6B /* SwiftUIPlus */,
 			);
 			productName = "SwiftUIBackportsDemo (macOS)";
 			productReference = 545530A628660AFD00BA482D /* BackportsDemo.app */;
@@ -778,6 +775,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		548B89C829A50CE400A3D5D5 /* SwiftUIPlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
+			productName = SwiftUIPlus;
+		};
+		54AF14A62A06FB5400228D6B /* SwiftUIPlus */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
 			productName = SwiftUIPlus;

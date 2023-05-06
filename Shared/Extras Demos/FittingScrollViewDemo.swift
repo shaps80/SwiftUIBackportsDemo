@@ -1,5 +1,5 @@
 import SwiftUI
-import SwiftUIBackports
+import SwiftUIPlus
 
 struct FittingScrollViewDemo: View {
     var body: some View {
@@ -13,7 +13,7 @@ struct FittingScrollViewDemo: View {
 
 private struct DemoView: View {
     var body: some View {
-        FittingScrollView {
+        VScrollStack {
             VStack {
                 Text("Aligned to the top")
                 Spacer()
