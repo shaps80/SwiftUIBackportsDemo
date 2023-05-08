@@ -39,6 +39,7 @@ private struct Demo: View {
             }
         }
         .backport.submitLabel(.join)
+        .backport.textInputAutocapitalization(.characters)
         .navigationTitle("Text Additions")
         .navigationBarTitleDisplayMode(.inline)
     }
