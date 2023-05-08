@@ -84,6 +84,7 @@
 		54ADC541287EAC5300113EFE /* MatchedGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */; };
 		54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
+		54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADF8732A0912950079B5FA /* TextDemos.swift */; };
 		54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 54AF14A62A06FB5400228D6B /* SwiftUIPlus */; };
 		54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
@@ -135,6 +136,7 @@
 		54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTableDemo.swift; sourceTree = "<group>"; };
 		54ADC53C287EABDD00113EFE /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometry.swift; sourceTree = "<group>"; };
+		54ADF8732A0912950079B5FA /* TextDemos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemos.swift; sourceTree = "<group>"; };
 		54AF14A82A06FD0900228D6B /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54AF14A92A06FD0900228D6B /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
 		54AF14AA2A06FD0900228D6B /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
 				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
+				54ADF8732A0912950079B5FA /* TextDemos.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				5496024B2873428900C96E44 /* RequestReviewDemo.swift in Sources */,
 				549602422873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
+				54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */,
 				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				540287A12981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */,
 				54ADC53D287EABDD00113EFE /* Animation.swift in Sources */,

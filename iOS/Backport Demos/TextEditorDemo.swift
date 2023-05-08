@@ -22,15 +22,47 @@ private struct Demo: View {
     """
 
     var body: some View {
-        Backport.TextEditor(text: $text)
-            .foregroundColor(.accentColor)
-            .font(
-                .system(.title, design: .serif)
-                .italic()
-                .leading(.loose)
-                .weight(.black)
-            )
-            .lineSpacing(10)
-            .multilineTextAlignment(.center)
+        VStack(alignment: .leading, spacing: 20) {
+            Section {
+                Backport.TextEditor(text: $text)
+                    .frame(minHeight: 100)
+                    .padding()
+                    .backport.background {
+                        RoundedRectangle(cornerRadius: 20, style: .continuous)
+                            .foregroundColor(Color.primary.opacity(0.05))
+                    }
+            } header: {
+                Text("Backport")
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+            }
+
+            if #available(iOS 16, *) {
+                Section {
+                    TextEditor(text: $text)
+                        .frame(minHeight: 100)
+                        .padding()
+                        .scrollContentBackground(.hidden)
+                        .backport.background {
+                            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                                .foregroundColor(Color.primary.opacity(0.05))
+                        }
+                } header: {
+                    Text("Native")
+                        .font(.headline)
+                        .foregroundColor(.secondary)
+                }
+            }
+        }
+        .foregroundColor(.accentColor)
+        .font(
+            .system(.title, design: .serif)
+            .italic()
+            .leading(.loose)
+            .weight(.black)
+        )
+        .lineSpacing(10)
+        .multilineTextAlignment(.leading)
+        .padding()
     }
 }

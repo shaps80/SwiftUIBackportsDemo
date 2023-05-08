@@ -45,6 +45,7 @@ struct RootView: View {
                         HostingCollectionDemo()
                         HostingTableDemo()
                         TextEditorDemo()
+                        TextDemos()
                     }
                 }
 
