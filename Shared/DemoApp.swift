@@ -36,16 +36,17 @@ struct RootView: View {
                     PhotosPickerDemo()
                     ScaledMetricDemo()
                     ScrollViewDemo()
+                    FocusState()
                 }
 #endif
 
 #if os(iOS)
                 if #available(iOS 14, *) {
                     Backport.Section("iOS 14+") {
-                        HostingCollectionDemo()
-                        HostingTableDemo()
                         TextEditorDemo()
                         TextDemos()
+                        HostingCollectionDemo()
+                        HostingTableDemo()
                     }
                 }
 

@@ -85,6 +85,7 @@
 		54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADF8732A0912950079B5FA /* TextDemos.swift */; };
+		54ADF8762A09224C0079B5FA /* FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADF8752A09224C0079B5FA /* FocusState.swift */; };
 		54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 54AF14A62A06FB5400228D6B /* SwiftUIPlus */; };
 		54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
@@ -137,6 +138,7 @@
 		54ADC53C287EABDD00113EFE /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometry.swift; sourceTree = "<group>"; };
 		54ADF8732A0912950079B5FA /* TextDemos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemos.swift; sourceTree = "<group>"; };
+		54ADF8752A09224C0079B5FA /* FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusState.swift; sourceTree = "<group>"; };
 		54AF14A82A06FD0900228D6B /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54AF14A92A06FD0900228D6B /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
 		54AF14AA2A06FD0900228D6B /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
 				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
 				54ADF8732A0912950079B5FA /* TextDemos.swift */,
+				54ADF8752A09224C0079B5FA /* FocusState.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */,
 				54AB0549286AF7E900C9FB4A /* (null) in Sources */,
 				544A24512874956800CE4B76 /* ScrollViewDemo.swift in Sources */,
+				54ADF8762A09224C0079B5FA /* FocusState.swift in Sources */,
 				5468DE3B299AE433000DAE7D /* UTType+All.swift in Sources */,
 				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
