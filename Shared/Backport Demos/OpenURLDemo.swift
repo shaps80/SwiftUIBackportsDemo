@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
+import SwiftUIPlus
 
 struct OpenURLDemo: View {
     var body: some View {
@@ -25,7 +26,7 @@ private struct Demo: View {
     @State private var showHandled: Bool = false
 
     var body: some View {
-        List {
+        Form {
             Section {
                 Button {
                     openURL(URL(string: "https://benkau.com")!)
@@ -33,11 +34,15 @@ private struct Demo: View {
                     Text("Shaps Benkau")
                 }
 
-                Button {
-                    openURL(URL(string: "https://github.com/shaps80/SwiftUIBackports")!)
-                } label: {
-                    Text("SwiftUI Backports")
-                }
+                Backport.Link("In-app Safari", destination: URL(string: "https://github.com/shaps80/SwiftUIBackports")!)
+                    .environment(\.backportOpenURL, .init { url in
+                        .safari(url) { config in
+                            config.tintColor = .red
+                            config.dismissStyle = .close
+                            config.prefersReader = true
+                            config.barCollapsingEnabled = false
+                        }
+                    })
             }
 
             Section {
@@ -68,6 +73,23 @@ private struct Demo: View {
                         message: Text("The action was intercepted by the app."),
                         dismissButton: .default(Text("OK"))
                     )
+                }
+            }
+
+            if #available(iOS 15, macOS 11, *) {
+                Section {
+
+                    Link("Backports", destination: URL(string: "https://github.com/shaps80/SwiftUIPlus")!)
+                        .environment(\.openURL, .init { url in
+                                .safari(url) { config in
+                                    config.tintColor = .red
+                                    config.dismissStyle = .close
+                                    config.prefersReader = true
+                                    config.barCollapsingEnabled = false
+                                    config.presentationStyle = .sheet
+                                }
+                        })
+
                 }
             }
         }
