@@ -37,13 +37,13 @@ struct RootView: View {
                     ScaledMetricDemo()
                     ScrollViewDemo()
                     FocusState()
+                    TextEditorDemo()
                 }
 #endif
 
 #if os(iOS)
                 if #available(iOS 14, *) {
                     Backport.Section("iOS 14+") {
-                        TextEditorDemo()
                         TextDemos()
                         HostingCollectionDemo()
                         HostingTableDemo()

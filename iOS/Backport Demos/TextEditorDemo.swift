@@ -1,7 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
 
-@available(iOS 14, *)
 struct TextEditorDemo: View {
     var body: some View {
         NavigationLink {
@@ -13,7 +12,6 @@ struct TextEditorDemo: View {
     }
 }
 
-@available(iOS 14, *)
 private struct Demo: View {
     @State private var text: String = """
     A longer piece of text that can displace itself across new lines as needed.
@@ -58,7 +56,6 @@ private struct Demo: View {
         .font(
             .system(.title, design: .serif)
             .italic()
-            .leading(.loose)
             .weight(.black)
         )
         .lineSpacing(10)
