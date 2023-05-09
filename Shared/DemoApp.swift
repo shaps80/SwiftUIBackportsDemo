@@ -17,6 +17,7 @@ struct RootView: View {
                     }
 
                     Group {
+                        LinkDemo()
                         OpenURLDemo()
                         ProgressDemo()
                         QuicklookDemo()
