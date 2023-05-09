@@ -194,6 +194,7 @@
 				54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */,
 				54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */,
 				549602442873424600C96E44 /* NavigationDemo.swift */,
+				54B199E02A0A43B200CF41A9 /* LinkDemo.swift */,
 				549602312873278A00C96E44 /* OpenURLDemo.swift */,
 				5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
@@ -206,7 +207,6 @@
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 				5441516F2989288E00842CF4 /* ToolBarBackgroundDemo.swift */,
 				5415EDA829954EF000D79822 /* UniformTypesDemo.swift */,
-				54B199E02A0A43B200CF41A9 /* LinkDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
