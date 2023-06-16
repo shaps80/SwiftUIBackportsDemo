@@ -19,8 +19,9 @@ private struct Demo: View {
     @State private var url: URL = .init(string: "https://github.com/shaps80/SwiftUIBackports")!
 //    @State private var url: URL = .init(string: "https://benkau.com")!
     var body: some View {
-        WebView(url: $url)
-            .navigationBarHidden(true)
+        Text("TBD")
+//        WebView(url: $url)
+//            .navigationBarHidden(true)
     }
 }
 #else
