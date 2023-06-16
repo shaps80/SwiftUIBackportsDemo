@@ -10,6 +10,10 @@
 		540287A12981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */; };
 		5415EDA929954EF000D79822 /* UniformTypesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415EDA829954EF000D79822 /* UniformTypesDemo.swift */; };
 		5415EDAA29954EF000D79822 /* UniformTypesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415EDA829954EF000D79822 /* UniformTypesDemo.swift */; };
+		54181B252A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */; };
+		54181B262A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */; };
+		541BF7782A0A9D6A008F1D56 /* SwiftBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 541BF7772A0A9D6A008F1D56 /* SwiftBackports */; };
+		541BF77A2A0A9D72008F1D56 /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 541BF7792A0A9D72008F1D56 /* SwiftUIPlus */; };
 		5428D13B28661F71009AFCD2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */; };
 		5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
 		5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
@@ -46,7 +50,6 @@
 		54721CA428E5882900D8FF6F /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */; };
 		5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */; };
 		5485638129818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */; };
-		548B89C929A50CE400A3D5D5 /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 548B89C829A50CE400A3D5D5 /* SwiftUIPlus */; };
 		549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496022E2873267700C96E44 /* RequestReviewDemo.swift */; };
 		549602332873278A00C96E44 /* OpenURLDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549602312873278A00C96E44 /* OpenURLDemo.swift */; };
 		54960235287339DB00C96E44 /* QuicklookDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54960234287339DB00C96E44 /* QuicklookDemo.swift */; };
@@ -92,6 +95,9 @@
 		54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */; };
 		54B199E12A0A43B200CF41A9 /* LinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B199E02A0A43B200CF41A9 /* LinkDemo.swift */; };
 		54B199E22A0A43B200CF41A9 /* LinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B199E02A0A43B200CF41A9 /* LinkDemo.swift */; };
+		54C36BE22A0A8DA600FC62EB /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */; };
+		54C36BE32A0A8DA600FC62EB /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */; };
+		54C36BE52A0A9CB600FC62EB /* SwiftBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54C36BE42A0A9CB600FC62EB /* SwiftBackports */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +105,7 @@
 /* Begin PBXFileReference section */
 		540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerDemo.swift; sourceTree = "<group>"; };
 		5415EDA829954EF000D79822 /* UniformTypesDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformTypesDemo.swift; sourceTree = "<group>"; };
+		54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseAnimatorDemo.swift; sourceTree = "<group>"; };
 		5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDemo.swift; sourceTree = "<group>"; };
 		5428D1432866504D009AFCD2 /* Chevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chevron.swift; sourceTree = "<group>"; };
@@ -148,6 +155,7 @@
 		54AF14AA2A06FD0900228D6B /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
 		54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDemo.swift; sourceTree = "<group>"; };
 		54B199E02A0A43B200CF41A9 /* LinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDemo.swift; sourceTree = "<group>"; };
+		54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemo.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,7 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AC6BA12A0A586200F5CA3F /* SwiftUIBackports in Frameworks */,
-				548B89C929A50CE400A3D5D5 /* SwiftUIPlus in Frameworks */,
+				541BF77A2A0A9D72008F1D56 /* SwiftUIPlus in Frameworks */,
+				54C36BE52A0A9CB600FC62EB /* SwiftBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AC6BA32A0A586800F5CA3F /* SwiftUIBackports in Frameworks */,
+				541BF7782A0A9D6A008F1D56 /* SwiftBackports in Frameworks */,
 				54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +211,7 @@
 				54B199E02A0A43B200CF41A9 /* LinkDemo.swift */,
 				549602312873278A00C96E44 /* OpenURLDemo.swift */,
 				5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */,
+				54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */,
 				5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */,
 				54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */,
 				54960234287339DB00C96E44 /* QuicklookDemo.swift */,
@@ -211,6 +222,7 @@
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 				5441516F2989288E00842CF4 /* ToolBarBackgroundDemo.swift */,
 				5415EDA829954EF000D79822 /* UniformTypesDemo.swift */,
+				54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */,
 			);
 			path = "Backport Demos";
 			sourceTree = "<group>";
@@ -336,8 +348,9 @@
 			);
 			name = "Demo (iOS)";
 			packageProductDependencies = (
-				548B89C829A50CE400A3D5D5 /* SwiftUIPlus */,
 				54AC6BA02A0A586200F5CA3F /* SwiftUIBackports */,
+				54C36BE42A0A9CB600FC62EB /* SwiftBackports */,
+				541BF7792A0A9D72008F1D56 /* SwiftUIPlus */,
 			);
 			productName = "SwiftUIBackportsDemo (iOS)";
 			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
@@ -359,6 +372,7 @@
 			packageProductDependencies = (
 				54AF14A62A06FB5400228D6B /* SwiftUIPlus */,
 				54AC6BA22A0A586800F5CA3F /* SwiftUIBackports */,
+				541BF7772A0A9D6A008F1D56 /* SwiftBackports */,
 			);
 			productName = "SwiftUIBackportsDemo (macOS)";
 			productReference = 545530A628660AFD00BA482D /* BackportsDemo.app */;
@@ -438,6 +452,7 @@
 				5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */,
 				54960235287339DB00C96E44 /* QuicklookDemo.swift in Sources */,
 				54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
+				54181B252A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */,
 				54721CA328E5882900D8FF6F /* ShareLinkDemo.swift in Sources */,
 				54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */,
 				5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */,
@@ -453,6 +468,7 @@
 				54ADC540287EAC5300113EFE /* MatchedGeometry.swift in Sources */,
 				54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */,
 				544151702989288E00842CF4 /* ToolBarBackgroundDemo.swift in Sources */,
+				54C36BE22A0A8DA600FC62EB /* WebViewDemo.swift in Sources */,
 				54AB053F286AE5FF00C9FB4A /* (null) in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */,
@@ -515,7 +531,9 @@
 				54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */,
 				54721CA428E5882900D8FF6F /* ShareLinkDemo.swift in Sources */,
+				54C36BE32A0A8DA600FC62EB /* WebViewDemo.swift in Sources */,
 				54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */,
+				54181B262A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,9 +822,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		548B89C829A50CE400A3D5D5 /* SwiftUIPlus */ = {
+		541BF7772A0A9D6A008F1D56 /* SwiftBackports */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
+			productName = SwiftBackports;
+		};
+		541BF7792A0A9D72008F1D56 /* SwiftUIPlus */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIPlus;
 		};
 		54AC6BA02A0A586200F5CA3F /* SwiftUIBackports */ = {
@@ -821,6 +842,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
 			productName = SwiftUIPlus;
+		};
+		54C36BE42A0A9CB600FC62EB /* SwiftBackports */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftBackports;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

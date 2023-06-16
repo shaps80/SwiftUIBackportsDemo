@@ -14,11 +14,12 @@ struct RootView: View {
                         LabelDemo()
                         LabeledContentDemo()
                         NavigationDemo()
+                        LinkDemo()
+                        OpenURLDemo()
                     }
 
                     Group {
-                        LinkDemo()
-                        OpenURLDemo()
+                        PhaseAnimatorDemo()
                         ProgressDemo()
                         QuicklookDemo()
                         RequestReviewDemo()
@@ -61,6 +62,7 @@ struct RootView: View {
                 Backport.Section("Extras") {
                     FittingGeometryReaderDemo()
                     FittingScrollViewDemo()
+                    WebViewDemo()
                 }
             }
             .backport.navigationTitle("Demos")
@@ -86,7 +88,10 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = UIHostingController(rootView: RootView())
+        window?.rootViewController = UIHostingController(
+            rootView: RootView()
+//            rootView: WebViewDemo()
+        )
         window?.makeKeyAndVisible()
     }
 }

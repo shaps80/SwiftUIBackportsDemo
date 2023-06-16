@@ -27,7 +27,7 @@ private struct Demo: View {
 
     var body: some View {
         Form {
-            Section {
+            Backport.Section("Backports") {
                 Button {
                     openURL(URL(string: "https://benkau.com")!)
                 } label: {
@@ -36,16 +36,16 @@ private struct Demo: View {
 
                 Backport.Link("In-app Safari", destination: URL(string: "https://github.com/shaps80/SwiftUIBackports")!)
                     .environment(\.backportOpenURL, .init { url in
+#if os(iOS)
                         .safari(url) { config in
                             config.tintColor = .red
                             config.dismissStyle = .close
                             config.prefersReader = true
                             config.barCollapsingEnabled = false
                         }
+#endif
                     })
-            }
 
-            Section {
                 Button {
                     openURL(URL(string: "https://discarded")!) { accepted in
                         showDiscarded = !accepted
@@ -78,18 +78,17 @@ private struct Demo: View {
 
             if #available(iOS 15, macOS 11, *) {
                 Section {
-
                     Link("Backports", destination: URL(string: "https://github.com/shaps80/SwiftUIPlus")!)
+#if os(iOS)
                         .environment(\.openURL, .init { url in
                                 .safari(url) { config in
                                     config.tintColor = .red
                                     config.dismissStyle = .close
                                     config.prefersReader = true
                                     config.barCollapsingEnabled = false
-                                    config.presentationStyle = .sheet
                                 }
                         })
-
+#endif
                 }
             }
         }
