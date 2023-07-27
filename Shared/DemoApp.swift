@@ -3,14 +3,17 @@ import SwiftUIBackports
 import PhotosUI
 
 struct RootView: View {
+    @State private var showInspectorOutsideNavigation: Bool = false
+
     var body: some View {
         NavigationView {
-            List {
+            Form {
                 Backport.Section("Backports") {
                     Group {
                         AsyncImageDemo()
                         AppStorageDemo()
                         DismissDemo()
+//                        InspectorDemo(showInspectorOutsideNavigation: $showInspectorOutsideNavigation)
                         LabelDemo()
                         LabeledContentDemo()
                         NavigationDemo()
@@ -19,7 +22,7 @@ struct RootView: View {
                     }
 
                     Group {
-                        PhaseAnimatorDemo()
+//                        PhaseAnimatorDemo()
                         ProgressDemo()
                         QuicklookDemo()
                         RequestReviewDemo()
@@ -65,11 +68,15 @@ struct RootView: View {
                     WebViewDemo()
                 }
             }
+            .formStyle()
             .backport.navigationTitle("Demos")
 
             Text("Select a Demo")
                 .foregroundColor(.secondary)
         }
+//        .backport.inspector(isPresented: $showInspectorOutsideNavigation) {
+//            InspectorDetail()
+//        }
     }
 }
 

@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 import SwiftUIPlus
+import SafariServices
 
 struct OpenURLDemo: View {
     var body: some View {
@@ -34,17 +35,21 @@ private struct Demo: View {
                     Text("Shaps Benkau")
                 }
 
-                Backport.Link("In-app Safari", destination: URL(string: "https://github.com/shaps80/SwiftUIBackports")!)
-                    .environment(\.backportOpenURL, .init { url in
+                if #available(iOS 15, tvOS 15, macOS 12, watchOS 8, *) {
+                    Backport.Link("In-app Safari", destination: URL(string: "https://github.com/shaps80/SwiftUIBackports")!)
+                        .environment(\.backportOpenURL, .init { url in
 #if os(iOS)
-                        .safari(url) { config in
-                            config.tintColor = .red
-                            config.dismissStyle = .close
-                            config.prefersReader = true
-                            config.barCollapsingEnabled = false
-                        }
+                                .safari(url) { config in
+                                    config.tintColor = .red
+                                    config.dismissStyle = .close
+                                    config.prefersReader = true
+                                    config.barCollapsingEnabled = false
+                                }
+#else
+                                .systemAction
 #endif
-                    })
+                        })
+                }
 
                 Button {
                     openURL(URL(string: "https://discarded")!) { accepted in
