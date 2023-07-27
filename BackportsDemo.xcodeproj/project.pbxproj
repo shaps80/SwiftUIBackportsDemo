@@ -46,6 +46,8 @@
 		5468DE3C299AE433000DAE7D /* UTType+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE39299AE433000DAE7D /* UTType+All.swift */; };
 		5468DE3D299AE433000DAE7D /* UTType+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE3A299AE433000DAE7D /* UTType+Image.swift */; };
 		5468DE3E299AE433000DAE7D /* UTType+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE3A299AE433000DAE7D /* UTType+Image.swift */; };
+		546C774A2A72B5CD00A664C8 /* TipsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C77492A72B5CD00A664C8 /* TipsDemo.swift */; };
+		546C774B2A72B5CD00A664C8 /* TipsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C77492A72B5CD00A664C8 /* TipsDemo.swift */; };
 		54721CA328E5882900D8FF6F /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */; };
 		54721CA428E5882900D8FF6F /* ShareLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */; };
 		5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */; };
@@ -133,6 +135,7 @@
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		5468DE39299AE433000DAE7D /* UTType+All.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+All.swift"; sourceTree = "<group>"; };
 		5468DE3A299AE433000DAE7D /* UTType+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+Image.swift"; sourceTree = "<group>"; };
+		546C77492A72B5CD00A664C8 /* TipsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDemo.swift; sourceTree = "<group>"; };
 		54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkDemo.swift; sourceTree = "<group>"; };
 		5485637F29818AAD0056A6C2 /* PasteButtonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonDemo.swift; sourceTree = "<group>"; };
 		5496022E2873267700C96E44 /* RequestReviewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewDemo.swift; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 				5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */,
 				54721CA228E5882900D8FF6F /* ShareLinkDemo.swift */,
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
+				546C77492A72B5CD00A664C8 /* TipsDemo.swift */,
 				5441516F2989288E00842CF4 /* ToolBarBackgroundDemo.swift */,
 				5415EDA829954EF000D79822 /* UniformTypesDemo.swift */,
 				54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */,
@@ -394,7 +398,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					5455309F28660AFD00BA482D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -495,6 +499,7 @@
 				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54B199E12A0A43B200CF41A9 /* LinkDemo.swift in Sources */,
+				546C774B2A72B5CD00A664C8 /* TipsDemo.swift in Sources */,
 				5496024B2873428900C96E44 /* RequestReviewDemo.swift in Sources */,
 				549602422873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
 				54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */,
@@ -511,6 +516,7 @@
 			files = (
 				549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */,
 				54CC032F2A680A6100B738AE /* FormStyle.swift in Sources */,
+				546C774A2A72B5CD00A664C8 /* TipsDemo.swift in Sources */,
 				54A7E5352872F3D600E195AD /* LeadingAligned.swift in Sources */,
 				54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
 				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
@@ -556,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -589,6 +596,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -615,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -648,6 +657,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
