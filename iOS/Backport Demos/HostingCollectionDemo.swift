@@ -10,6 +10,9 @@ struct HostingCollectionDemo: View {
             Demo()
                 .backport.navigationTitle("CollectionView")
         } label: {
+            if #available(macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("CollectionView")
         }
     }

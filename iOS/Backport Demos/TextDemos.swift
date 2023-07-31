@@ -7,6 +7,9 @@ struct TextDemos: View {
         NavigationLink {
             Demo()
         } label: {
+            if #available(macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Text Additions")
         }
     }
@@ -19,7 +22,7 @@ private struct Demo: View {
     @State private var textEditor: String = "iOS 16 TextEditor"
 
     var body: some View {
-        Form {
+        List {
             Section {
                 TextField("Placeholder", text: $textField)
                     .backport.onSubmit {

@@ -16,6 +16,9 @@ struct OpenURLDemo: View {
                     }
                 })
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Open URL")
         }
     }
@@ -27,7 +30,7 @@ private struct Demo: View {
     @State private var showHandled: Bool = false
 
     var body: some View {
-        Form {
+        List {
             Backport.Section("Backports") {
                 Button {
                     openURL(URL(string: "https://benkau.com")!)

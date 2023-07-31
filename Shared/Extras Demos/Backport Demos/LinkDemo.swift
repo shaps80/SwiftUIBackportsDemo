@@ -7,6 +7,9 @@ struct LinkDemo: View {
             Demo()
                 .backport.navigationTitle("Link")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Link")
         }
     }
@@ -14,7 +17,7 @@ struct LinkDemo: View {
 
 private struct Demo: View {
     var body: some View {
-        Form {
+        List {
             Backport.Link("Shaps Benkau", destination: URL(string: "https://benkau.com")!)
                 .environment(\.backportOpenURL, Backport.OpenURLAction { url in
                     print("Open \(url)")

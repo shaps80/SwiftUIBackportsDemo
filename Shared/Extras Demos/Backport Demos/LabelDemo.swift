@@ -7,6 +7,9 @@ struct LabelDemo: View {
             Demo()
                 .backport.navigationTitle("Label")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Label")
         }
     }

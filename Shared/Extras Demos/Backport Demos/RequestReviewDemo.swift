@@ -7,6 +7,9 @@ struct RequestReviewDemo: View {
             Demo()
                 .backport.navigationTitle("Request Review")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Request Review")
         }
     }

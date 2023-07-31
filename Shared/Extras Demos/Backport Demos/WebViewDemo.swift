@@ -9,6 +9,9 @@ struct WebViewDemo: View {
                 .navigationBarTitle(Text("Web View"), displayMode: .inline)
 #endif
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Web View")
         }
     }

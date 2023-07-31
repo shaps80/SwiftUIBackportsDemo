@@ -8,6 +8,9 @@ struct PhotosPickerDemo: View {
         NavigationLink {
             PhotosDemoView()
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("PhotosPicker")
         }
     }

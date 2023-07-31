@@ -59,7 +59,11 @@ struct PresentationDemo: View {
                         )
                 }
             }
+            .backport.navigationTitle("Presentation")
         } label: {
+            if #available(macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Presentation")
         }
     }

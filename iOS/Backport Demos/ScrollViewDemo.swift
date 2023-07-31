@@ -7,6 +7,9 @@ struct ScrollViewDemo: View {
             Demo()
                 .backport.navigationTitle("ScrollView")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("ScrollView")
         }
     }

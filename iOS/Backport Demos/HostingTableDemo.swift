@@ -10,6 +10,9 @@ struct HostingTableDemo: View {
             Demo()
                 .backport.navigationTitle("TableView")
         } label: {
+            if #available(macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("TableView")
         }
     }

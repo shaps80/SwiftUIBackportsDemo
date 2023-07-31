@@ -42,6 +42,8 @@
 		545530AA28660AFD00BA482D /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455309928660AFC00BA482D /* DemoApp.swift */; };
 		545530AD28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
 		545530AE28660AFD00BA482D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455309B28660AFD00BA482D /* Assets.xcassets */; };
+		5459105E2A78551900DC5FE2 /* Backport+ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459105D2A78551900DC5FE2 /* Backport+ButtonStyle.swift */; };
+		5459105F2A78551900DC5FE2 /* Backport+ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459105D2A78551900DC5FE2 /* Backport+ButtonStyle.swift */; };
 		5468DE3B299AE433000DAE7D /* UTType+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE39299AE433000DAE7D /* UTType+All.swift */; };
 		5468DE3C299AE433000DAE7D /* UTType+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE39299AE433000DAE7D /* UTType+All.swift */; };
 		5468DE3D299AE433000DAE7D /* UTType+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468DE3A299AE433000DAE7D /* UTType+Image.swift */; };
@@ -133,6 +135,7 @@
 		545530A028660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A628660AFD00BA482D /* BackportsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545530A828660AFD00BA482D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5459105D2A78551900DC5FE2 /* Backport+ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backport+ButtonStyle.swift"; sourceTree = "<group>"; };
 		5468DE39299AE433000DAE7D /* UTType+All.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+All.swift"; sourceTree = "<group>"; };
 		5468DE3A299AE433000DAE7D /* UTType+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UTType+Image.swift"; sourceTree = "<group>"; };
 		546C77492A72B5CD00A664C8 /* TipsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDemo.swift; sourceTree = "<group>"; };
@@ -195,6 +198,7 @@
 		5428D146286650BA009AFCD2 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				5459105D2A78551900DC5FE2 /* Backport+ButtonStyle.swift */,
 				5468DE39299AE433000DAE7D /* UTType+All.swift */,
 				5468DE3A299AE433000DAE7D /* UTType+Image.swift */,
 				54ADC53C287EABDD00113EFE /* Animation.swift */,
@@ -467,6 +471,7 @@
 				54181B252A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */,
 				54721CA328E5882900D8FF6F /* ShareLinkDemo.swift in Sources */,
 				54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */,
+				5459105E2A78551900DC5FE2 /* Backport+ButtonStyle.swift in Sources */,
 				5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */,
 				54ADC53B287DEC3A00113EFE /* HostingTableDemo.swift in Sources */,
 				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
@@ -529,6 +534,7 @@
 				5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5485638129818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */,
 				54AB0540286AE5FF00C9FB4A /* (null) in Sources */,
+				5459105F2A78551900DC5FE2 /* Backport+ButtonStyle.swift in Sources */,
 				54B199E22A0A43B200CF41A9 /* LinkDemo.swift in Sources */,
 				54ADC53E287EABFB00113EFE /* Animation.swift in Sources */,
 				544151712989288E00842CF4 /* ToolBarBackgroundDemo.swift in Sources */,
@@ -745,6 +751,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -776,6 +783,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

@@ -7,6 +7,9 @@ struct DismissDemo: View {
             Presenting()
                 .backport.navigationTitle("Dismiss")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Dismiss")
         }
     }

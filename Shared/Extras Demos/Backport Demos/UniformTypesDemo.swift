@@ -7,6 +7,9 @@ struct UniformTypesDemo: View {
         NavigationLink {
             Demo()
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Uniform Type Identifiers")
         }
     }
@@ -64,7 +67,7 @@ private struct Demo: View {
     }
 }
 
-struct TypeDetailView: View {
+private struct TypeDetailView: View {
     var type: Backport<Any>.UTType
 
     var body: some View {
@@ -102,16 +105,16 @@ struct TypeDetailView: View {
     }
 }
 
-struct LabeledContent: View {
+private struct LabeledContent: View {
     var body: AnyView
 }
 
-extension LabeledContent {
+private extension LabeledContent {
     init<Content: View>(_ title: String, @ViewBuilder content: () -> Content) {
         body = AnyView(
             VStack(alignment: .leading, spacing: 5) {
                 Text(title)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.primary)
                 content()
             }
                 .padding(.vertical, 5)
@@ -128,7 +131,7 @@ extension LabeledContent {
         body = AnyView(
             HStack {
                 Text(title)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.primary)
                 Spacer()
                 Toggle("", isOn: .constant(isOn))
                     .toggleStyle(.checkmark)
@@ -138,7 +141,7 @@ extension LabeledContent {
     }
 }
 
-struct CheckmarkStyle: ToggleStyle {
+private struct CheckmarkStyle: ToggleStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
             Circle()
@@ -150,9 +153,10 @@ struct CheckmarkStyle: ToggleStyle {
             }
         }
         .frame(width: 20, height: 20)
-        .foregroundColor(.secondary)
+        .foregroundColor(.primary)
     }
 }
-extension ToggleStyle where Self == CheckmarkStyle {
+
+private extension ToggleStyle where Self == CheckmarkStyle {
     static var checkmark: Self { .init() }
 }

@@ -7,6 +7,9 @@ struct RefreshableDemo: View {
         NavigationLink {
             DemoView()
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Refreshable")
         }
     }

@@ -7,6 +7,9 @@ struct StateObjectDemo: View {
             Demo()
                 .backport.navigationTitle("StateObject")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("StateObject")
         }
     }

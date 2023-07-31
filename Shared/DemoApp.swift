@@ -7,7 +7,7 @@ struct RootView: View {
 
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Backport.Section("Backports") {
                     Group {
                         AsyncImageDemo()
@@ -29,7 +29,9 @@ struct RootView: View {
                         RefreshableDemo()
                         ShareLinkDemo()
                         StateObjectDemo()
-                        TipsDemo()
+                        if #available(iOS 14, macOS 11, *) {
+                            TipsDemo()
+                        }
 //                        ToolBarBackgroundDemo()
                         UniformTypesDemo()
                     }
@@ -69,11 +71,16 @@ struct RootView: View {
                     WebViewDemo()
                 }
             }
+#if os(iOS)
             .formStyle()
-            .backport.navigationTitle("Demos")
+            .navigationBarTitle(Text("Demos"), displayMode: .inline)
+#else
+            .listStyle(.sidebar)
+#endif
 
             Text("Select a Demo")
                 .foregroundColor(.secondary)
+                .edgesIgnoringSafeArea(.all)
         }
 //        .backport.inspector(isPresented: $showInspectorOutsideNavigation) {
 //            InspectorDetail()
@@ -82,8 +89,7 @@ struct RootView: View {
 }
 
 #if os(iOS)
-@main
-final class AppDelegate: UIResponder, UIApplicationDelegate {
+@main final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool { true }
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -109,7 +115,15 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .toolbar {
+                    Button("") { }
+                        .disabled(true)
+                        .opacity(0)
+                        .allowsHitTesting(false)
+                }
         }
+        .windowToolbarStyle(.unified(showsTitle: true))
+        .windowStyle(.titleBar)
     }
 }
 #endif

@@ -7,6 +7,9 @@ struct FocusState: View {
             Demo()
                 .backport.navigationTitle("Sign In")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Focus State")
         }
     }
@@ -23,7 +26,7 @@ private struct Demo: View {
     @Backport.FocusState private var focusedField: Field?
 
     var body: some View {
-        Form {
+        List {
             TextField("Username", text: $username)
                 .backport.focused($focusedField, equals: .username)
                 .backport.submitLabel(.next)

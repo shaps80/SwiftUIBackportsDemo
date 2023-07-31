@@ -7,6 +7,9 @@ struct LabeledContentDemo: View {
             Demo()
                 .backport.navigationTitle("Labeled Content")
         } label: {
+            if #available(iOS 14, macOS 11, *) {
+                Image(systemName: "curlybraces").foregroundColor(.accentColor)
+            }
             Text("Labeled Content")
         }
     }
@@ -27,7 +30,7 @@ private struct Demo: View {
     @Backport.AppStorage("hide-labels") private var hideLabels: Bool = false
 
     var body: some View {
-        Form {
+        List {
             Section {
                 Toggle("Hide Labels", isOn: $hideLabels)
             }
