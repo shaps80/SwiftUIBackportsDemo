@@ -21,7 +21,16 @@ struct TipsDemo: View {
 private struct Demo: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Backport.TipView(Tip1())
+            if #available(iOS 15, macOS 12, *) {
+                Backport.TipView(Tip1())
+                    .backport.tipCornerRadius(30)
+                    .backport.tipBackground(.tint)
+                    .frame(maxWidth: 320)
+                    .backport.popoverTip(Tip1())
+            } else {
+                Backport.TipView(Tip1())
+                    .backport.tipCornerRadius(30)
+            }
         }
         .padding()
         .backport.task {
