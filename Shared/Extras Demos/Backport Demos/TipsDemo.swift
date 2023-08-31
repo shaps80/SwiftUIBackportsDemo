@@ -21,41 +21,40 @@ struct TipsDemo: View {
 private struct Demo: View {
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 0) {
-                if #available(iOS 17, macOS 14, *) {
-//                    TipView(Tip1())
-//                    TipView(Tip2())
-//                        .popoverTip(PopoverTip())
-                }
-
-
-
+            VStack(alignment: .leading) {
                 if #available(iOS 15, macOS 12, *) {
                     Backport.TipView(BackportTip1())
-                        .backport.popoverTip(BackportTip1())
+//                        .backport.popoverTip(BackportTip1())
                 } else {
                     Backport.TipView(BackportTip1())
                 }
+
+                if #available(iOS 17, macOS 14, *) {
+                    TipView(Tip2())
+//                        .popoverTip(PopoverTip())
+                }
             }
+//            .font(.caption.weight(.bold))
+            .frame(maxWidth: .infinity)
             .padding()
-            .backport.task {
-                do {
-                    try Backport.Tips.resetDatastore()
-                    try Backport.Tips.configure([
+        }
+        .backport.task {
+            do {
+                try Backport.Tips.resetDatastore()
+                try Backport.Tips.configure([
+                    .displayFrequency(.immediate),
+                    .datastoreLocation(.applicationDefault),
+                ])
+
+                if #available(iOS 17, macOS 14, *) {
+                    try Tips.resetDatastore()
+                    try Tips.configure([
                         .displayFrequency(.immediate),
                         .datastoreLocation(.applicationDefault),
                     ])
-
-                    if #available(iOS 17, macOS 14, *) {
-                        try Tips.resetDatastore()
-                        try Tips.configure([
-                            .displayFrequency(.immediate),
-                            .datastoreLocation(.applicationDefault),
-                        ])
-                    }
-                } catch {
-                    print(error)
                 }
+            } catch {
+                print(error)
             }
         }
     }
@@ -66,8 +65,9 @@ import TipKit
 #endif
 @available(iOS 17, macOS 14, *)
 struct PopoverTip: TipKit.Tip {
-    var id: String { "get.started" }
+    var id: String { "popover" }
     var title: Text { .init("Welcome") }
+    var image: Image? { Image(systemName: "star") }
 
     var message: Text? {
         Text("Foobar?")
@@ -88,6 +88,7 @@ struct PopoverTip: TipKit.Tip {
 struct Tip1: TipKit.Tip {
     var id: String { "get.started.1" }
     var title: Text { .init("Welcome") }
+    var image: Image? { Image(systemName: "star") }
 
     var message: Text? {
         Text("Foobar?")
@@ -106,8 +107,9 @@ struct Tip1: TipKit.Tip {
 
 @available(iOS 17, macOS 14, *)
 struct Tip2: TipKit.Tip {
-    var id: String { "get.started.2" }
+    var id: String { "tip.2" }
     var title: Text { .init("Welcome") }
+    var image: Image? { Image(systemName: "star") }
 
     var message: Text? {
         Text("Foobar?")
@@ -124,9 +126,11 @@ struct Tip2: TipKit.Tip {
     }
 }
 
+@available(iOS 13, macOS 11, *)
 struct BackportTip1: BackportTip {
     var id: String { "get.started" }
     var title: Text { .init("Welcome") }
+    var image: Image? { Image(systemName: "star") }
 
     var message: Text? {
         Text("Foobar?")
