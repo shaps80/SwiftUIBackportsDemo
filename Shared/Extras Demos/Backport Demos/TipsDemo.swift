@@ -23,13 +23,12 @@ private struct Demo: View {
         VStack(alignment: .leading, spacing: 20) {
             if #available(iOS 15, macOS 12, *) {
                 Backport.TipView(Tip1())
-                    .backport.tipCornerRadius(30)
-                    .backport.tipBackground(.tint)
+                    .backport.tipBackground(.tint.opacity(0.1))
                     .frame(maxWidth: 320)
                     .backport.popoverTip(Tip1())
             } else {
                 Backport.TipView(Tip1())
-                    .backport.tipCornerRadius(30)
+                    .backport.tipBackground(color: .accentColor.opacity(0.1))
             }
         }
         .padding()
