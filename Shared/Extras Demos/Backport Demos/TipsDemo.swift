@@ -2,6 +2,9 @@ import SwiftUI
 import SwiftUIBackports
 import SwiftBackports
 
+import CoreData
+import CloudKit
+
 @available(iOS 13, macOS 11, *)
 struct TipsDemo: View {
     var body: some View {
@@ -22,37 +25,33 @@ private struct Demo: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                if #available(iOS 15, macOS 12, *) {
-                    Backport.TipView(BackportTip1())
-//                        .backport.popoverTip(BackportTip1())
-                } else {
-                    Backport.TipView(BackportTip1())
-                }
+                Backport.TipView(BackportTip1())
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            BackportTip1().invalidate(reason: .tipClosed)
+                        }
+                    }
 
-                if #available(iOS 17, macOS 14, *) {
-                    TipView(Tip2())
-//                        .popoverTip(PopoverTip())
-                }
+#if canImport(TipKit)
+//                if #available(iOS 17, macOS 14, *) {
+//                    TipView(Tip1())
+//                }
+#endif
+
+                Text("Content goes here...")
             }
-//            .font(.caption.weight(.bold))
             .frame(maxWidth: .infinity)
             .padding()
         }
-        .backport.task {
+        .onAppear {
             do {
                 try Backport.Tips.resetDatastore()
-                try Backport.Tips.configure([
-                    .displayFrequency(.immediate),
-                    .datastoreLocation(.applicationDefault),
-                ])
+                try Backport.Tips.configure()
 
-                if #available(iOS 17, macOS 14, *) {
-                    try Tips.resetDatastore()
-                    try Tips.configure([
-                        .displayFrequency(.immediate),
-                        .datastoreLocation(.applicationDefault),
-                    ])
-                }
+//                if #available(iOS 17, macOS 14, *) {
+////                    try Tips.resetDatastore()
+//                    try Tips.configure()
+//                }
             } catch {
                 print(error)
             }
@@ -62,27 +61,6 @@ private struct Demo: View {
 
 #if canImport(TipKit)
 import TipKit
-#endif
-@available(iOS 17, macOS 14, *)
-struct PopoverTip: TipKit.Tip {
-    var id: String { "popover" }
-    var title: Text { .init("Welcome") }
-    var image: Image? { Image(systemName: "star") }
-
-    var message: Text? {
-        Text("Foobar?")
-    }
-
-    var actions: [Action] {
-        Action(title: "Foo 1")
-        Action(title: "Bar 2")
-    }
-
-    var options: [Option] {
-        MaxDisplayCount(.max)
-        IgnoresDisplayFrequency(true)
-    }
-}
 
 @available(iOS 17, macOS 14, *)
 struct Tip1: TipKit.Tip {
@@ -96,35 +74,13 @@ struct Tip1: TipKit.Tip {
 
     var actions: [Action] {
         Action(title: "Foo 1")
-        Action(title: "Bar 2")
     }
 
     var options: [Option] {
-        MaxDisplayCount(.max)
-        IgnoresDisplayFrequency(true)
+        MaxDisplayCount(2)
     }
 }
-
-@available(iOS 17, macOS 14, *)
-struct Tip2: TipKit.Tip {
-    var id: String { "tip.2" }
-    var title: Text { .init("Welcome") }
-    var image: Image? { Image(systemName: "star") }
-
-    var message: Text? {
-        Text("Foobar?")
-    }
-
-    var actions: [Action] {
-        Action(title: "Foo 1")
-        Action(title: "Bar 2")
-    }
-
-    var options: [Option] {
-        MaxDisplayCount(.max)
-        IgnoresDisplayFrequency(true)
-    }
-}
+#endif
 
 @available(iOS 13, macOS 11, *)
 struct BackportTip1: BackportTip {
@@ -142,8 +98,7 @@ struct BackportTip1: BackportTip {
     }
 
     var options: [Option] {
-        MaxDisplayCount(.max)
-        IgnoresDisplayFrequency(true)
+        MaxDisplayCount(2)
     }
 
 //    @Parameter(isTransient: true, customID: "foo")

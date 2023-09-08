@@ -168,6 +168,7 @@
 		54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemo.swift; sourceTree = "<group>"; };
 		54CC032A2A67F65600B738AE /* InspectorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorDemo.swift; sourceTree = "<group>"; };
 		54CC032D2A680A6100B738AE /* FormStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormStyle.swift; sourceTree = "<group>"; };
+		54DAB6D42AA5ED05002E2A8B /* Demo (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Demo (iOS).entitlements"; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +259,7 @@
 			children = (
 				543F19D5286E00DF00518DB2 /* Backport Demos */,
 				5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */,
+				54DAB6D42AA5ED05002E2A8B /* Demo (iOS).entitlements */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -684,6 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS/Demo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
@@ -701,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.152percent.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -716,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS/Demo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
@@ -733,7 +737,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.152percent.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -768,7 +772,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.152percent.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -800,7 +804,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.152percent.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
