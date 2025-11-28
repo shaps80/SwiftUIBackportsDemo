@@ -180,8 +180,15 @@
 		5428D14D28666D5B009AFCD2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				543F19D5286E00DF00518DB2 /* Backport Demos */,
 				5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */,
+				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
+				54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */,
+				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
+				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
+				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
+				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
+				54ADF8732A0912950079B5FA /* TextDemos.swift */,
+				54ADF8752A09224C0079B5FA /* FocusState.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -210,21 +217,6 @@
 				5415EDA829954EF000D79822 /* UniformTypesDemo.swift */,
 			);
 			path = Demos;
-			sourceTree = "<group>";
-		};
-		543F19D5286E00DF00518DB2 /* Backport Demos */ = {
-			isa = PBXGroup;
-			children = (
-				54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */,
-				54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */,
-				543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */,
-				54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */,
-				540287A02981CCAC00E7E252 /* PhotosPickerDemo.swift */,
-				544A24502874956800CE4B76 /* ScrollViewDemo.swift */,
-				54ADF8732A0912950079B5FA /* TextDemos.swift */,
-				54ADF8752A09224C0079B5FA /* FocusState.swift */,
-			);
-			path = "Backport Demos";
 			sourceTree = "<group>";
 		};
 		5455309328660AFC00BA482D = {
