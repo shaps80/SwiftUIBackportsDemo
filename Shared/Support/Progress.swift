@@ -7,6 +7,7 @@ struct Progress: View {
     var body: some View {
         if visibility == .visible {
             Backport.ProgressView()
+                .backport.progressViewStyle(.linear)
         }
     }
 }

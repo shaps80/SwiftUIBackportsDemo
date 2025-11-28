@@ -35,7 +35,6 @@
 //                showCustom = true
 //            }
 //        }
-//        .formStyle()
 //        .sheet(isPresented: $showCustom) {
 //            GeometryReader { _ in
 //                ZStack {
@@ -90,7 +89,6 @@
 //                Text("Item \(index + 1)")
 //            }
 //        }
-//        .formStyle()
 //        .extendedPresentation()
 //        .navigationBarItems(trailing: Image(systemName: "info.circle"))
 //    }

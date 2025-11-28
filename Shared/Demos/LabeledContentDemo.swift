@@ -27,7 +27,7 @@ private struct Demo: View {
     @Backport.AppStorage("hide-labels") private var hideLabels: Bool = false
 
     var body: some View {
-        Form {
+        List {
             Section {
                 Toggle("Hide Labels", isOn: $hideLabels)
             }

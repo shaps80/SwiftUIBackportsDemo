@@ -3,17 +3,14 @@ import SwiftUIBackports
 import PhotosUI
 
 struct RootView: View {
-    @State private var showInspectorOutsideNavigation: Bool = false
-
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Backport.Section("Backports") {
                     Group {
                         AsyncImageDemo()
                         AppStorageDemo()
                         DismissDemo()
-//                        InspectorDemo(showInspectorOutsideNavigation: $showInspectorOutsideNavigation)
                         LabelDemo()
                         LabeledContentDemo()
                         NavigationDemo()
@@ -22,14 +19,12 @@ struct RootView: View {
                     }
 
                     Group {
-//                        PhaseAnimatorDemo()
                         ProgressDemo()
                         QuicklookDemo()
                         RequestReviewDemo()
                         RefreshableDemo()
                         ShareLinkDemo()
                         StateObjectDemo()
-//                        ToolBarBackgroundDemo()
                         UniformTypesDemo()
                     }
                 }
@@ -61,22 +56,12 @@ struct RootView: View {
                     }
                 }
 #endif
-
-                Backport.Section("Extras") {
-                    FittingGeometryReaderDemo()
-                    FittingScrollViewDemo()
-                    WebViewDemo()
-                }
             }
-            .formStyle()
             .backport.navigationTitle("Demos")
 
             Text("Select a Demo")
                 .foregroundColor(.secondary)
         }
-//        .backport.inspector(isPresented: $showInspectorOutsideNavigation) {
-//            InspectorDetail()
-//        }
     }
 }
 
@@ -97,7 +82,6 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.rootViewController = UIHostingController(
             rootView: RootView()
-//            rootView: WebViewDemo()
         )
         window?.makeKeyAndVisible()
     }
@@ -108,6 +92,18 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .hiddenToolbarBackground()
+        }
+    }
+}
+
+extension View {
+    @ViewBuilder
+    func hiddenToolbarBackground() -> some View {
+        if #available(iOS 18, tvOS 18, macOS 15, watchOS 11, *) {
+            toolbarBackgroundVisibility(.hidden, for: .windowToolbar)
+        } else {
+            self
         }
     }
 }

@@ -19,7 +19,7 @@ private struct Demo: View {
     @State private var textEditor: String = "iOS 16 TextEditor"
 
     var body: some View {
-        Form {
+        List {
             Section {
                 TextField("Placeholder", text: $textField)
                     .backport.onSubmit {

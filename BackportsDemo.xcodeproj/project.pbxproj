@@ -12,13 +12,9 @@
 		5415EDAA29954EF000D79822 /* UniformTypesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415EDA829954EF000D79822 /* UniformTypesDemo.swift */; };
 		54181B252A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */; };
 		54181B262A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */; };
-		541BF7782A0A9D6A008F1D56 /* SwiftBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 541BF7772A0A9D6A008F1D56 /* SwiftBackports */; };
-		541BF77A2A0A9D72008F1D56 /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 541BF7792A0A9D72008F1D56 /* SwiftUIPlus */; };
 		5428D13B28661F71009AFCD2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */; };
 		5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
 		5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */; };
-		5428D1442866504D009AFCD2 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D1432866504D009AFCD2 /* Chevron.swift */; };
-		5428D1452866504D009AFCD2 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D1432866504D009AFCD2 /* Chevron.swift */; };
 		5428D14A286654A6009AFCD2 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
 		5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D152286678B7009AFCD2 /* AppStorageDemo.swift */; };
 		5428D154286678B7009AFCD2 /* AppStorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D152286678B7009AFCD2 /* AppStorageDemo.swift */; };
@@ -28,10 +24,6 @@
 		5428D15A286685E9009AFCD2 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D158286685E9009AFCD2 /* Progress.swift */; };
 		5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */; };
 		5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */; };
-		5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
-		5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */; };
-		5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
-		5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */; };
 		543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D1286DEED000518DB2 /* StateObjectDemo.swift */; };
 		543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */; };
@@ -68,7 +60,6 @@
 		5496024A2873428200C96E44 /* OpenURLDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549602312873278A00C96E44 /* OpenURLDemo.swift */; };
 		5496024B2873428900C96E44 /* RequestReviewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496022E2873267700C96E44 /* RequestReviewDemo.swift */; };
 		54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */; };
-		54A7E5352872F3D600E195AD /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54A7E5372873176300E195AD /* DismissDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5362873176300E195AD /* DismissDemo.swift */; };
 		54AB053F286AE5FF00C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		54AB0540286AE5FF00C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -76,32 +67,19 @@
 		54AB054A286AF7E900C9FB4A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
 		54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */; };
-		54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
-		54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB0550286B0D6300C9FB4A /* Titled.swift */; };
 		54AC6BA12A0A586200F5CA3F /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AC6BA02A0A586200F5CA3F /* SwiftUIBackports */; };
 		54AC6BA32A0A586800F5CA3F /* SwiftUIBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54AC6BA22A0A586800F5CA3F /* SwiftUIBackports */; };
 		54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
 		54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */; };
 		54ADC53B287DEC3A00113EFE /* HostingTableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */; };
-		54ADC53D287EABDD00113EFE /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53C287EABDD00113EFE /* Animation.swift */; };
-		54ADC53E287EABFB00113EFE /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53C287EABDD00113EFE /* Animation.swift */; };
-		54ADC540287EAC5300113EFE /* MatchedGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */; };
-		54ADC541287EAC5300113EFE /* MatchedGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */; };
 		54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428D149286654A6009AFCD2 /* Checkmark.swift */; };
-		54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7E5332872F3D600E195AD /* LeadingAligned.swift */; };
 		54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADF8732A0912950079B5FA /* TextDemos.swift */; };
 		54ADF8762A09224C0079B5FA /* FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADF8752A09224C0079B5FA /* FocusState.swift */; };
-		54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 54AF14A62A06FB5400228D6B /* SwiftUIPlus */; };
 		54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */; };
 		54B199E12A0A43B200CF41A9 /* LinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B199E02A0A43B200CF41A9 /* LinkDemo.swift */; };
 		54B199E22A0A43B200CF41A9 /* LinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B199E02A0A43B200CF41A9 /* LinkDemo.swift */; };
-		54C36BE22A0A8DA600FC62EB /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */; };
-		54C36BE32A0A8DA600FC62EB /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */; };
-		54C36BE52A0A9CB600FC62EB /* SwiftBackports in Frameworks */ = {isa = PBXBuildFile; productRef = 54C36BE42A0A9CB600FC62EB /* SwiftBackports */; };
 		54CC032B2A67F65600B738AE /* InspectorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC032A2A67F65600B738AE /* InspectorDemo.swift */; };
 		54CC032C2A67F65600B738AE /* InspectorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC032A2A67F65600B738AE /* InspectorDemo.swift */; };
-		54CC032E2A680A6100B738AE /* FormStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC032D2A680A6100B738AE /* FormStyle.swift */; };
-		54CC032F2A680A6100B738AE /* FormStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC032D2A680A6100B738AE /* FormStyle.swift */; };
 		54FEADAF286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 		54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */; };
 /* End PBXBuildFile section */
@@ -112,15 +90,12 @@
 		54181B242A3B1A9B007D14FF /* PhaseAnimatorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseAnimatorDemo.swift; sourceTree = "<group>"; };
 		5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5428D13D28664CBF009AFCD2 /* PresentationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDemo.swift; sourceTree = "<group>"; };
-		5428D1432866504D009AFCD2 /* Chevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chevron.swift; sourceTree = "<group>"; };
 		5428D149286654A6009AFCD2 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
 		5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--iOS--Info.plist"; sourceTree = "<group>"; };
 		5428D152286678B7009AFCD2 /* AppStorageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageDemo.swift; sourceTree = "<group>"; };
 		5428D15528668485009AFCD2 /* RefreshableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableDemo.swift; sourceTree = "<group>"; };
 		5428D158286685E9009AFCD2 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		5428D15B28668A02009AFCD2 /* ScaledMetricDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricDemo.swift; sourceTree = "<group>"; };
-		5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingGeometryReaderDemo.swift; sourceTree = "<group>"; };
-		5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingScrollViewDemo.swift; sourceTree = "<group>"; };
 		542DE01B286DDEE200D9107A /* Demo--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo--macOS--Info.plist"; sourceTree = "<group>"; };
 		543F19D1286DEED000518DB2 /* StateObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectDemo.swift; sourceTree = "<group>"; };
 		543F19D6286E00EA00518DB2 /* HostingCollectionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingCollectionDemo.swift; sourceTree = "<group>"; };
@@ -144,24 +119,17 @@
 		549602412873423A00C96E44 /* AsyncImageDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		549602442873424600C96E44 /* NavigationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		54A7E52F2872DCCC00E195AD /* DynamicTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeDemo.swift; sourceTree = "<group>"; };
-		54A7E5332872F3D600E195AD /* LeadingAligned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAligned.swift; sourceTree = "<group>"; };
 		54A7E5362873176300E195AD /* DismissDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissDemo.swift; sourceTree = "<group>"; };
 		54AB054D286B0C5A00C9FB4A /* ProgressDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemo.swift; sourceTree = "<group>"; };
-		54AB0550286B0D6300C9FB4A /* Titled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titled.swift; sourceTree = "<group>"; };
 		54ADC537287DC9E000113EFE /* LabeledContentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledContentDemo.swift; sourceTree = "<group>"; };
 		54ADC53A287DEC3A00113EFE /* HostingTableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTableDemo.swift; sourceTree = "<group>"; };
-		54ADC53C287EABDD00113EFE /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometry.swift; sourceTree = "<group>"; };
 		54ADF8732A0912950079B5FA /* TextDemos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemos.swift; sourceTree = "<group>"; };
 		54ADF8752A09224C0079B5FA /* FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusState.swift; sourceTree = "<group>"; };
 		54AF14A82A06FD0900228D6B /* SwiftUIBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIBackports; path = ../SwiftUIBackports; sourceTree = "<group>"; };
 		54AF14A92A06FD0900228D6B /* SwiftBackports */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftBackports; path = ../SwiftBackports; sourceTree = "<group>"; };
-		54AF14AA2A06FD0900228D6B /* SwiftUIPlus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIPlus; path = ../SwiftUIPlus; sourceTree = "<group>"; };
 		54AF14AB2A07043B00228D6B /* TextEditorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDemo.swift; sourceTree = "<group>"; };
 		54B199E02A0A43B200CF41A9 /* LinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDemo.swift; sourceTree = "<group>"; };
-		54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemo.swift; sourceTree = "<group>"; };
 		54CC032A2A67F65600B738AE /* InspectorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorDemo.swift; sourceTree = "<group>"; };
-		54CC032D2A680A6100B738AE /* FormStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormStyle.swift; sourceTree = "<group>"; };
 		54FEADAE286D9E6A0079AC74 /* LabelDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,8 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AC6BA12A0A586200F5CA3F /* SwiftUIBackports in Frameworks */,
-				541BF77A2A0A9D72008F1D56 /* SwiftUIPlus in Frameworks */,
-				54C36BE52A0A9CB600FC62EB /* SwiftBackports in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AC6BA32A0A586800F5CA3F /* SwiftUIBackports in Frameworks */,
-				541BF7782A0A9D6A008F1D56 /* SwiftBackports in Frameworks */,
-				54AF14A72A06FB5400228D6B /* SwiftUIPlus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,19 +158,32 @@
 			children = (
 				5468DE39299AE433000DAE7D /* UTType+All.swift */,
 				5468DE3A299AE433000DAE7D /* UTType+Image.swift */,
-				54ADC53C287EABDD00113EFE /* Animation.swift */,
 				5428D149286654A6009AFCD2 /* Checkmark.swift */,
-				5428D1432866504D009AFCD2 /* Chevron.swift */,
-				54A7E5332872F3D600E195AD /* LeadingAligned.swift */,
-				54ADC53F287EAC5300113EFE /* MatchedGeometry.swift */,
 				5428D158286685E9009AFCD2 /* Progress.swift */,
-				54AB0550286B0D6300C9FB4A /* Titled.swift */,
-				54CC032D2A680A6100B738AE /* FormStyle.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
 		};
-		5428D147286650C0009AFCD2 /* Backport Demos */ = {
+		5428D14828665102009AFCD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5496023728733B9800C96E44 /* Images */,
+				5455309B28660AFD00BA482D /* Assets.xcassets */,
+				5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5428D14D28666D5B009AFCD2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				543F19D5286E00DF00518DB2 /* Backport Demos */,
+				5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5428D15F2866958D009AFCD2 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
 				5428D152286678B7009AFCD2 /* AppStorageDemo.swift */,
@@ -230,38 +207,8 @@
 				543F19D1286DEED000518DB2 /* StateObjectDemo.swift */,
 				5441516F2989288E00842CF4 /* ToolBarBackgroundDemo.swift */,
 				5415EDA829954EF000D79822 /* UniformTypesDemo.swift */,
-				54C36BE12A0A8DA600FC62EB /* WebViewDemo.swift */,
 			);
-			path = "Backport Demos";
-			sourceTree = "<group>";
-		};
-		5428D14828665102009AFCD2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5496023728733B9800C96E44 /* Images */,
-				5455309B28660AFD00BA482D /* Assets.xcassets */,
-				5428D13A28661F71009AFCD2 /* Launch Screen.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5428D14D28666D5B009AFCD2 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				543F19D5286E00DF00518DB2 /* Backport Demos */,
-				5428D14C286663C1009AFCD2 /* Demo--iOS--Info.plist */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		5428D15F2866958D009AFCD2 /* Extras Demos */ = {
-			isa = PBXGroup;
-			children = (
-				5428D147286650C0009AFCD2 /* Backport Demos */,
-				5428D160286695AC009AFCD2 /* FittingGeometryReaderDemo.swift */,
-				5428D163286695BC009AFCD2 /* FittingScrollViewDemo.swift */,
-			);
-			path = "Extras Demos";
+			path = Demos;
 			sourceTree = "<group>";
 		};
 		543F19D5286E00DF00518DB2 /* Backport Demos */ = {
@@ -284,7 +231,6 @@
 			children = (
 				54AF14A92A06FD0900228D6B /* SwiftBackports */,
 				54AF14A82A06FD0900228D6B /* SwiftUIBackports */,
-				54AF14AA2A06FD0900228D6B /* SwiftUIPlus */,
 				5455309828660AFC00BA482D /* Shared */,
 				5428D14D28666D5B009AFCD2 /* iOS */,
 				545530A728660AFD00BA482D /* macOS */,
@@ -298,7 +244,7 @@
 			children = (
 				5428D14828665102009AFCD2 /* Resources */,
 				5428D146286650BA009AFCD2 /* Support */,
-				5428D15F2866958D009AFCD2 /* Extras Demos */,
+				5428D15F2866958D009AFCD2 /* Demos */,
 				5455309928660AFC00BA482D /* DemoApp.swift */,
 			);
 			path = Shared;
@@ -357,8 +303,6 @@
 			name = "Demo (iOS)";
 			packageProductDependencies = (
 				54AC6BA02A0A586200F5CA3F /* SwiftUIBackports */,
-				54C36BE42A0A9CB600FC62EB /* SwiftBackports */,
-				541BF7792A0A9D72008F1D56 /* SwiftUIPlus */,
 			);
 			productName = "SwiftUIBackportsDemo (iOS)";
 			productReference = 545530A028660AFD00BA482D /* BackportsDemo.app */;
@@ -378,9 +322,7 @@
 			);
 			name = "Demo (macOS)";
 			packageProductDependencies = (
-				54AF14A62A06FB5400228D6B /* SwiftUIPlus */,
 				54AC6BA22A0A586800F5CA3F /* SwiftUIBackports */,
-				541BF7772A0A9D6A008F1D56 /* SwiftBackports */,
 			);
 			productName = "SwiftUIBackportsDemo (macOS)";
 			productReference = 545530A628660AFD00BA482D /* BackportsDemo.app */;
@@ -394,7 +336,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					5455309F28660AFD00BA482D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -414,7 +356,6 @@
 			);
 			mainGroup = 5455309328660AFC00BA482D;
 			packageReferences = (
-				548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */,
 			);
 			productRefGroup = 545530A128660AFD00BA482D /* Products */;
 			projectDirPath = "";
@@ -465,7 +406,6 @@
 				54A7E5302872DCCC00E195AD /* DynamicTypeDemo.swift in Sources */,
 				5485638029818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */,
 				54ADC53B287DEC3A00113EFE /* HostingTableDemo.swift in Sources */,
-				5428D164286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				5428D13E28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				54CC032B2A67F65600B738AE /* InspectorDemo.swift in Sources */,
 				54ADC538287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
@@ -474,25 +414,19 @@
 				5428D153286678B7009AFCD2 /* AppStorageDemo.swift in Sources */,
 				5415EDA929954EF000D79822 /* UniformTypesDemo.swift in Sources */,
 				5496024A2873428200C96E44 /* OpenURLDemo.swift in Sources */,
-				54ADC540287EAC5300113EFE /* MatchedGeometry.swift in Sources */,
 				54AF14AC2A07043B00228D6B /* TextEditorDemo.swift in Sources */,
 				544151702989288E00842CF4 /* ToolBarBackgroundDemo.swift in Sources */,
-				54C36BE22A0A8DA600FC62EB /* WebViewDemo.swift in Sources */,
 				54AB053F286AE5FF00C9FB4A /* (null) in Sources */,
 				5428D15628668485009AFCD2 /* RefreshableDemo.swift in Sources */,
 				543F19D7286E00EA00518DB2 /* HostingCollectionDemo.swift in Sources */,
 				5468DE3D299AE433000DAE7D /* UTType+Image.swift in Sources */,
 				549602452873424600C96E44 /* NavigationDemo.swift in Sources */,
 				5428D15C28668A02009AFCD2 /* ScaledMetricDemo.swift in Sources */,
-				54CC032E2A680A6100B738AE /* FormStyle.swift in Sources */,
 				54A7E5372873176300E195AD /* DismissDemo.swift in Sources */,
-				54ADC543287EAC5E00113EFE /* LeadingAligned.swift in Sources */,
 				54AB0549286AF7E900C9FB4A /* (null) in Sources */,
 				544A24512874956800CE4B76 /* ScrollViewDemo.swift in Sources */,
 				54ADF8762A09224C0079B5FA /* FocusState.swift in Sources */,
 				5468DE3B299AE433000DAE7D /* UTType+All.swift in Sources */,
-				5428D161286695AC009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
-				5428D1442866504D009AFCD2 /* Chevron.swift in Sources */,
 				543F19D2286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54B199E12A0A43B200CF41A9 /* LinkDemo.swift in Sources */,
 				5496024B2873428900C96E44 /* RequestReviewDemo.swift in Sources */,
@@ -500,8 +434,6 @@
 				54ADF8742A0912950079B5FA /* TextDemos.swift in Sources */,
 				54AB054E286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
 				540287A12981CCAC00E7E252 /* PhotosPickerDemo.swift in Sources */,
-				54ADC53D287EABDD00113EFE /* Animation.swift in Sources */,
-				54AB0553286B0DA700C9FB4A /* Titled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,10 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				549602302873267700C96E44 /* RequestReviewDemo.swift in Sources */,
-				54CC032F2A680A6100B738AE /* FormStyle.swift in Sources */,
-				54A7E5352872F3D600E195AD /* LeadingAligned.swift in Sources */,
 				54FEADB0286D9E6A0079AC74 /* LabelDemo.swift in Sources */,
-				5428D165286695BC009AFCD2 /* FittingScrollViewDemo.swift in Sources */,
 				54960236287339DB00C96E44 /* QuicklookDemo.swift in Sources */,
 				5428D13F28664CBF009AFCD2 /* PresentationDemo.swift in Sources */,
 				54CC032C2A67F65600B738AE /* InspectorDemo.swift in Sources */,
@@ -524,7 +453,6 @@
 				5485638129818AAD0056A6C2 /* PasteButtonDemo.swift in Sources */,
 				54AB0540286AE5FF00C9FB4A /* (null) in Sources */,
 				54B199E22A0A43B200CF41A9 /* LinkDemo.swift in Sources */,
-				54ADC53E287EABFB00113EFE /* Animation.swift in Sources */,
 				544151712989288E00842CF4 /* ToolBarBackgroundDemo.swift in Sources */,
 				5415EDAA29954EF000D79822 /* UniformTypesDemo.swift in Sources */,
 				5428D15728668485009AFCD2 /* RefreshableDemo.swift in Sources */,
@@ -532,18 +460,13 @@
 				5428D15E28668AFF009AFCD2 /* ScaledMetricDemo.swift in Sources */,
 				54AB054A286AF7E900C9FB4A /* (null) in Sources */,
 				54ADC539287DC9E000113EFE /* LabeledContentDemo.swift in Sources */,
-				54ADC541287EAC5300113EFE /* MatchedGeometry.swift in Sources */,
-				5428D162286695B0009AFCD2 /* FittingGeometryReaderDemo.swift in Sources */,
-				5428D1452866504D009AFCD2 /* Chevron.swift in Sources */,
 				549602432873423A00C96E44 /* AsyncImageDemo.swift in Sources */,
 				549602462873424600C96E44 /* NavigationDemo.swift in Sources */,
 				549602472873424E00C96E44 /* DismissDemo.swift in Sources */,
 				5468DE3C299AE433000DAE7D /* UTType+All.swift in Sources */,
 				543F19D3286DEED000518DB2 /* StateObjectDemo.swift in Sources */,
 				54AB054F286B0C5A00C9FB4A /* ProgressDemo.swift in Sources */,
-				54AB0554286B0DA700C9FB4A /* Titled.swift in Sources */,
 				54721CA428E5882900D8FF6F /* ShareLinkDemo.swift in Sources */,
-				54C36BE32A0A8DA600FC62EB /* WebViewDemo.swift in Sources */,
 				54ADC542287EAC5900113EFE /* Checkmark.swift in Sources */,
 				54181B262A3B1A9B007D14FF /* PhaseAnimatorDemo.swift in Sources */,
 			);
@@ -556,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -587,8 +511,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -606,8 +532,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -615,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -646,8 +576,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -658,8 +590,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -670,7 +605,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
@@ -702,7 +636,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS/Demo--iOS--Info.plist";
@@ -739,9 +672,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = V2CWYL9AN8;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS/Demo--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -749,13 +684,14 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -770,9 +706,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = V2CWYL9AN8;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS/Demo--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -780,13 +718,14 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benkau.SwiftUIBackportsDemo;
 				PRODUCT_NAME = BackportsDemo;
 				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -822,26 +761,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/shaps80/SwiftUIPlus";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		541BF7772A0A9D6A008F1D56 /* SwiftBackports */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftBackports;
-		};
-		541BF7792A0A9D72008F1D56 /* SwiftUIPlus */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftUIPlus;
-		};
 		54AC6BA02A0A586200F5CA3F /* SwiftUIBackports */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIBackports;
@@ -849,15 +769,6 @@
 		54AC6BA22A0A586800F5CA3F /* SwiftUIBackports */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIBackports;
-		};
-		54AF14A62A06FB5400228D6B /* SwiftUIPlus */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 548B89C729A50CE400A3D5D5 /* XCRemoteSwiftPackageReference "SwiftUIPlus" */;
-			productName = SwiftUIPlus;
-		};
-		54C36BE42A0A9CB600FC62EB /* SwiftBackports */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftBackports;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

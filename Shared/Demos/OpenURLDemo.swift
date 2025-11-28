@@ -1,6 +1,5 @@
 import SwiftUI
 import SwiftUIBackports
-import SwiftUIPlus
 import SafariServices
 
 struct OpenURLDemo: View {
@@ -27,7 +26,7 @@ private struct Demo: View {
     @State private var showHandled: Bool = false
 
     var body: some View {
-        Form {
+        List {
             Backport.Section("Backports") {
                 Button {
                     openURL(URL(string: "https://benkau.com")!)
@@ -85,7 +84,7 @@ private struct Demo: View {
                 Section {
                     Link("Backports", destination: URL(string: "https://github.com/shaps80/SwiftUIPlus")!)
 #if os(iOS)
-                        .environment(\.openURL, .init { url in
+                        .environment(\.backportOpenURL, .init { url in
                                 .safari(url) { config in
                                     config.tintColor = .red
                                     config.dismissStyle = .close

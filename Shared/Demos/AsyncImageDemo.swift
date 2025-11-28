@@ -30,10 +30,10 @@ private struct Demo: View {
                     isLoading = true
                 }
         }
+        .edgesIgnoringSafeArea(.all)
         .backport.navigationTitle("AsyncImage")
         .backport.overlay {
             Progress(visibility: isLoading ? .visible : .hidden)
         }
-        .edgesIgnoringSafeArea([.bottom, .horizontal])
     }
 }

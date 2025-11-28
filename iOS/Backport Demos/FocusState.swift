@@ -23,7 +23,7 @@ private struct Demo: View {
     @Backport.FocusState private var focusedField: Field?
 
     var body: some View {
-        Form {
+        List {
             TextField("Username", text: $username)
                 .backport.focused($focusedField, equals: .username)
                 .backport.submitLabel(.next)

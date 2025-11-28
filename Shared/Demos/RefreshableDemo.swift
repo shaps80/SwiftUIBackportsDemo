@@ -18,19 +18,23 @@ struct RefreshableView: View {
 
     var body: some View {
         Button {
-            Task {
-                isRefreshing = true
-                await refresh?()
-                isRefreshing = false
-            }
+            guard !isRefreshing else { return }
+            isRefreshing = true
         } label: {
             HStack {
-                Text("Refresh")
+                Text(isRefreshing ? "Refreshing..." : "Refresh")
+                    .padding(.vertical, 5)
                 Spacer()
                 Progress(visibility: isRefreshing ? .visible : .hidden)
+                    .frame(maxWidth: 150)
             }
         }
         .disabled(refresh == nil || isRefreshing)
+        .backport.task(id: isRefreshing) {
+            guard isRefreshing else { return }
+            await refresh?()
+            isRefreshing = false
+        }
     }
 }
 
@@ -49,6 +53,3 @@ private struct DemoView: View {
         .backport.navigationTitle("Refreshable")
     }
 }
-
-// I think this is a Swift bug, feels like I shouldn't need to do this given Bool is already Sendable.
-extension State: @unchecked Sendable where Value == Bool { }

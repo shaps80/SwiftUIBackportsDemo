@@ -24,15 +24,17 @@ private struct DemoView: View {
 
             if #available(iOS 14, *) {
                 Backport.Section("Backport") {
-                    Backport.PasteButton(supportedContentTypes: [String(kUTTypeText)]) { providers in
-                        Task {
-                            do {
-                                text = try await providers.first?.loadObject(of: String.self) ?? ""
+                    HStack {
+                        Backport.PasteButton(supportedContentTypes: [String(kUTTypeText)]) { providers in
+                            Task {
+                                do {
+                                    text = try await providers.first?.loadObject(of: String.self) ?? ""
+                                }
                             }
                         }
+
+                        PasteAsStringButton()
                     }
-                    
-                    button
                 }
             }
 
@@ -44,6 +46,8 @@ private struct DemoView: View {
                             UIPasteboard.general.string = "Shaps Benkau"
                         } label: {
                             Label("Copy", systemImage: "doc.on.doc")
+                                .foregroundColor(.white)
+                                .imageScale(.small)
                         }
                         .buttonBorderShape(.roundedRectangle)
                         .buttonStyle(.borderedProminent)
@@ -63,11 +67,11 @@ private struct DemoView: View {
             }
         }
         .backport.navigationTitle("PasteButton")
-        .navigationBarItems(trailing: button)
+        .navigationBarItems(trailing: PasteAsStringButton())
     }
 
     @ViewBuilder
-    private var button: some View {
+    private func PasteAsStringButton() -> some View {
         Backport.PasteButton(payloadType: String.self) { strings in
             text = strings[0]
         }

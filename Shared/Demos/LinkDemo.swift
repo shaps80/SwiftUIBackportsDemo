@@ -14,7 +14,7 @@ struct LinkDemo: View {
 
 private struct Demo: View {
     var body: some View {
-        Form {
+        List {
             Backport.Link("Shaps Benkau", destination: URL(string: "https://benkau.com")!)
                 .environment(\.backportOpenURL, Backport.OpenURLAction { url in
                     print("Open \(url)")
