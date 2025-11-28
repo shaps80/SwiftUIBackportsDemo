@@ -20,5 +20,4 @@ struct Demo<Content: Demonstrable>: View {
             title
         }
     }
-
 }
