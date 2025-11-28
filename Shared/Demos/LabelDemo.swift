@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct LabelDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Label")
-        } label: {
-            Text("Label")
-        }
-    }
-}
-
-private struct Demo: View {
+struct LabelDemo: Demonstrable {
     let title = "Person"
     let icon = "person.fill"
 

@@ -1,14 +1,19 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct RefreshableDemo: View {
+struct RefreshableDemo: Demonstrable {
+    @State private var isRefreshing: Bool = false
 
     var body: some View {
-        NavigationLink {
-            DemoView()
-        } label: {
-            Text("Refreshable")
+        List {
+            RefreshableView(isRefreshing: $isRefreshing)
         }
+        .backport.refreshable {
+            isRefreshing = true
+            sleep(2)
+            isRefreshing = false
+        }
+        .backport.navigationTitle("Refreshable")
     }
 }
 
@@ -35,21 +40,5 @@ struct RefreshableView: View {
             await refresh?()
             isRefreshing = false
         }
-    }
-}
-
-private struct DemoView: View {
-    @State private var isRefreshing: Bool = false
-
-    var body: some View {
-        List {
-            RefreshableView(isRefreshing: $isRefreshing)
-        }
-        .backport.refreshable {
-            isRefreshing = true
-            sleep(2)
-            isRefreshing = false
-        }
-        .backport.navigationTitle("Refreshable")
     }
 }

@@ -2,21 +2,8 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS) || os(tvOS)
-
 @available(iOS 14, *)
-struct HostingCollectionDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("CollectionView")
-        } label: {
-            Text("CollectionView")
-        }
-    }
-}
-
-@available(iOS 14, *)
-private struct Demo: View {
+struct HostingCollectionDemo: Demonstrable {
     var body: some View {
         Representable()
             .edgesIgnoringSafeArea(.all)

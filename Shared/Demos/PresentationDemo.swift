@@ -3,7 +3,7 @@ import SwiftUIBackports
 
 #if os(iOS)
 @available(iOS 14, *)
-struct PresentationDemo: View {
+struct PresentationDemo: Demonstrable {
     @State private var showSheet: Bool = false
     @State private var backgroundInteraction: Backport<Any>.PresentationBackgroundInteraction = .disabled
     @State private var contentInteraction: Backport<Any>.PresentationContentInteraction = .resizes
@@ -13,54 +13,50 @@ struct PresentationDemo: View {
     @State private var cornerRadius: CGFloat = 20
 
     var body: some View {
-        NavigationLink {
-            List {
-                Section {
-                    Picker("Background Interaction", selection: $backgroundInteraction) {
-                        Text("Disabled")
-                            .tag(Backport<Any>.PresentationBackgroundInteraction.disabled)
+        List {
+            Section {
+                Picker("Background Interaction", selection: $backgroundInteraction) {
+                    Text("Disabled")
+                        .tag(Backport<Any>.PresentationBackgroundInteraction.disabled)
 
-                        Text("Enabled")
-                            .tag(Backport<Any>.PresentationBackgroundInteraction.enabled)
+                    Text("Enabled")
+                        .tag(Backport<Any>.PresentationBackgroundInteraction.enabled)
 
-                        Text("Up to Medium")
-                            .tag(Backport<Any>.PresentationBackgroundInteraction.enabled(upThrough: .medium))
+                    Text("Up to Medium")
+                        .tag(Backport<Any>.PresentationBackgroundInteraction.enabled(upThrough: .medium))
 
-                        Text("Up to Large")
-                            .tag(Backport<Any>.PresentationBackgroundInteraction.enabled(upThrough: .large))
-                    }
-                    .pickerStyle(.menu)
-
-                    Picker("Content Interaction", selection: $contentInteraction) {
-                        Text("Resizes")
-                            .tag(Backport<Any>.PresentationContentInteraction.resizes)
-
-                        Text("Scrolls")
-                            .tag(Backport<Any>.PresentationContentInteraction.scrolls)
-                    }
-                    .pickerStyle(.menu)
+                    Text("Up to Large")
+                        .tag(Backport<Any>.PresentationBackgroundInteraction.enabled(upThrough: .large))
                 }
+                .pickerStyle(.menu)
 
-                Section {
-                    Button {
-                        showSheet = true
-                    } label: {
-                        Text("Show Sheet")
-                    }
+                Picker("Content Interaction", selection: $contentInteraction) {
+                    Text("Resizes")
+                        .tag(Backport<Any>.PresentationContentInteraction.resizes)
+
+                    Text("Scrolls")
+                        .tag(Backport<Any>.PresentationContentInteraction.scrolls)
                 }
-                .sheet(isPresented: $showSheet) {
-                    DemoView(detents: $detents, selection: $selection, customRadius: $customRadius, cornerRadius: $cornerRadius)
-                        .presentationDetentsIfAvailable(
-                            detents: detents,
-                            selection: $selection,
-                            backgroundInteraction: backgroundInteraction,
-                            contentInteraction: contentInteraction,
-                            cornerRadius: customRadius ? cornerRadius : nil
-                        )
+                .pickerStyle(.menu)
+            }
+
+            Section {
+                Button {
+                    showSheet = true
+                } label: {
+                    Text("Show Sheet")
                 }
             }
-        } label: {
-            Text("Presentation")
+            .sheet(isPresented: $showSheet) {
+                DemoView(detents: $detents, selection: $selection, customRadius: $customRadius, cornerRadius: $cornerRadius)
+                    .presentationDetentsIfAvailable(
+                        detents: detents,
+                        selection: $selection,
+                        backgroundInteraction: backgroundInteraction,
+                        contentInteraction: contentInteraction,
+                        cornerRadius: customRadius ? cornerRadius : nil
+                    )
+            }
         }
     }
 }

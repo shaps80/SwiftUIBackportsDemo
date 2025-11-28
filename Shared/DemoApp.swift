@@ -8,56 +8,55 @@ struct RootView: View {
             List {
                 Backport.Section("Backports") {
                     Group {
-                        AsyncImageDemo()
-                        AppStorageDemo()
-                        DismissDemo()
-                        LabelDemo()
-                        LabeledContentDemo()
-                        NavigationDemo()
-                        LinkDemo()
-                        OpenURLDemo()
+                        Demo(AsyncImageDemo.self)
+                        Demo(AppStorageDemo.self)
+                        Demo(DismissDemo.self)
+                        Demo(LabelDemo.self)
+                        Demo(LabeledContentDemo.self)
+                        Demo(NavigationDemo.self)
+                        Demo(LinkDemo.self)
+                        Demo(OpenURLDemo.self)
                     }
 
                     Group {
-                        ProgressDemo()
-                        QuicklookDemo()
-                        RequestReviewDemo()
-                        RefreshableDemo()
-                        ShareLinkDemo()
-                        StateObjectDemo()
-                        UniformTypesDemo()
+                        Demo(ProgressDemo.self)
+                        Demo(QuicklookDemo.self)
+                        Demo(RequestReviewDemo.self)
+                        Demo(RefreshableDemo.self)
+                        Demo(ShareLinkDemo.self)
+                        Demo(StateObjectDemo.self)
+                        Demo(UniformTypesDemo.self)
                     }
                 }
 
 #if os(iOS)
                 Backport.Section("iOS Only") {
-                    DynamicTypeDemo()
-                    PasteButtonDemo()
-                    PhotosPickerDemo()
-                    ScaledMetricDemo()
-                    ScrollViewDemo()
-                    FocusState()
-                    TextEditorDemo()
+                    Demo(DynamicTypeDemo.self)
+                    Demo(PasteButtonDemo.self)
+                    Demo(ScaledMetricDemo.self)
+                    Demo(ScrollViewDemo.self)
+                    Demo(FocusStateDemo.self)
+                    Demo(TextEditorDemo.self)
                 }
 #endif
 
 #if os(iOS)
                 if #available(iOS 14, *) {
                     Backport.Section("iOS 14+") {
-                        TextDemos()
-                        HostingCollectionDemo()
-                        HostingTableDemo()
+                        Demo(TextDemos.self)
+                        Demo(HostingCollectionDemo.self)
+                        Demo(HostingTableDemo.self)
                     }
                 }
 
                 if #available(iOS 15, *) {
                     Backport.Section("iOS 15+") {
-                        PresentationDemo()
+                        Demo(PresentationDemo.self)
                     }
                 }
 #endif
             }
-            .backport.navigationTitle("Demos")
+            .inlineTitle("Demos")
 
             Text("Select a Demo")
                 .foregroundColor(.secondary)

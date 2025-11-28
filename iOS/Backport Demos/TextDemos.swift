@@ -2,18 +2,7 @@ import SwiftUI
 import SwiftUIBackports
 
 @available(iOS 14, *)
-struct TextDemos: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-        } label: {
-            Text("Text Additions")
-        }
-    }
-}
-
-@available(iOS 14, *)
-private struct Demo: View {
+struct TextDemos: Demonstrable {
     @State private var textField: String = "TextField"
     @State private var backportEditor: String = "Backport TextEditor"
     @State private var textEditor: String = "iOS 16 TextEditor"

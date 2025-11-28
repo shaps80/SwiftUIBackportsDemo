@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct StateObjectDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("StateObject")
-        } label: {
-            Text("StateObject")
-        }
-    }
-}
-
-private struct Demo: View {
+struct StateObjectDemo: Demonstrable {
     var body: some View {
         RandomNumberView()
     }

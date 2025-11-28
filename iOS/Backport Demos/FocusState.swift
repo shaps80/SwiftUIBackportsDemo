@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct FocusState: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Sign In")
-        } label: {
-            Text("Focus State")
-        }
-    }
-}
-
-private struct Demo: View {
+struct FocusStateDemo: Demonstrable {
     enum Field: Hashable {
         case username
         case password

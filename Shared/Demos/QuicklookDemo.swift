@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct QuicklookDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Quicklook")
-        } label: {
-            Text("Quicklook")
-        }
-    }
-}
-
-private struct Demo: View {
+struct QuicklookDemo: Demonstrable {
     @State private var nativeUrl: URL?
     @State private var nativeSelection: URL?
 

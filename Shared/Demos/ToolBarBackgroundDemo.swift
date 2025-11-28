@@ -13,7 +13,7 @@ struct ToolBarBackgroundDemo: View {
             Text("Toolbar Background")
         }
         .sheet(isPresented: $showDemo) {
-            Demo()
+            DemoView()
         }
 
         if #available(iOS 16, macOS 13, *) {
@@ -31,7 +31,7 @@ struct ToolBarBackgroundDemo: View {
 }
 
 #if os(iOS)
-private struct Demo: View {
+private struct DemoView: View {
     @Environment(\.backportDismiss) private var dismiss
 
     var body: some View {

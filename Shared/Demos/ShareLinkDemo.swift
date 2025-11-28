@@ -1,17 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct ShareLinkDemo: View {
-    var body: some View {
-        NavigationLink {
-            DemoView()
-        } label: {
-            Text("ShareLink")
-        }
-    }
-}
-
-private struct DemoView: View {
+struct ShareLinkDemo: Demonstrable {
     var body: some View {
         ScrollView {
             VStack(spacing: 40) {

@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct DismissDemo: View {
-    var body: some View {
-        NavigationLink {
-            Presenting()
-                .backport.navigationTitle("Dismiss")
-        } label: {
-            Text("Dismiss")
-        }
-    }
-}
-
-private struct Presenting: View {
+struct DismissDemo: Demonstrable {
     @State private var showSheet: Bool = false
 
     var body: some View {
@@ -29,7 +18,7 @@ private struct Presenting: View {
     }
 }
 
-struct Presented: View {
+private struct Presented: View {
     @Environment(\.backportDismiss) private var dismiss
     @Environment(\.backportIsPresented) private var isPresented
 

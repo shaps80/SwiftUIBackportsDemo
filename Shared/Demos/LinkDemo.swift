@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct LinkDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Link")
-        } label: {
-            Text("Link")
-        }
-    }
-}
-
-private struct Demo: View {
+struct LinkDemo: Demonstrable {
     var body: some View {
         List {
             Backport.Link("Shaps Benkau", destination: URL(string: "https://benkau.com")!)

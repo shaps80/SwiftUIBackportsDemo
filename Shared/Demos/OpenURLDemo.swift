@@ -2,25 +2,7 @@ import SwiftUI
 import SwiftUIBackports
 import SafariServices
 
-struct OpenURLDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Open URL")
-                .environment(\.backportOpenURL, .init { url in
-                    switch url.host {
-                    case "handled": return .handled
-                    case "discarded": return .discarded
-                    default: return .systemAction
-                    }
-                })
-        } label: {
-            Text("Open URL")
-        }
-    }
-}
-
-private struct Demo: View {
+struct OpenURLDemo: Demonstrable {
     @Environment(\.backportOpenURL) private var openURL
     @State private var showDiscarded: Bool = false
     @State private var showHandled: Bool = false

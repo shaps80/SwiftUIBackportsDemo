@@ -3,17 +3,7 @@ import SwiftUIBackports
 import CoreServices
 
 #if os(iOS)
-struct PasteButtonDemo: View {
-    var body: some View {
-        NavigationLink {
-            DemoView()
-        } label: {
-            Text("PasteButton")
-        }
-    }
-}
-
-private struct DemoView: View {
+struct PasteButtonDemo: Demonstrable {
     @State private var text: String = ""
 
     var body: some View {

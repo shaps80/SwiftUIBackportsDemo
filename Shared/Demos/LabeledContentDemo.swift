@@ -1,19 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct LabeledContentDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Labeled Content")
-        } label: {
-            Text("Labeled Content")
-        }
-    }
-}
-
-private struct Demo: View {
-    var people: [Person] = [
+struct LabeledContentDemo: Demonstrable {
+    private var people: [Person] = [
         .init(name: "Shaps", age: 42, pets: [
             .init(name: "Scruffy", species: "Dog"),
             .init(name: "Lippy", species: "Cat")

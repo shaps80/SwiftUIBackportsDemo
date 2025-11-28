@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct ScrollViewDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("ScrollView")
-        } label: {
-            Text("ScrollView")
-        }
-    }
-}
-
-private struct Demo: View {
+struct ScrollViewDemo: Demonstrable {
     @State private var scrollEnabled: Bool = true
     @State private var indicatorVisibility: Backport.ScrollIndicatorVisibility = .automatic
     @State private var dismissMode: Backport.ScrollDismissesKeyboardMode = .automatic

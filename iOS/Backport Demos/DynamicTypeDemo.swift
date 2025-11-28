@@ -1,18 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct DynamicTypeDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-                .backport.navigationTitle("Dynamic Type")
-        } label: {
-            Text("Dynamic Type")
-        }
-    }
-}
-
-private struct Demo: View {
+struct DynamicTypeDemo: Demonstrable {
     @State private var isOverriden: Bool = false
     @State private var size: Backport.DynamicTypeSize = .large
     @State private var minSize: Backport.DynamicTypeSize = .xSmall

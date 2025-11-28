@@ -1,17 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct ProgressDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-        } label: {
-            Text("ProgressView")
-        }
-    }
-}
-
-private struct Demo: View {
+struct ProgressDemo: Demonstrable {
     @State private var downloadAmount: Float = 0.0
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 

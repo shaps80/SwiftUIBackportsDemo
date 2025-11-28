@@ -1,17 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct NavigationDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-        } label: {
-            Text("Navigation")
-        }
-    }
-}
-
-private struct Demo: View {
+struct NavigationDemo: Demonstrable {
     var title: String = "Navigation"
 
     var body: some View {
@@ -29,17 +19,17 @@ private struct Demo: View {
             }
 
             NavigationLink("Normal Link") {
-                Demo(title: "Normal")
+                NavigationDemo(title: "Normal")
             }
         }
         .backport.navigationDestination(for: String.self) { value in
-            Demo(title: "Number")
+            NavigationDemo(title: "Number")
         }
         .backport.navigationDestination(for: Int.self) { value in
-            Demo(title: "String")
+            NavigationDemo(title: "String")
         }
         .backport.navigationDestination(for: Person.self) { person in
-            Demo(title: "Person")
+            NavigationDemo(title: "Person")
         }
         .backport.navigationTitle(title)
     }

@@ -1,17 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct AsyncImageDemo: View {
-    var body: some View {
-        NavigationLink {
-            Demo()
-        } label: {
-            Text("AsyncImage")
-        }
-    }
-}
-
-private struct Demo: View {
+struct AsyncImageDemo: Demonstrable {
     @State private var isLoading: Bool = true
     private let seed = (0...1000).randomElement()!
 
@@ -31,7 +21,6 @@ private struct Demo: View {
                 }
         }
         .edgesIgnoringSafeArea(.all)
-        .backport.navigationTitle("AsyncImage")
         .backport.overlay {
             Progress(visibility: isLoading ? .visible : .hidden)
         }

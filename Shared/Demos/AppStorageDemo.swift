@@ -1,17 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
-struct AppStorageDemo: View {
-    var body: some View {
-        NavigationLink {
-            DemoView()
-        } label: {
-            Text("AppStorage")
-        }
-    }
-}
-
-private struct DemoView: View {
+struct AppStorageDemo: Demonstrable {
     @Backport.AppStorage("isOn") private var isOn: Bool = false
     @State private var didChange: Bool = false
 
