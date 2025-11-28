@@ -3,31 +3,23 @@ import SwiftUIBackports
 
 struct ShareLinkDemo: Demonstrable {
     var body: some View {
-        ScrollView {
-            VStack(spacing: 40) {
-                Backport.ShareLink(item: "Can I share this?") {
-                    VStack {
+        List {
+            Backport.ShareLink(item: "Can I share this?") {
+                VStack {
 #if os(macOS)
-                        if #available(macOS 11, *) {
-                            Image(systemName: "globe")
-                                .imageScale(.large)
-                                .foregroundColor(.accentColor)
-                        }
-#endif
-                        Text("Hello, world!")
+                    if #available(macOS 11, *) {
+                        Image(systemName: "globe")
+                            .imageScale(.large)
+                            .foregroundColor(.accentColor)
                     }
+#endif
+                    Text("Hello, world!")
                 }
-                .buttonStyle(.plain)
-
-                Backport.ShareLink(item: "Some text to share")
-                Backport.ShareLink("Benkau", item: URL(string: "https://benkau.com")!)
             }
-            .frame(maxWidth: .infinity)
-            .padding(20)
+            .buttonStyle(.plain)
+
+            Backport.ShareLink(item: "Some text to share")
+            Backport.ShareLink("Benkau", item: URL(string: "https://benkau.com")!)
         }
-        .backport.navigationTitle("Sharing")
-        #if os(iOS)
-        .navigationBarItems(trailing: Backport.ShareLink(item: URL(string: "https://benkau.com")!))
-        #endif
     }
 }

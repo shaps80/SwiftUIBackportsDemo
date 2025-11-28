@@ -25,7 +25,6 @@ struct UniformTypesDemo: Demonstrable {
                 Text("Declared")
             }
         }
-        .backport.navigationTitle("Types")
     }
 
     func section(from list: [Backport<Any>.UTType]) -> some View {

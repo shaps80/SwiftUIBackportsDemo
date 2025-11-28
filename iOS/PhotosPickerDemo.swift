@@ -53,7 +53,6 @@
 //                }
 //            }
 //        }
-//        .backport.navigationTitle("Photos Picker")
 //    }
 //}
 //#endif

@@ -46,7 +46,6 @@ struct LabeledContentDemo: Demonstrable {
             }
             .hideLabels(hideLabels)
         }
-        .backport.navigationTitle("People")
     }
 }
 
