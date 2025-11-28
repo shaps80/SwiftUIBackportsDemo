@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct ShareLinkDemo: Demonstrable {
+@Demo
+struct ShareLinkDemo {
     var body: some View {
         List {
             Backport.ShareLink(item: "Can I share this?") {

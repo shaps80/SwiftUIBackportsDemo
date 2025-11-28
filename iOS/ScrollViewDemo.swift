@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct ScrollViewDemo: Demonstrable {
+@Demo
+struct ScrollViewDemo {
     @State private var scrollEnabled: Bool = true
     @State private var indicatorVisibility: Backport.ScrollIndicatorVisibility = .automatic
     @State private var dismissMode: Backport.ScrollDismissesKeyboardMode = .automatic

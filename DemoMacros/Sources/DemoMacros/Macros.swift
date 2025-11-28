@@ -25,6 +25,19 @@ extension DemoMacro: ExtensionMacro {
         conformingTo protocols: [SwiftSyntax.TypeSyntax],
         in context: some SwiftSyntaxMacros.MacroExpansionContext
     ) throws -> [SwiftSyntax.ExtensionDeclSyntax] {
-        []
+        if protocols.isEmpty {
+            return []
+        }
+
+        let demo: DeclSyntax =
+        """
+        extension \(type.trimmed): Demonstrable { }
+        """
+
+        guard let decl = demo.as(ExtensionDeclSyntax.self) else {
+            return []
+        }
+
+        return [decl]
     }
 }

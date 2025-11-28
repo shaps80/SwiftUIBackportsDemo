@@ -5,9 +5,8 @@
     names:
     named(init)
 )
-@attached(memberAttribute)
-@attached(extension)
+@attached(extension, conformances: Demonstrable)
 public macro Demo() = #externalMacro(
-    module: "DemoMacrosMacros",
+    module: "DemoMacros",
     type: "DemoMacro"
 )

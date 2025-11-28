@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct NavigationDemo: Demonstrable {
+@Demo
+struct NavigationDemo {
     var title: String = "Navigation"
 
     var body: some View {

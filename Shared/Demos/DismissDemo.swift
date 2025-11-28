@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct DismissDemo: Demonstrable {
+@Demo
+struct DismissDemo {
     @State private var showSheet: Bool = false
 
     var body: some View {

@@ -2,7 +2,10 @@ import SwiftUI
 import SwiftUIBackports
 
 #if !os(macOS)
-struct ScaledMetricDemo: Demonstrable {
+import Demo
+
+@Demo
+struct ScaledMetricDemo {
     @State private var size: Backport.DynamicTypeSize = .large
 
     var body: some View {

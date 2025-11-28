@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct AppStorageDemo: Demonstrable {
+@Demo
+struct AppStorageDemo {
     @Backport.AppStorage("isOn") private var isOn: Bool = false
     @State private var didChange: Bool = false
 

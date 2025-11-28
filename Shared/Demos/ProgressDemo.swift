@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct ProgressDemo: Demonstrable {
+@Demo
+struct ProgressDemo {
     @State private var downloadAmount: Float = 0.0
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 

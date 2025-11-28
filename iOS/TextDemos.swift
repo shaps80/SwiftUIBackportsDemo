@@ -1,8 +1,11 @@
 import SwiftUI
 import SwiftUIBackports
 
+import Demo
+
+@Demo
 @available(iOS 14, *)
-struct TextDemos: Demonstrable {
+struct TextDemos: View {
     @State private var textField: String = "TextField"
     @State private var backportEditor: String = "Backport TextEditor"
     @State private var textEditor: String = "iOS 16 TextEditor"

@@ -2,8 +2,11 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS) || os(tvOS)
+import Demo
+
+@Demo
 @available(iOS 14, *)
-struct HostingTableDemo: Demonstrable {
+struct HostingTableDemo: View {
     var body: some View {
         Representable()
             .edgesIgnoringSafeArea(.all)

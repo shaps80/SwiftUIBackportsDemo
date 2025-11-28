@@ -2,8 +2,11 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS)
+import Demo
+
+@Demo
 @available(iOS 14, *)
-struct PresentationDemo: Demonstrable {
+struct PresentationDemo: View {
     @State private var showSheet: Bool = false
     @State private var backgroundInteraction: Backport<Any>.PresentationBackgroundInteraction = .disabled
     @State private var contentInteraction: Backport<Any>.PresentationContentInteraction = .resizes

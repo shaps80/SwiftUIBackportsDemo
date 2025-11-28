@@ -1,7 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
+import Demo
 
-struct AsyncImageDemo: Demonstrable {
+@Demo
+struct AsyncImageDemo {
     @State private var isLoading: Bool = true
     private let seed = (0...1000).randomElement()!
 

@@ -3,12 +3,12 @@ import PackageDescription
 import CompilerPluginSupport
 
 let package = Package(
-    name: "DemoMacros",
+    name: "Demo",
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macCatalyst(.v13)],
     products: [
         .library(
-            name: "DemoMacros",
-            targets: ["DemoMacros"]
+            name: "Demo",
+            targets: ["Demo"]
         )
     ],
     dependencies: [
@@ -19,7 +19,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         // Macro implementation that performs the source transformation of a macro.
         .macro(
-            name: "DemoMacrosMacros",
+            name: "DemoMacros",
             dependencies: [
                 .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
                 .product(name: "SwiftCompilerPlugin", package: "swift-syntax")
@@ -27,13 +27,13 @@ let package = Package(
         ),
 
         // Library that exposes a macro as part of its API, which is used in client programs.
-        .target(name: "DemoMacros", dependencies: ["DemoMacrosMacros"]),
+        .target(name: "Demo", dependencies: ["DemoMacros"]),
 
         // A test target used to develop the macro implementation.
         .testTarget(
-            name: "DemoMacrosTests",
+            name: "DemoTests",
             dependencies: [
-                "DemoMacrosMacros",
+                "DemoMacros",
                 .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
             ]
         )
