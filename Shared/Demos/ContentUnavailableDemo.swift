@@ -12,8 +12,6 @@ struct ContentUnavailableDemo: View {
                 Button("Primary") { }
                 Button("Secondary") { }
             }
-            .background(Color.gray.opacity(0.3))
-            .padding()
 
             Divider()
 
@@ -26,8 +24,6 @@ struct ContentUnavailableDemo: View {
                     Button("Primary") { }
                     Button("Secondary") { }
                 }
-                .background(Color.gray.opacity(0.3))
-                .padding()
             }
         }
     }
