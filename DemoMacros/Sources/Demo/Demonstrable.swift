@@ -4,7 +4,11 @@ public protocol Demonstrable: View { }
 
 public struct Demo<Content: View>: View {
     private var title: Text
-    let content: () -> Content
+    @ViewBuilder let content: () -> Content
+
+    public init(_ content: @autoclosure @escaping () -> Content) {
+        self.init(content)
+    }
 
     public init(@ViewBuilder _ content: @escaping () -> Content) {
         let title = String(describing: Content.self)

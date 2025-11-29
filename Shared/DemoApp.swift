@@ -1,46 +1,44 @@
 import SwiftUI
 import SwiftUIBackports
-
-import PhotosUI
 import Demo
 
 struct RootView: View {
     var body: some View {
         NavigationView {
-            DemoList {
-                AsyncImageDemo()
-                AppStorageDemo()
-                DismissDemo()
-                LabelDemo()
-                LabeledContentDemo()
-                NavigationDemo()
-                LinkDemo()
-                OpenURLDemo()
-                ProgressDemo()
-                QuicklookDemo()
-                RequestReviewDemo()
-                RefreshableDemo()
-                ShareLinkDemo()
-                StateObjectDemo()
-                UniformTypesDemo()
+            List {
+                Demo(AsyncImageDemo())
+                Demo(AppStorageDemo())
+                Demo(DismissDemo())
+                Demo(LabelDemo())
+                Demo(LabeledContentDemo())
+                Demo(NavigationDemo())
+                Demo(LinkDemo())
+                Demo(OpenURLDemo())
+                Demo(ProgressDemo())
+                Demo(QuicklookDemo())
+                Demo(RequestReviewDemo())
+                Demo(RefreshableDemo())
+                Demo(ShareLinkDemo())
+                Demo(StateObjectDemo())
+                Demo(UniformTypesDemo())
 
 #if os(iOS)
-                DynamicTypeDemo()
-                PasteButtonDemo()
-                ScaledMetricDemo()
-                ScrollViewDemo()
-                FocusStateDemo()
-                TextEditorDemo()
+                Demo(DynamicTypeDemo())
+                Demo(PasteButtonDemo())
+                Demo(ScaledMetricDemo())
+                Demo(ScrollViewDemo())
+                Demo(FocusStateDemo())
+                Demo(TextEditorDemo())
 
 
                 if #available(iOS 14, *) {
-                    TextDemos()
-                    HostingCollectionDemo()
-                    HostingTableDemo()
+                    Demo(TextDemos())
+                    Demo(HostingCollectionDemo())
+                    Demo(HostingTableDemo())
                 }
 
                 if #available(iOS 15, *) {
-                    PresentationDemo()
+                    Demo(PresentationDemo())
 
                 }
 #endif

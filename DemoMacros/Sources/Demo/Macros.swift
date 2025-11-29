@@ -1,5 +1,3 @@
-@_exported import Foundation
-
 @attached(
     member,
     names:
