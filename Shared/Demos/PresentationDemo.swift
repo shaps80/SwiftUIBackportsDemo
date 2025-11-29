@@ -2,9 +2,6 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS)
-import Demo
-
-@Demo
 @available(iOS 14, *)
 struct PresentationDemo: View {
     @State private var showSheet: Bool = false

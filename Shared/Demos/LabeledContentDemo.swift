@@ -1,9 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct LabeledContentDemo {
+struct LabeledContentDemo: View {
     private var people: [Person] = [
         .init(name: "Shaps", age: 42, pets: [
             .init(name: "Scruffy", species: "Dog"),

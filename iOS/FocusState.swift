@@ -1,10 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
 
-import Demo
 
-@Demo
-struct FocusStateDemo {
+
+struct FocusStateDemo: View {
     enum Field: Hashable {
         case username
         case password

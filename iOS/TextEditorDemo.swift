@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct TextEditorDemo {
+
+struct TextEditorDemo: View {
     @State private var text: String = """
     A longer piece of text that can displace itself across new lines as needed.
     The behaviour and properties should match similary to the official

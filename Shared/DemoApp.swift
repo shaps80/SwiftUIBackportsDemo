@@ -1,59 +1,47 @@
 import SwiftUI
 import SwiftUIBackports
+
 import PhotosUI
 import Demo
 
 struct RootView: View {
     var body: some View {
         NavigationView {
-            List {
-                Backport.Section("Backports") {
-                    Group {
-                        Demo(AsyncImageDemo.self)
-                        Demo(AppStorageDemo.self)
-                        Demo(DismissDemo.self)
-                        Demo(LabelDemo.self)
-                        Demo(LabeledContentDemo.self)
-                        Demo(NavigationDemo.self)
-                        Demo(LinkDemo.self)
-                        Demo(OpenURLDemo.self)
-                    }
-
-                    Group {
-                        Demo(ProgressDemo.self)
-                        Demo(QuicklookDemo.self)
-                        Demo(RequestReviewDemo.self)
-                        Demo(RefreshableDemo.self)
-                        Demo(ShareLinkDemo.self)
-                        Demo(StateObjectDemo.self)
-                        Demo(UniformTypesDemo.self)
-                    }
-                }
+            DemoList {
+                AsyncImageDemo()
+                AppStorageDemo()
+                DismissDemo()
+                LabelDemo()
+                LabeledContentDemo()
+                NavigationDemo()
+                LinkDemo()
+                OpenURLDemo()
+                ProgressDemo()
+                QuicklookDemo()
+                RequestReviewDemo()
+                RefreshableDemo()
+                ShareLinkDemo()
+                StateObjectDemo()
+                UniformTypesDemo()
 
 #if os(iOS)
-                Backport.Section("iOS Only") {
-                    Demo(DynamicTypeDemo.self)
-                    Demo(PasteButtonDemo.self)
-                    Demo(ScaledMetricDemo.self)
-                    Demo(ScrollViewDemo.self)
-                    Demo(FocusStateDemo.self)
-                    Demo(TextEditorDemo.self)
-                }
-#endif
+                DynamicTypeDemo()
+                PasteButtonDemo()
+                ScaledMetricDemo()
+                ScrollViewDemo()
+                FocusStateDemo()
+                TextEditorDemo()
 
-#if os(iOS)
+
                 if #available(iOS 14, *) {
-                    Backport.Section("iOS 14+") {
-                        Demo(TextDemos.self)
-                        Demo(HostingCollectionDemo.self)
-                        Demo(HostingTableDemo.self)
-                    }
+                    TextDemos()
+                    HostingCollectionDemo()
+                    HostingTableDemo()
                 }
 
                 if #available(iOS 15, *) {
-                    Backport.Section("iOS 15+") {
-                        Demo(PresentationDemo.self)
-                    }
+                    PresentationDemo()
+
                 }
 #endif
             }

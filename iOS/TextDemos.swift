@@ -1,9 +1,6 @@
 import SwiftUI
 import SwiftUIBackports
 
-import Demo
-
-@Demo
 @available(iOS 14, *)
 struct TextDemos: View {
     @State private var textField: String = "TextField"

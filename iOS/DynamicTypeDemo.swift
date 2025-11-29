@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct DynamicTypeDemo {
+
+struct DynamicTypeDemo: View {
     @State private var isOverriden: Bool = false
     @State private var size: Backport.DynamicTypeSize = .large
     @State private var minSize: Backport.DynamicTypeSize = .xSmall

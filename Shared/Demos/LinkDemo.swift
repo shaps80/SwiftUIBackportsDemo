@@ -1,9 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct LinkDemo {
+struct LinkDemo: View {
     var body: some View {
         List {
             Backport.Link("Shaps Benkau", destination: URL(string: "https://benkau.com")!)

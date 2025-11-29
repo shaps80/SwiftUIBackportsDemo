@@ -1,10 +1,9 @@
 import SwiftUI
 import SwiftUIBackports
-import UniformTypeIdentifiers
-import Demo
 
-@Demo
-struct UniformTypesDemo {
+import UniformTypeIdentifiers
+
+struct UniformTypesDemo: View {
     // Registered in plist
     let foo = Backport<Any>.UTType(exportedAs: "com.benkau.foo")
     let bar = Backport<Any>.UTType(importedAs: "com.benkau.bar")

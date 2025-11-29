@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct LabelDemo {
+
+struct LabelDemo: View {
     let title = "Person"
     let icon = "person.fill"
 

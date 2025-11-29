@@ -1,10 +1,10 @@
 import SwiftUI
 import SwiftUIBackports
-import SafariServices
-import Demo
 
-@Demo
-struct OpenURLDemo {
+import SafariServices
+
+
+struct OpenURLDemo: View {
     @Environment(\.backportOpenURL) private var openURL
     @State private var showDiscarded: Bool = false
     @State private var showHandled: Bool = false

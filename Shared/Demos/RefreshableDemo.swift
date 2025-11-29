@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct RefreshableDemo {
+
+struct RefreshableDemo: View {
     @State private var isRefreshing: Bool = false
 
     var body: some View {

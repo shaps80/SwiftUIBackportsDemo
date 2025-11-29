@@ -1,9 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct StateObjectDemo {
+struct StateObjectDemo: View {
     var body: some View {
         RandomNumberView()
     }

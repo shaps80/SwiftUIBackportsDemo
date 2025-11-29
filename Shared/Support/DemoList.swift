@@ -1,6 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
 
+import Demo
+
 public struct DemoList<Content: View>: View {
     public let content: Content
 
@@ -9,8 +11,10 @@ public struct DemoList<Content: View>: View {
     }
 
     public var body: some View {
-        Backport.ForEach(subviewOf: content) { subview in
-            subview
+        List {
+            Backport.ForEach(subviewOf: content) { subview in
+                Demo { subview }
+            }
         }
     }
 }

@@ -2,9 +2,6 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS) || os(tvOS)
-import Demo
-
-@Demo
 @available(iOS 14, *)
 struct HostingCollectionDemo: View {
     var body: some View {

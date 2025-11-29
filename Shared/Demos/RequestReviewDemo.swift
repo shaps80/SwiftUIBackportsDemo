@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct RequestReviewDemo {
+
+struct RequestReviewDemo: View {
     @Environment(\.backportRequestReview) private var requestReview
 
     var body: some View {

@@ -1,9 +1,8 @@
 import SwiftUI
 import SwiftUIBackports
-import Demo
 
-@Demo
-struct QuicklookDemo {
+
+struct QuicklookDemo: View {
     @State private var nativeUrl: URL?
     @State private var nativeSelection: URL?
 
