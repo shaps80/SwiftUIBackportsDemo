@@ -32,7 +32,7 @@ struct RootView: View {
                 Demo(ScrollViewDemo())
                 Demo(FocusStateDemo())
                 Demo(TextEditorDemo())
-
+                Demo(SensoryFeedbackDemo())
 
                 if #available(iOS 14, *) {
                     Demo(TextDemos())
