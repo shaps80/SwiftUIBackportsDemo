@@ -8,6 +8,8 @@ struct RootView: View {
             List {
                 Demo(AsyncImageDemo())
                 Demo(AppStorageDemo())
+                Demo(ContainerRelativeDemo())
+                Demo(ContentUnavailableDemo())
                 Demo(DismissDemo())
                 Demo(GeometryChangeDemo())
                 Demo(LabelDemo())
