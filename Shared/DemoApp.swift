@@ -9,6 +9,7 @@ struct RootView: View {
                 Demo(AsyncImageDemo())
                 Demo(AppStorageDemo())
                 Demo(DismissDemo())
+                Demo(GeometryChangeDemo())
                 Demo(LabelDemo())
                 Demo(LabeledContentDemo())
                 Demo(NavigationDemo())
