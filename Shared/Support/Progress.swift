@@ -2,18 +2,18 @@ import SwiftUI
 import SwiftUIBackports
 
 struct Progress: View {
-    let visibility: Backport<Any>.Visibility
+    let visibility: Visibility
 
     var body: some View {
         if visibility == .visible {
-            Backport.ProgressView()
-                .backport.progressViewStyle(.linear)
+            ProgressView()
+                .progressViewStyle(.linear)
         }
     }
 }
 
 private struct ProgressModifier: ViewModifier {
-    let visibility: Backport<Any>.Visibility
+    let visibility: Visibility
 
     func body(content: Content) -> some View {
         switch visibility {
@@ -30,7 +30,7 @@ private struct ProgressModifier: ViewModifier {
 }
 
 extension View {
-    func progress(_ visibility: Backport<Any>.Visibility) -> some View {
+    func progress(_ visibility: Visibility) -> some View {
         modifier(ProgressModifier(visibility: visibility))
     }
 }

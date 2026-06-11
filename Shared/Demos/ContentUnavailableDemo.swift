@@ -5,7 +5,7 @@ struct ContentUnavailableDemo: View {
     var body: some View {
         VStack {
             Backport.ContentUnavailableView {
-                Backport.Label("Backport", systemImage: "star")
+                Label("Backport", systemImage: "star")
             } description: {
                 Text("A description for the placeholder")
             } actions: {

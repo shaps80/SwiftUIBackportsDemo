@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftUIBackports
 
+import UniformTypeIdentifiers
 import CoreServices
 
 #if os(iOS)
@@ -11,28 +12,28 @@ struct PasteButtonDemo: View {
 
     var body: some View {
         List {
-            Backport.Section("TextField") {
+            Section("TextField") {
                 TextField("", text: $text)
             }
 
-            if #available(iOS 14, *) {
-                Backport.Section("Backport") {
-                    HStack {
-                        Backport.PasteButton(supportedContentTypes: [String(kUTTypeText)]) { providers in
-                            Task {
-                                do {
-                                    text = try await providers.first?.loadObject(of: String.self) ?? ""
-                                }
+            Section("Backport") {
+                HStack {
+                    Backport.PasteButton(supportedContentTypes: [UTType.text]) { providers in
+                        providers.first?.loadObject(ofClass: NSString.self) { value, _ in
+                            let string = value as? String ?? (value as? NSString).map(String.init) ?? ""
+
+                            DispatchQueue.main.async {
+                                text = string
                             }
                         }
-
-                        PasteAsStringButton()
                     }
+
+                    PasteAsStringButton()
                 }
             }
 
             if #available(iOS 16, macOS 13, *) {
-                Backport.Section("Test") {
+                Section("Test") {
                     HStack {
                         Button {
                             text = ""
@@ -59,7 +60,7 @@ struct PasteButtonDemo: View {
                 }
             }
         }
-        .backport.navigationTitle("PasteButton")
+        .navigationTitle("PasteButton")
         .navigationBarItems(trailing: PasteAsStringButton())
     }
 

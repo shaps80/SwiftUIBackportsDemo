@@ -6,36 +6,22 @@ struct RootView: View {
     var body: some View {
         NavigationView {
             List {
-                Demo(AsyncImageDemo())
-                Demo(AppStorageDemo())
                 Demo(ContainerRelativeDemo())
                 Demo(ContentUnavailableDemo())
-                Demo(DismissDemo())
                 Demo(GeometryChangeDemo())
-                Demo(LabelDemo())
                 Demo(LabeledContentDemo())
                 Demo(NavigationDemo())
-                Demo(LinkDemo())
-                Demo(OpenURLDemo())
-                Demo(ProgressDemo())
-                Demo(QuicklookDemo())
                 Demo(RequestReviewDemo())
-                Demo(RefreshableDemo())
                 Demo(ShareLinkDemo())
-                Demo(StateObjectDemo())
-                Demo(UniformTypesDemo())
 
 #if os(iOS)
                 Demo(DynamicTypeDemo())
                 Demo(PasteButtonDemo())
-                Demo(ScaledMetricDemo())
                 Demo(ScrollViewDemo())
-                Demo(FocusStateDemo())
                 Demo(TextEditorDemo())
                 Demo(SensoryFeedbackDemo())
 
                 if #available(iOS 14, *) {
-                    Demo(TextDemos())
                     Demo(HostingCollectionDemo())
                     Demo(HostingTableDemo())
                 }

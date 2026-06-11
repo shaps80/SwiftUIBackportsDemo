@@ -2,7 +2,6 @@ import SwiftUI
 import SwiftUIBackports
 
 #if os(iOS)
-@available(iOS 14, *)
 struct PresentationDemo: View {
     @State private var showSheet: Bool = false
     @State private var backgroundInteraction: Backport<Any>.PresentationBackgroundInteraction = .disabled
@@ -61,11 +60,10 @@ struct PresentationDemo: View {
     }
 }
 
-@available(iOS 14, *)
 private struct DemoView: View {
-    @Environment(\.backportDismiss) private var dismiss
+    @Environment(\.dismiss) private var dismiss
 
-    @State private var visible: Backport.Visibility = .hidden
+    @State private var visible: Visibility = .hidden
     @State private var isModal: Bool = false
     @State private var enablePrompt: Bool = true
     @State private var showPrompt: Bool = false
@@ -153,9 +151,9 @@ private struct DemoView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .backport.navigationTitle("Sheet")
-            .backport.toolbar {
-                Backport.ToolbarItem {
+            .navigationTitle("Sheet")
+            .toolbar {
+                ToolbarItem {
                     Button {
                         dismiss()
                     } label: {
@@ -181,14 +179,10 @@ extension View {
         contentInteraction: Backport<Any>.PresentationContentInteraction,
         cornerRadius: CGFloat?
     ) -> some View {
-        if #available(iOS 15, *) {
-            backport.presentationDetents(detents, selection: selection)
-                .backport.presentationBackgroundInteraction(backgroundInteraction)
-                .backport.presentationContentInteraction(contentInteraction)
-                .backport.presentationCornerRadius(cornerRadius)
-        } else {
-            self
-        }
+        backport.presentationDetents(detents, selection: selection)
+            .backport.presentationBackgroundInteraction(backgroundInteraction)
+            .backport.presentationContentInteraction(contentInteraction)
+            .backport.presentationCornerRadius(cornerRadius)
     }
 }
 #endif

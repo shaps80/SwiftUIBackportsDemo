@@ -12,10 +12,10 @@ struct TextEditorDemo: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Section {
-                Backport.TextEditor(text: $text)
+                TextEditor(text: $text)
                     .frame(minHeight: 100)
                     .padding()
-                    .backport.background {
+                    .background {
                         RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .foregroundColor(Color.primary.opacity(0.05))
                     }
@@ -31,7 +31,7 @@ struct TextEditorDemo: View {
                         .frame(minHeight: 100)
                         .padding()
                         .scrollContentBackground(.hidden)
-                        .backport.background {
+                        .background {
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
                                 .foregroundColor(Color.primary.opacity(0.05))
                         }

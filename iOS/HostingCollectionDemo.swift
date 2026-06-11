@@ -41,7 +41,7 @@ private final class Controller: UICollectionViewController {
                 Image(systemName: "swift")
                     .font(.title)
                     .padding(10)
-                    .backport.background {
+                    .background {
                         Circle()
                             .stroke(lineWidth: 3)
                     }

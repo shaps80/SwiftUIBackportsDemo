@@ -4,9 +4,9 @@ import SwiftUIBackports
 
 struct DynamicTypeDemo: View {
     @State private var isOverriden: Bool = false
-    @State private var size: Backport.DynamicTypeSize = .large
-    @State private var minSize: Backport.DynamicTypeSize = .xSmall
-    @State private var maxSize: Backport.DynamicTypeSize = .accessibility5
+    @State private var size: DynamicTypeSize = .large
+    @State private var minSize: DynamicTypeSize = .xSmall
+    @State private var maxSize: DynamicTypeSize = .accessibility5
 
     var body: some View {
         List {
@@ -16,7 +16,7 @@ struct DynamicTypeDemo: View {
 
             Section {
                 Picker("Current Size", selection: $size) {
-                    ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
+                    ForEach(DynamicTypeSize.allCases, id: \.self) { size in
                         Text(String(describing: size))
                             .tag(size)
                     }
@@ -27,7 +27,7 @@ struct DynamicTypeDemo: View {
                 VStack {
                     VStack {
                         Picker(selection: $minSize) {
-                            ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
+                            ForEach(DynamicTypeSize.allCases, id: \.self) { size in
                                 Text(String(describing: size))
                                     .tag(size)
                             }
@@ -37,7 +37,7 @@ struct DynamicTypeDemo: View {
                         Text("Minimum")
                         
                         Picker(selection: $maxSize) {
-                            ForEach(Backport.DynamicTypeSize.allCases, id: \.self) { size in
+                            ForEach(DynamicTypeSize.allCases, id: \.self) { size in
                                 Text(String(describing: size))
                                     .tag(size)
                             }
@@ -50,13 +50,13 @@ struct DynamicTypeDemo: View {
                 .foregroundColor(.secondary)
                 .font(.footnote)
             }
-            .backport.dynamicTypeSize(.large)
+            .dynamicTypeSize(.large)
         }
         .menuPickerStyle()
-        .backport.dynamicTypeSize(isOverriden ? size : min(maxSize, max(minSize, size)))
-        .backport.dynamicTypeSize(minSize...)
-        .backport.dynamicTypeSize(...maxSize)
-        .backport.dynamicTypeSize(size)
+        .dynamicTypeSize(isOverriden ? size : min(maxSize, max(minSize, size)))
+        .dynamicTypeSize(minSize...)
+        .dynamicTypeSize(...maxSize)
+        .dynamicTypeSize(size)
     }
 }
 
@@ -73,10 +73,10 @@ private extension View {
 }
 
 private struct ScalingText: View {
-    @Environment(\.backportDynamicTypeSize) private var size
+    @Environment(\.dynamicTypeSize) private var size
 
     var body: some View {
         Text(String(describing: size))
-            .backport.dynamicTypeSize(size)
+            .dynamicTypeSize(size)
     }
 }

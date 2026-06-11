@@ -18,7 +18,7 @@ struct SensoryFeedbackDemo: View {
             Toggle("Selection", isOn: $selection)
                 .backport.sensoryFeedback(.selection, trigger: selection)
 
-            Backport.Section("Notifications") {
+            Section("Notifications") {
                 Toggle("Success", isOn: $success)
                     .backport.sensoryFeedback(.success, trigger: success)
                     .foregroundColor(.green)
@@ -32,7 +32,7 @@ struct SensoryFeedbackDemo: View {
                     .foregroundColor(.red)
             }
 
-            Backport.Section("Weight") {
+            Section("Weight") {
                 Toggle("Light", isOn: $light)
                     .backport.sensoryFeedback(.impact(weight: .light, intensity: 1), trigger: light)
 
@@ -43,7 +43,7 @@ struct SensoryFeedbackDemo: View {
                     .backport.sensoryFeedback(.impact(weight: .heavy, intensity: 1), trigger: heavy)
             }
 
-            Backport.Section("Flexibility") {
+            Section("Flexibility") {
                 Toggle("Soft", isOn: $soft)
                     .backport.sensoryFeedback(.impact(flexibility: .soft, intensity: 1), trigger: soft)
 

@@ -35,7 +35,7 @@ private final class Controller: UITableViewController {
                 Image(systemName: "swift")
                     .font(.title)
                     .padding(10)
-                    .backport.background {
+                    .background {
                         Circle()
                             .stroke(lineWidth: 3)
                     }

@@ -13,7 +13,7 @@ struct LabeledContentDemo: View {
         ])
     ]
 
-    @Backport.AppStorage("hide-labels") private var hideLabels: Bool = false
+    @AppStorage("hide-labels") private var hideLabels: Bool = false
 
     var body: some View {
         List {

@@ -32,7 +32,7 @@ struct NavigationDemo: View {
         .backport.navigationDestination(for: Person.self) { person in
             NavigationDemo(title: "Person")
         }
-        .backport.navigationTitle(title)
+        .navigationTitle(title)
     }
 }
 

@@ -21,7 +21,7 @@
 //    var body: some View {
 //        List {
 //            Text("TBD")
-//            Backport.Section("Backport") {
+//            Section("Backport") {
 //                if #available(iOS 15, *) {
 //                    Backport.PhotosPicker(selection: $selection, maxSelectionCount: 3, selectionBehavior: .ordered, matching: .any(of: [.slomoVideos, .timelapseVideos])) {
 //                        Label("Choose Photos", systemImage: "photo")
@@ -44,7 +44,7 @@
 //            }
 //
 //            if #available(iOS 16, *) {
-//                Backport.Section("Native") {
+//                Section("Native") {
 //                    PhotosPicker(
 //                        selection: .constant([]),
 //                        matching: nil
