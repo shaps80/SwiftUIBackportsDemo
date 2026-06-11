@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftUIBackports
 
 struct Checkmark: ViewModifier {
-    let visibility: Backport<Any>.Visibility
+    let visibility: Visibility
     func body(content: Content) -> some View {
         switch visibility {
         case .visible:
@@ -26,7 +26,7 @@ struct Checkmark: ViewModifier {
 }
 
 extension View {
-    func checkmark(_ visibility: Backport<Any>.Visibility) -> some View {
+    func checkmark(_ visibility: Visibility) -> some View {
         modifier(Checkmark(visibility: visibility))
     }
 }
